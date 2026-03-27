@@ -124,6 +124,19 @@ const slides = [
           <h1>Any company can join the organism.</h1>
           <p>They keep their sovereignty &mdash; their brand, their clients, their agency. But they plug into a living network and get access to everything JOB builds.</p>
           <p><strong>The organism grows like mycelium &mdash; decentralized, interconnected, and impossible to kill.</strong></p>
+          <div className="network-mobile">
+            <div className="network-mobile-hub">JOB</div>
+            <div className="network-mobile-resources">
+              <span>Training</span><span>Talent</span><span>IP</span>
+            </div>
+            <div className="network-mobile-nodes">
+              <div>Jumpsuit</div>
+              <div>Your Co</div>
+              <div>Studio X</div>
+              <div>Agency Y</div>
+              <div>Lab Z</div>
+            </div>
+          </div>
         </div>
         <div className="network-diagram">
           <div className="network-core">
