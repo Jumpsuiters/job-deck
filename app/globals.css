@@ -613,20 +613,100 @@ a { color: inherit; text-decoration: none; }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .slide { padding: 2.5rem 1.5rem; padding-bottom: 5rem; }
-  .slide h1 { font-size: 2rem; }
-  .slide h2 { font-size: 1.4rem; }
-  .slide p, .slide li { font-size: 1rem; }
+  /* Let slides scroll on mobile */
+  .slide {
+    padding: 2rem 1.25rem;
+    padding-bottom: 5rem;
+    height: auto;
+    min-height: 100%;
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+
+  .slide-wrapper {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Typography */
+  .slide h1 { font-size: 1.75rem; margin-bottom: 1rem; }
+  .slide h2 { font-size: 1.25rem; margin-bottom: 1rem; }
+  .slide h3 { font-size: 0.85rem; }
+  .slide p { font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; }
+  .slide li { font-size: 0.9rem; line-height: 1.5; padding: 0.25rem 0; padding-left: 1.25rem; }
+  .slide li::before { width: 5px; height: 5px; top: 0.65rem; }
+
+  /* Cover */
+  .cover { justify-content: center; padding-top: 2rem; }
   .cover h1 { font-size: 3rem; }
-  .cover .subtitle { font-size: 1.1rem; }
-  .two-col, .three-col { grid-template-columns: 1fr; gap: 1.25rem; }
-  .big-quote { font-size: 1.3rem; }
-  .stat-number { font-size: 2rem; }
-  .deck-table { font-size: 0.85rem; }
-  .deck-table td, .deck-table th { padding: 0.5rem 0.5rem; }
+  .cover .subtitle { font-size: 1.1rem; margin-bottom: 1.5rem; }
+  .cover .tagline { font-size: 1rem; }
+
+  /* Grids → single column */
+  .two-col, .three-col {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  /* Cards */
+  .card { padding: 1.25rem; border-radius: 10px; }
+  .card h3 { font-size: 0.85rem; }
+  .card p { font-size: 0.9rem; }
+  .card li { font-size: 0.85rem; padding-left: 1rem; }
+  .card li::before { width: 4px; height: 4px; top: 0.6rem; }
+
+  /* Stats */
+  .stat-number { font-size: 1.8rem; }
+  .stat-label { font-size: 0.8rem; }
+
+  /* Make stat grid 2-col on mobile instead of 1 */
+  .three-col:has(.stat) {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /* Quote */
+  .big-quote { font-size: 1.2rem; }
+
+  /* Table */
+  .deck-table { font-size: 0.8rem; }
+  .deck-table td, .deck-table th { padding: 0.4rem 0.5rem; }
+
+  /* Close slide */
+  .close-slide { justify-content: center; padding-top: 2rem; }
+  .close-slide h1 { font-size: 1.75rem; }
+  .close-slide p { font-size: 0.95rem; }
+
+  /* Network diagram — hide on mobile, show text only */
   .network-layout { grid-template-columns: 1fr; }
-  .network-diagram { width: 300px; height: 280px; margin: 0 auto; }
-  .network-hub { width: 60px; height: 60px; font-size: 1rem; }
-  .network-node { font-size: 0.75rem; padding: 0.35rem 0.7rem; }
-  .modal { margin: 1rem; padding: 1.75rem; }
+  .network-diagram { display: none; }
+  .network-text h1 { font-size: 1.75rem; }
+
+  /* CTAs */
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .waitlist-trigger {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.75rem;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Nav */
+  .nav-bar { padding: 0.75rem 1rem; }
+  .nav-dot { width: 6px; height: 6px; }
+  .nav-dot.active { width: 16px; }
+  .nav-dots { gap: 3px; }
+  .nav-btn { width: 30px; height: 30px; font-size: 0.8rem; }
+  .slide-count { font-size: 0.7rem; min-width: 35px; }
+
+  /* Modal */
+  .modal { margin: 1rem; padding: 1.75rem; border-radius: 14px; }
+  .modal h2 { font-size: 1.3rem; }
 }
