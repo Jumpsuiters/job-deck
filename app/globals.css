@@ -581,6 +581,27 @@ a { color: inherit; text-decoration: none; }
   transform: translateY(-1px);
 }
 
+.donate-btn {
+  background: none;
+  border: 2px solid var(--accent-solid);
+  color: var(--text);
+  -webkit-text-fill-color: var(--text);
+}
+
+.donate-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  -webkit-text-fill-color: var(--teal);
+}
+
+.cta-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .form-success {
   text-align: center;
   padding: 2rem 0;

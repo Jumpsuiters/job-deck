@@ -482,7 +482,10 @@ function CloseSlide({ onJoin }) {
       <p>Because there&apos;s only one job left. And it&apos;s the only one that ever mattered.</p>
       <p style={{ color: 'var(--text)', fontSize: '1.5rem', fontWeight: 700, marginTop: '0.5rem' }}>Being human is the job now.</p>
       <p style={{ marginTop: '1rem' }}><strong className="gold">Welcome to the new Human Resources.</strong></p>
-      <button className="waitlist-trigger" onClick={onJoin}>Join the Waitlist</button>
+      <div className="cta-row">
+        <button className="waitlist-trigger" onClick={onJoin}>Join the Investor Waitlist</button>
+        <a href="#donate" className="waitlist-trigger donate-btn" onClick={e => { e.preventDefault(); alert('Donation account coming soon — we\u0027ll notify you when it\u0027s live.'); }}>Invest Now with Church Donation (tax exempt)</a>
+      </div>
     </div>
   );
 }
