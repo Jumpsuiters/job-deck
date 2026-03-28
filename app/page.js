@@ -446,7 +446,8 @@ const slides = [
     <div className="slide">
       <h3>The ask</h3>
       <h1><span className="gold">$3&ndash;5M</span> Seed Round</h1>
-      <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>SAFE into the HoldCo. Lead checks from our network + Wefunder community round.<br /><strong>Own what you co-create.</strong></p>
+      <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>SAFE into the <strong>HoldCo</strong> &mdash; the for-profit parent entity that owns all subsidiaries: IP, technology, services, land, and every future experiment.</p>
+      <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>One investment. Every door. Lead checks from our network + Wefunder community round.<br /><strong>Own what you co-create.</strong></p>
       <div className="two-col">
         <div className="card">
           <h3>What the money builds (24 months)</h3>
