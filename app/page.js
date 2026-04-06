@@ -138,7 +138,18 @@ const slides = [
     </div>
   ),
 
-  // 6 — SOLUTION
+  // 6 — THE NAME (reveal)
+  () => (
+    <div className="slide">
+      <h3>The name</h3>
+      <h1>J.O.B. = <span className="gold">Joy of Being.</span></h1>
+      <p style={{ fontSize: '1.15rem', marginTop: '1rem' }}>For 200 years, a &ldquo;job&rdquo; was the thing you did for money so you could maybe have a life on the weekend.</p>
+      <p style={{ fontSize: '1.15rem' }}>We took the most loaded word in the working world and gave it back its real meaning.</p>
+      <p style={{ fontSize: '1.4rem', color: 'var(--gold)', fontStyle: 'italic', marginTop: '1.5rem', textAlign: 'center', maxWidth: '100%' }}>The only job left is to be human. So we took the word.</p>
+    </div>
+  ),
+
+  // 7 — SOLUTION
   () => (
     <div className="slide">
       <h3>The solution</h3>
