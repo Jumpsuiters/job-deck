@@ -9,30 +9,29 @@ const slides = [
     <div className="slide cover">
       <h1>J.O.B.</h1>
       <p className="subtitle">The Transition Company</p>
-      <p className="tagline">The largest involuntary liberation in economic history is underway. We&apos;re building the infrastructure to catch the people falling out of the old system — and launch the ones ready to come alive.</p>
+      <p className="tagline">The machines are taking the jobs. We&apos;re taking the humans.</p>
     </div>
   ),
 
-  // 1 — THE MOMENT (MANIFESTO OPENER)
+  // 1 — THE MOMENT
   () => (
     <div className="slide">
       <h3>2026</h3>
-      <h1>The floor is falling out.</h1>
-      <p>Layoffs aren&apos;t a news cycle anymore. They&apos;re a climate. Every week another company announces another round, another function, another &ldquo;strategic realignment&rdquo; that means the same thing: the machines can do it now.</p>
-      <p>The economists are measuring it in unemployment points. The markets are pricing it as demand destruction. The headlines are calling it a crisis.</p>
-      <p><strong>All of them are looking at the wrong thing.</strong></p>
+      <h1>Your job is a dead man walking.</h1>
+      <p>Every week, another round. Another function. Another &ldquo;strategic realignment&rdquo; that means the same thing.</p>
+      <p>The machines can do it now.</p>
+      <p><strong>The economists call it a crisis. They&apos;re reading the wrong chart.</strong></p>
     </div>
   ),
 
   // 2 — THE REFRAME
   () => (
     <div className="slide">
-      <h3>What they&apos;re missing</h3>
+      <h3>Plot twist</h3>
       <h1>They weren&apos;t laid off. They were let out.</h1>
       <p style={{ fontSize: '1.6rem', color: 'var(--gold)', fontWeight: 300, margin: '1.5rem 0' }}>This is the largest involuntary liberation in economic history.</p>
-      <p>Tens of millions of people are being stripped of the performance of productivity — and forced, for the first time in their adult lives, to ask what they would actually do if the old deal stopped being available.</p>
-      <p>Most panic. They sharpen the resume, chase the next title, and compete for roles that are being automated faster than they can interview for them.</p>
-      <p>But a growing number do something the economy has no variable for. <strong>They stop.</strong> Not stop working — stop <em>performing</em>. And they sit with a question they&apos;d been too busy, too comfortable, or too afraid to ask before the layoff made it unavoidable.</p>
+      <p>Tens of millions of people. Stripped of the performance. Forced to ask the question their paycheck was paying them not to.</p>
+      <p><strong>What would you actually do if the old deal disappeared?</strong></p>
     </div>
   ),
 
@@ -47,20 +46,20 @@ const slides = [
   // 4 — WHAT THE LAYOFF REVEALS
   () => (
     <div className="slide">
-      <h3>What the layoff reveals</h3>
-      <h1>The deal was never the job. It was the suppression.</h1>
+      <h3>The secret everyone was keeping</h3>
+      <h1>You weren&apos;t working. You were hiding.</h1>
       <div className="three-col" style={{ marginTop: '1rem' }}>
         <div className="card">
-          <h3>The trade we made</h3>
-          <p>Trade your energy for a paycheck. Trade your time for an identity. Trade your aliveness for a title that tells your family what you do. A whole generation signed up for it. The machine needed compliant cognitive labor — not alive human beings — and we delivered.</p>
+          <h3>The deal</h3>
+          <p>Trade your energy for a paycheck. Trade your time for a title. Trade your aliveness for a LinkedIn profile your parents finally understood.</p>
         </div>
         <div className="card">
-          <h3>What the trade cost</h3>
-          <p>Every person quietly carried a list of the things they would do if they could afford to. The cooking, the building, the teaching, the making, the healing, the time with their kids. The list got longer every year. Then one day the company eliminated the role — and the list was all that was left.</p>
+          <h3>The cost</h3>
+          <p>Everyone kept a list. The things they&apos;d do if they could afford to. Build. Cook. Teach. Heal. Parent. The list got longer every year.</p>
         </div>
         <div className="card">
-          <h3>What it revealed</h3>
-          <p>These aren&apos;t people who lack skills or drive. Their skills were <em>allocated</em> — by incentive, by fear, by the gravitational pull of the paycheck — to work that didn&apos;t make them come alive. Take the paycheck away and a different set of skills surfaces almost immediately.</p>
+          <h3>The reveal</h3>
+          <p>Take the paycheck away and a different person walks out of the office. Same human. Completely different skill set. It was in there the whole time.</p>
         </div>
       </div>
     </div>
@@ -69,125 +68,120 @@ const slides = [
   // 5 — THE PASSAGE
   () => (
     <div className="slide">
-      <h3>The passage</h3>
-      <h1>This isn&apos;t a weekend workshop. It&apos;s bereavement.</h1>
-      <p>The people losing their jobs are grieving an identity. Not a paycheck — an <em>identity.</em> The one they answered to at dinner parties. The one their parents finally understood. The one the whole culture told them was the point.</p>
-      <p>The ones who surrender to the grief — who let it strip away the performance and sit with the terrifying question of who they are without a title — emerge as something the old economy didn&apos;t know how to hire and the new economy can&apos;t function without.</p>
-      <p>The passage takes <strong>12 to 18 months</strong>. It cannot be rushed. It cannot be replaced by a Udemy course. It cannot be handled by a chatbot. And on the other side of it is a human the market will pay for — because AI can&apos;t fake what they&apos;ve become.</p>
-      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%' }}>They don&apos;t start more businesses because they learned new skills. <strong>They stop suppressing the ones they already had.</strong></p>
+      <h3>The part nobody tells you</h3>
+      <h1>It&apos;s not a job search. It&apos;s a funeral.</h1>
+      <p>You&apos;re not grieving the paycheck. You&apos;re grieving the <em>person you thought you were.</em> The one with the title. The one your parents bragged about. The one the culture told you was the point.</p>
+      <p>A resume workshop can&apos;t fix this. A Udemy course can&apos;t fix this. A chatbot definitely can&apos;t fix this.</p>
+      <p style={{ fontSize: '1.35rem', color: 'var(--gold)', fontWeight: 400, margin: '1.25rem 0' }}>The passage takes 12 to 18 months.</p>
+      <p><strong>On the other side is a human AI can&apos;t fake — because AI can&apos;t grieve.</strong></p>
     </div>
   ),
 
   // 7 — THE PROBLEM
   () => (
     <div className="slide">
-      <h3>The problem</h3>
-      <h1>Nobody&apos;s building a passage.</h1>
-      <p>Old HR was never about resourcing humans. It manages humans <em>as</em> resources — to be optimized, utilized, and replaced. Now it&apos;s replacing them at scale.</p>
-      <p>And when the severance check hits, what does HR offer? A templated goodbye and a LinkedIn Premium code. Sending people right back into the loop that just spit them out.</p>
-      <p>The $2.5B outplacement industry is a $4 billion lie: that a sharper resume will land people back where they were before. <strong>But where they were before is exactly what stopped working.</strong></p>
-      <p style={{ marginTop: '1rem' }}>Every CEO and CHRO knows this. Every therapist, coach, and healer knows this. Every laid-off worker knows this.</p>
-      <p>None of them have an answer. <strong>We do.</strong></p>
+      <h3>Meanwhile, in HR</h3>
+      <h1>They hand them a LinkedIn code and call it closure.</h1>
+      <p>Old HR was never about resourcing humans. It manages humans <em>as</em> resources. Optimize, utilize, replace.</p>
+      <p>Now it&apos;s replacing them at scale — and sending them back into the loop that just spit them out.</p>
+      <p style={{ marginTop: '1rem' }}><strong>The $2.5B outplacement industry is a $4 billion lie:</strong> that a sharper resume will land people back where they were before.</p>
+      <p>But where they were before is exactly what stopped working.</p>
     </div>
   ),
 
   // 8 — THE THESIS
   () => (
     <div className="slide">
-      <h3>Our thesis</h3>
+      <h3>Enter us</h3>
       <h1>J.O.B. is the transition company.</h1>
-      <p style={{ fontSize: '1.35rem', color: 'var(--text)', fontWeight: 600, marginBottom: '1.25rem' }}>We&apos;re building the infrastructure for the largest involuntary liberation in economic history.</p>
-      <p>Not a job board. Not a retraining program. Not another outplacement service with better branding.</p>
-      <p>A living organism that catches people when they fall out of the old system, holds them through the 12-to-18-month passage, and launches them into the new economy on the other side.</p>
-      <p>Some start businesses. Some transform organizations. Some — the therapists, healers, bodyworkers, artists, furniture makers, mediators, farmers — finally get paid for gifts the old economy never valued.</p>
-      <p><strong>We&apos;re not rebuilding the old system. We&apos;re the infrastructure for the one that&apos;s replacing it.</strong></p>
+      <p style={{ fontSize: '1.35rem', color: 'var(--text)', fontWeight: 600, marginBottom: '1.25rem' }}>Not a job board. Not retraining. Not outplacement with better branding.</p>
+      <p>A living organism. It catches people when they fall out of the old system. It holds them through the passage. It launches them into the new economy.</p>
+      <p><strong>We&apos;re not rebuilding the old system. We&apos;re the infrastructure for the one replacing it.</strong></p>
     </div>
   ),
 
   // 9 — THE ORGANISM
   () => (
     <div className="slide">
-      <h3>The organism</h3>
+      <h3>How it works</h3>
       <h2>Six doors. One transition.</h2>
-      <p>Every experiment is a way in. Every experiment feeds the others. The whole thing is built to catch you wherever you are in the passage — and launch you when you&apos;re ready.</p>
+      <p>Every door is a way in. Every door feeds the others.</p>
       <div className="three-col" style={{ marginTop: '1rem' }}>
         <div className="card">
           <h3>The Church</h3>
-          <p><em>The grief container.</em> AA × Indeed × Meow Wolf had a baby. Where the &ldquo;in order to&rdquo; dissolves and the real question surfaces.</p>
+          <p><em>The grief container.</em> Where the performance dies and the real person surfaces.</p>
         </div>
         <div className="card">
-          <h3>MagicShowLand</h3>
-          <p><em>The Transition Centers.</em> Physical spaces — abandoned churches, castles, colleges — where the passage happens in-person, in community.</p>
+          <h3>Transition Centers</h3>
+          <p><em>The physical space.</em> Abandoned churches. Castles. Colleges. The room you walk into when the floor falls out.</p>
         </div>
         <div className="card">
           <h3>Magic Shows</h3>
-          <p><em>The nervous system reset.</em> Multi-day stateside and multi-week Costa Rica immersions that break the fear loop and accelerate the passage.</p>
+          <p><em>The reset.</em> Multi-day stateside. Multi-week Costa Rica. Breaks the fear loop in days, not months.</p>
         </div>
         <div className="card">
           <h3>The J.O.B. Board</h3>
-          <p><em>The marketplace for the alive.</em> Sovereign humans get paid for what AI can&apos;t do. 20% platform fee on every transaction.</p>
+          <p><em>The marketplace.</em> Where sovereign humans get paid for what AI can&apos;t do. 20% platform fee.</p>
         </div>
         <div className="card">
           <h3>Business 3.0</h3>
-          <p><em>The new operating system.</em> For the companies built by the transitioned — organisms instead of machines. Consulting, cohorts, certification.</p>
+          <p><em>The OS.</em> For the companies the transitioned build next. Organisms, not machines.</p>
         </div>
         <div className="card">
           <h3>New Human Resources</h3>
-          <p><em>The enterprise door.</em> Companies doing layoffs pay us to put their people through the passage. The revenue engine that funds the whole organism.</p>
+          <p><em>The enterprise door.</em> Companies pay us to put their laid-off people through all of it. The revenue engine.</p>
         </div>
       </div>
     </div>
   ),
 
-  // 10 — THE CHURCH (zoom in)
+  // 10 — THE CHURCH
   () => (
     <div className="slide">
-      <h3>The Church</h3>
-      <h1>AA × Indeed × Meow Wolf had a baby.</h1>
-      <p>It isn&apos;t a religion. There&apos;s no deity. No dogma. But there&apos;s sacrament — and the sacrament is the question itself: <em>what makes you come alive?</em></p>
+      <h3>Door one</h3>
+      <h1>What if AA, Indeed, and Meow Wolf had a baby?</h1>
+      <p>No deity. No dogma. One sacrament: <em>what makes you come alive?</em></p>
       <div className="three-col" style={{ marginTop: '1rem' }}>
         <div className="card">
           <h3>From AA</h3>
-          <p>The container. Sunday Night Live. Small groups. Body-based check-ins that bypass the intellectualization professionals use as a defense. People admitting, out loud, that the thing they&apos;ve been performing isn&apos;t the thing they are — and being held there until something true surfaces.</p>
+          <p>The container. Small groups. Body-based check-ins that bypass the performance. People admitting, out loud, that the thing they&apos;ve been isn&apos;t the thing they are.</p>
         </div>
         <div className="card">
           <h3>From Indeed</h3>
-          <p>The practical function. People arrive because they&apos;ve lost or hate their jobs. Church is the place they go <em>after</em> LinkedIn didn&apos;t work — and the place they leave ready to build something the old economy couldn&apos;t imagine.</p>
+          <p>The function. People arrive because they lost the job. They leave ready to build something LinkedIn couldn&apos;t find a category for.</p>
         </div>
         <div className="card">
           <h3>From Meow Wolf</h3>
-          <p>The weirdness. Church is an immersive experience, not a service. Playful, strange, alive — on purpose. The professional self can&apos;t be coaxed out through a webinar. It has to be <em>surprised.</em></p>
+          <p>The weirdness. Church is an experience, not a service. The professional self won&apos;t come out for a webinar. It has to be surprised.</p>
         </div>
       </div>
-      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%' }}>Live now at apply.itsthejob.com. Doctrine written. Congregation forming.</p>
+      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%' }}><strong>Live now. Congregation forming.</strong></p>
     </div>
   ),
 
-  // 11 — TRANSITION CENTERS (MagicShowLand)
+  // 11 — TRANSITION CENTERS
   () => (
     <div className="slide">
-      <h3>MagicShowLand</h3>
-      <h1>Transition Centers.</h1>
-      <p>Abandoned churches. Castles. Colleges that couldn&apos;t keep the lights on. Buildings the old economy can&apos;t use anymore, reactivated as physical infrastructure for the transition.</p>
-      <p>The form adapts to the place — urban studios, rural retreats, neighborhood halls. The function is constant: a room you can walk into when the floor falls out, and people who will hold it with you until you can stand on the new one.</p>
-      <p><strong>We&apos;re building the national network. The first three open in the first 24 months.</strong></p>
+      <h3>Door two</h3>
+      <h1>You can&apos;t become someone new on Zoom.</h1>
+      <p>Transition Centers are the physical side of the passage. Abandoned churches. Castles. Colleges the old economy couldn&apos;t keep running.</p>
+      <p>We rent them for pennies. We fill them with humans. We call it real estate arbitrage on the collapse of the old world.</p>
       <div className="two-col" style={{ marginTop: '1rem' }}>
         <div className="card">
-          <h3>What&apos;s inside</h3>
+          <h3>What happens inside</h3>
           <ul>
-            <li>Small groups of 6–8, meeting twice a week</li>
+            <li>Small groups of 6&ndash;8, twice a week</li>
             <li>Body-based check-ins, not performance reviews</li>
-            <li>Practical skill-building alongside emotional honesty</li>
-            <li>Practices that distinguish what you&apos;re feeling from the story you&apos;re telling about it</li>
-            <li>Co-regulation — nervous systems in the same room</li>
-            <li>An AI-native toolkit layered on top of all of it</li>
+            <li>Real skill-building, real emotional honesty</li>
+            <li>Co-regulation &mdash; nervous systems in the same room</li>
+            <li>AI-native toolkit layered on top</li>
           </ul>
         </div>
         <div className="card">
-          <h3>Why physical matters</h3>
-          <p><strong>You can&apos;t grieve alone on Zoom.</strong> Or you can, but you won&apos;t come out the other side.</p>
-          <p>People who process the loss in a room full of other humans take real risk on the other side — they start the thing, make the call, launch the practice. People who white-knuckle through it alone, refreshing LinkedIn, mostly just spiral.</p>
-          <p>No AI can replicate this. Not because of a capability gap — because the thing that does the work isn&apos;t information. It&apos;s presence.</p>
+          <h3>Why it works</h3>
+          <p><strong>Presence is the product.</strong></p>
+          <p>People who grieve in community take real risk on the other side. People who white-knuckle through it alone, refreshing LinkedIn, mostly just spiral.</p>
+          <p>AI can&apos;t replicate this. Not a capability gap &mdash; a category error.</p>
         </div>
       </div>
     </div>
@@ -197,39 +191,39 @@ const slides = [
   () => (
     <div className="slide">
       <h3>The flywheel</h3>
-      <h1>How the organism feeds itself.</h1>
+      <h1>The people we save become the people we sell.</h1>
       <div className="two-col" style={{ marginTop: '0.75rem' }}>
         <div className="card">
-          <h3>1 &middot; Catch them when they fall</h3>
-          <p>Companies doing layoffs pay us (<strong>NHR</strong>) to put their people through the passage. The Church takes them in. Magic Shows reset their nervous systems. Transition Centers hold them physically for 12–18 months.</p>
+          <h3>1 &middot; Catch</h3>
+          <p>Companies pay us (NHR) to put their laid-off people through the passage. Church holds them. Magic Shows reset them. Centers ground them.</p>
         </div>
         <div className="card">
-          <h3>2 &middot; Launch them into the new economy</h3>
-          <p>The ones who come through start companies. Some become sellers on the <strong>J.O.B. Board</strong> (20% platform fee). Some build <strong>Business 3.0</strong> organisms. Some become Guides for the next cohort.</p>
+          <h3>2 &middot; Launch</h3>
+          <p>Some start companies. Some sell on the J.O.B. Board (20% fee). Some build Business 3.0 organisms. Some come back as Guides.</p>
         </div>
         <div className="card">
-          <h3>3 &middot; They bring the next wave</h3>
-          <p>Their businesses grow. Their communities refer. Their stories spread. Every alive human is a door back into the organism. EOS scaled to $145M on the same mechanic.</p>
+          <h3>3 &middot; Multiply</h3>
+          <p>Every alive human is a door back in. Their businesses grow. Their stories spread. EOS scaled to $145M on exactly this mechanic.</p>
         </div>
         <div className="card">
-          <h3>4 &middot; The cycle compounds</h3>
-          <p>Eventually the companies they build face their own transitions. They already trust us. The flywheel never stops — because the passage never stops.</p>
+          <h3>4 &middot; Compound</h3>
+          <p>The companies they build eventually face their own transitions. They already trust us. The passage never stops.</p>
         </div>
       </div>
-      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%' }}><strong>NHR funds the organism. The organism feeds NHR. Every door compounds every other door.</strong></p>
+      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%' }}><strong>NHR funds the organism. The organism makes NHR impossible to copy.</strong></p>
     </div>
   ),
 
-  // 13 — NHR (the revenue engine, now framed inside the whole)
+  // 13 — NHR
   () => (
     <div className="slide">
       <h3>The revenue engine</h3>
-      <h1>New Human Resources.</h1>
-      <p style={{ fontSize: '1.25rem', color: 'var(--text)', fontWeight: 600, marginBottom: '1.25rem' }}>Old HR offboards people. New HR sets them free.</p>
-      <p>Companies letting people go pay us per seat. Their laid-off employees get the entire J.O.B. ecosystem — six months of passage through the Church, the Guides, the Board, Business 3.0, and (optionally) the Magic Show.</p>
-      <p>This is our wedge into the enterprise. It&apos;s the biggest single revenue line in the organism. And it&apos;s the most legible thing we sell to a CFO — because outplacement is already a line item on every corporate P&amp;L.</p>
-      <p><strong>But it&apos;s one door among six.</strong> The whole organism is what makes every door valuable — and what makes NHR something outplacement vendors can&apos;t replicate no matter how much they spend.</p>
-      <p style={{ marginTop: '1rem', fontSize: '0.95rem', color: 'var(--muted)' }}>new-human-resources.vercel.app — live, taking applications</p>
+      <h1>Old HR offboards people. New HR sets them free.</h1>
+      <p>Companies pay per seat. Their laid-off employees get the whole organism &mdash; Church, Guides, Board, B3.0, and (optionally) the Magic Show.</p>
+      <p>It&apos;s the most legible thing we sell to a CFO. Outplacement is already a line item on every P&amp;L. We&apos;re just making it actually work.</p>
+      <p style={{ fontSize: '1.35rem', color: 'var(--gold)', fontWeight: 400, margin: '1.25rem 0' }}>It&apos;s the biggest line. But it&apos;s one door of six.</p>
+      <p><strong>Which is exactly why outplacement can&apos;t copy it.</strong></p>
+      <p style={{ marginTop: '1rem', fontSize: '0.95rem', color: 'var(--muted)' }}>new-human-resources.vercel.app &mdash; live, taking applications</p>
     </div>
   ),
 
@@ -237,7 +231,7 @@ const slides = [
   () => (
     <div className="slide">
       <h3>NHR pricing</h3>
-      <h2>Priced like outplacement. Works nothing like it.</h2>
+      <h1>Priced like outplacement. Works nothing like it.</h1>
       <div className="three-col" style={{ marginTop: '1rem' }}>
         <div className="card">
           <h3>Founder-led</h3>
@@ -249,20 +243,20 @@ const slides = [
           <h3>Growth-stage</h3>
           <p style={{ color: 'var(--muted)', marginBottom: '0.5rem' }}>51&ndash;1,000 people</p>
           <p style={{ fontSize: '2rem', color: 'var(--gold)', fontWeight: 300, margin: '0.5rem 0', lineHeight: 1 }}>$2,500<span style={{ fontSize: '0.9rem', color: 'var(--muted)' }}>/seat</span></p>
-          <p>For CHROs navigating a restructure. Protect the brand. Take care of the people.</p>
+          <p>For CHROs protecting the brand while the headcount drops.</p>
         </div>
         <div className="card">
           <h3>Enterprise</h3>
           <p style={{ color: 'var(--muted)', marginBottom: '0.5rem' }}>1,000+ people</p>
           <p style={{ fontSize: '2rem', color: 'var(--gold)', fontWeight: 300, margin: '0.5rem 0', lineHeight: 1 }}>Custom</p>
-          <p>For mass workforce transitions. Multi-cohort, co-branded, board-defensible.</p>
+          <p>For mass workforce transitions. Co-branded. Board-defensible.</p>
         </div>
       </div>
       <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%' }}>
-        <strong>Magic Show add-on: +$5K stateside (multi-day) / +$10K Costa Rica (multi-week), per person.</strong>
+        <strong>Magic Show add-on: +$5K stateside / +$10K Costa Rica, per person.</strong>
       </p>
       <p style={{ marginTop: '0.75rem', textAlign: 'center', maxWidth: '100%', fontSize: '0.95rem', color: 'var(--muted)' }}>
-        A single enterprise deal at 30,000 seats × $2,500 = <strong style={{ color: 'var(--text)' }}>$75M</strong>. 10% Magic Show uptake at a blended $7,500 = <strong style={{ color: 'var(--text)' }}>+$22.5M</strong>. One customer.
+        One enterprise deal &middot; 30,000 seats × $2,500 = <strong style={{ color: 'var(--text)' }}>$75M</strong>. 10% Magic Show uptake = <strong style={{ color: 'var(--text)' }}>+$22.5M</strong>. <strong style={{ color: 'var(--text)' }}>One customer.</strong>
       </p>
     </div>
   ),
@@ -270,12 +264,12 @@ const slides = [
   // 15 — TAM
   () => (
     <div className="slide">
-      <h3>Total addressable market</h3>
-      <h2>We sit at the intersection of six industries — and a seventh we&apos;re inventing.</h2>
+      <h3>TAM</h3>
+      <h1>Six broken industries. One fix.</h1>
       <div className="three-col" style={{ marginTop: '1.5rem' }}>
         <div className="stat">
           <div className="stat-number">$739B</div>
-          <div className="stat-label">Global HR &amp; recruiting</div>
+          <div className="stat-label">HR &amp; recruiting</div>
         </div>
         <div className="stat">
           <div className="stat-number">$461B</div>
@@ -295,10 +289,10 @@ const slides = [
         </div>
         <div className="stat">
           <div className="stat-number">$2.5B</div>
-          <div className="stat-label">Outplacement (direct replacement)</div>
+          <div className="stat-label">Outplacement</div>
         </div>
       </div>
-      <p style={{ marginTop: '2rem', textAlign: 'center', maxWidth: '100%' }}>Every one of these industries is a fragment of the same problem — nobody built a passage. <strong>The seventh industry is the transition economy itself. It doesn&apos;t exist yet. We&apos;re building it.</strong></p>
+      <p style={{ marginTop: '2rem', textAlign: 'center', maxWidth: '100%' }}>Every one of these is a fragment of the same problem. Nobody built the passage. <strong>The seventh industry is the transition economy itself. We&apos;re inventing it.</strong></p>
     </div>
   ),
 
@@ -306,7 +300,7 @@ const slides = [
   () => (
     <div className="slide">
       <h3>The comp</h3>
-      <h2>Outplacement is the incumbent. EOS is the playbook.</h2>
+      <h1>LinkedIn sells hope. We sell the passage.</h1>
       <table className="deck-table">
         <thead>
           <tr>
@@ -319,58 +313,58 @@ const slides = [
         <tbody>
           <tr>
             <td>What</td>
-            <td>Resume workshops, job search tools</td>
-            <td>Operating system for businesses</td>
-            <td>Transition infrastructure for the largest involuntary liberation in economic history</td>
+            <td>Resume workshops</td>
+            <td>Operating system for SMBs</td>
+            <td>Transition infrastructure</td>
           </tr>
           <tr>
             <td>Method</td>
-            <td>LinkedIn hacks, templated advice</td>
-            <td>Traction (cognitive, process)</td>
-            <td>Embodiment (somatic, relational, whole-intelligence)</td>
+            <td>LinkedIn hacks</td>
+            <td>Cognitive process</td>
+            <td>Embodiment + community</td>
           </tr>
           <tr>
             <td>Revenue</td>
-            <td>$2.5B market, shrinking</td>
+            <td>$2.5B, shrinking</td>
             <td>$145M, growing</td>
-            <td>Wedge live, pipeline forming</td>
+            <td>Wedge live</td>
           </tr>
           <tr>
             <td>Output</td>
-            <td>A slightly better resume</td>
+            <td>A better resume</td>
             <td>Better-run companies</td>
-            <td>Sovereign humans &amp; the companies they create</td>
+            <td>Sovereign humans</td>
           </tr>
         </tbody>
       </table>
-      <p style={{ marginTop: '1.5rem' }}><strong>The person who scaled EOS to $145M is now building the thing that replaces outplacement.</strong></p>
+      <p style={{ marginTop: '1.5rem' }}><strong>The woman who scaled EOS to $145M is now building the thing that replaces outplacement.</strong></p>
     </div>
   ),
 
   // 17 — TRACTION
   () => (
     <div className="slide">
-      <h3>What exists today</h3>
-      <h2>We&apos;re not starting from zero. We&apos;re starting from live.</h2>
+      <h3>Traction</h3>
+      <h1>We&apos;re not starting from zero. We&apos;re starting from live.</h1>
       <div className="two-col" style={{ marginTop: '1rem' }}>
         <div className="card">
           <h3>Live product</h3>
           <ul>
-            <li><strong>itsthejob.com</strong> — the front door. Every experiment lives here.</li>
-            <li><strong>new-human-resources.vercel.app</strong> — the B2B wedge. Pricing, application flow, taking inbound.</li>
-            <li><strong>Magic Show platform</strong> — multi-show portal, golden tickets, intake + waivers. Shows already produced (Nashville, Minneapolis, Big Sky).</li>
-            <li><strong>The Church</strong> — live app, Sunday Night Live running, doctrine written, congregation forming.</li>
-            <li><strong>The J.O.B. Board</strong> — marketplace MVP live, fixed pricing, 20% fee in place.</li>
-            <li><strong>Business 3.0</strong> — framework fully built, pricing set, ready to deploy.</li>
+            <li><strong>itsthejob.com</strong> &mdash; the front door</li>
+            <li><strong>new-human-resources.vercel.app</strong> &mdash; B2B wedge, taking inbound</li>
+            <li><strong>Magic Show platform</strong> &mdash; shows produced in Nashville, Minneapolis, Big Sky</li>
+            <li><strong>The Church</strong> &mdash; live app, Sunday Night Live running</li>
+            <li><strong>J.O.B. Board</strong> &mdash; marketplace MVP, 20% fee in place</li>
+            <li><strong>Business 3.0</strong> &mdash; framework built, pricing set</li>
           </ul>
         </div>
         <div className="card">
           <h3>Network &amp; brand</h3>
           <ul>
-            <li><strong>Founders&apos; combined reach:</strong> 800+ EOS implementers, 200+ Jumpsuit contractors, investor network ready to write checks.</li>
-            <li><strong>Brand north stars:</strong> Meow Wolf, Blah Airlines, Dramcorp — weird on purpose, culture-shaping.</li>
-            <li><strong>Investor pipeline:</strong> Wefunder community round prepped. Lead conversations open.</li>
-            <li><strong>First NHR conversations:</strong> inbound applications already flowing through the new site.</li>
+            <li><strong>Reach:</strong> 800+ EOS implementers, 200+ Jumpsuit contractors</li>
+            <li><strong>Brand north stars:</strong> Meow Wolf, Blah Airlines, Dramcorp</li>
+            <li><strong>Pipeline:</strong> Wefunder community round prepped, lead conversations open</li>
+            <li><strong>NHR inbound:</strong> applications flowing</li>
           </ul>
         </div>
       </div>
@@ -381,6 +375,7 @@ const slides = [
   () => (
     <div className="slide">
       <h3>Why us</h3>
+      <h1>Big idea + big implementation = over $100B shipped.</h1>
       <div className="two-col">
         <div className="card">
           <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem' }}>Nicole Ayres</h3>
@@ -403,9 +398,6 @@ const slides = [
           </ul>
         </div>
       </div>
-      <p style={{ marginTop: '1.5rem', textAlign: 'center', maxWidth: '100%' }}>
-        <strong>Nicole&apos;s big ideas + Pam&apos;s big implementation = over $100B in combined revenue impact.</strong>
-      </p>
     </div>
   ),
 
@@ -413,9 +405,9 @@ const slides = [
   () => (
     <div className="slide">
       <h3>The ask</h3>
-      <h1><span className="gold">$3&ndash;5M</span> Seed Round</h1>
-      <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>SAFE into the <strong>HoldCo</strong> — the for-profit parent that owns every door in the organism: Church, MagicShowLand Transition Centers, Magic Shows, J.O.B. Board, Business 3.0, and New Human Resources.</p>
-      <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>One investment. Every door. Lead checks from our network + Wefunder community round. <strong>Own what you co-create.</strong></p>
+      <h1><span className="gold">$3&ndash;5M</span> seed. One check. Every door.</h1>
+      <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>SAFE into the <strong>HoldCo</strong> &mdash; the for-profit parent that owns every door: Church, Transition Centers, Magic Shows, J.O.B. Board, Business 3.0, NHR.</p>
+      <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>Lead checks from our network + Wefunder community round. <strong>Own what you co-create.</strong></p>
       <div className="two-col">
         <div className="card">
           <h3>What 24 months builds</h3>
@@ -451,12 +443,11 @@ const slides = [
 function CloseSlide({ onJoin }) {
   return (
     <div className="slide close-slide">
-      <h1>The old jobs are going. Let them.</h1>
-      <p>For centuries we trained humans to be workers before we let them be fully human. The trade made sense when the work needed us. It doesn&apos;t anymore.</p>
-      <p>The machines can have the drudgery. We want the part they can&apos;t touch.</p>
-      <p>The layoffs aren&apos;t the crisis. They&apos;re the opening. Every person walking out of a corporate job this year is a person who finally gets to ask the question the paycheck kept them from asking.</p>
-      <p style={{ color: 'var(--text)', fontSize: '1.5rem', fontWeight: 700, marginTop: '0.75rem' }}>Our job is to catch them on the way out — and launch them into what comes next.</p>
-      <p style={{ marginTop: '1rem' }}><strong className="gold">Welcome to the transition company.</strong></p>
+      <h1>The machines can have the jobs.</h1>
+      <p>We want the part they can&apos;t touch.</p>
+      <p>The layoffs aren&apos;t the crisis. They&apos;re the opening.</p>
+      <p style={{ color: 'var(--text)', fontSize: '1.5rem', fontWeight: 700, marginTop: '1.25rem' }}>Catch the humans on the way out. Launch them into what comes next.</p>
+      <p style={{ marginTop: '1.25rem' }}><strong className="gold">Welcome to the transition company.</strong></p>
       <div className="cta-row">
         <button className="waitlist-trigger" onClick={onJoin}>Join the Investor Waitlist</button>
         <a href="https://donorbox.org/j-o-b-founding-member-donations" target="_blank" rel="noopener noreferrer" className="waitlist-trigger donate-btn">Invest Now with Church Donation (tax exempt)</a>
