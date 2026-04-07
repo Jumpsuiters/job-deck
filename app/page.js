@@ -65,11 +65,38 @@ const slides = [
     <div className="slide cover">
       <h1>J.O.B.</h1>
       <p className="subtitle">The Joy of Being Company</p>
-      <p className="tagline">What if being human is the only job left?</p>
+      <p className="tagline">Being human is the only job left.</p>
     </div>
   ),
 
-  // 1 — PROBLEM (three systems collapsing)
+  // 1 — KEY INSIGHT
+  () => (
+    <div className="slide">
+      <h3>The key insight</h3>
+      <h1>We were optimized for a system that no longer exists.</h1>
+      <p style={{ fontSize: '1.15rem' }}>We can choose to live in fear, or we can see this time for what it actually is &mdash; <em>the largest involuntary liberation in history</em>. Either way, there&apos;s no going back.</p>
+      <p style={{ marginTop: '1.75rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.75rem', color: 'var(--gold)', fontWeight: 600 }}>The system is collapsing. You are not.</p>
+    </div>
+  ),
+
+  // 2 — CURRENT REALITY (layoff = funeral)
+  () => (
+    <div className="slide">
+      <h3>Current reality</h3>
+      <h1>It&apos;s not a layoff. It&apos;s a funeral.</h1>
+      <p>By 2027, at least <strong>30% of the workforce</strong> is predicted to be out of work. And people aren&apos;t grieving the paycheck &mdash; they&apos;re grieving the life they had and the person they thought they were.</p>
+      <p>Which makes the resources we currently provide feel almost offensive:</p>
+      <ul style={{ margin: '0.75rem 0 0.75rem 1.5rem', lineHeight: 1.8 }}>
+        <li>1&ndash;3 months severance</li>
+        <li>A resume workshop</li>
+        <li>A LinkedIn Premium stipend</li>
+      </ul>
+      <p>To what? Send them right back into the system that just spit them out?</p>
+      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%', color: 'var(--gold)', fontStyle: 'italic', fontSize: '1.3rem' }}>Severance pays you to leave. J.O.B. pays you to arrive.</p>
+    </div>
+  ),
+
+  // 3 — THE PROBLEM (three systems collapsing)
   () => (
     <div className="slide">
       <h3>The problem</h3>
@@ -89,24 +116,8 @@ const slides = [
           <p>told us why we were here.</p>
         </div>
       </div>
-      <p style={{ marginTop: '1.25rem', textAlign: 'center', maxWidth: '100%' }}>All three are collapsing at once. People aren&apos;t just losing jobs and beliefs. They&apos;re losing identity, structure, and meaning.</p>
-      <p style={{ marginTop: '0.75rem', textAlign: 'center', maxWidth: '100%', color: 'var(--gold)', fontStyle: 'italic' }}>Looks like institutional collapse. Is actually the masks coming off.</p>
-    </div>
-  ),
-
-  // 2 — CURRENT REALITY (layoff = funeral)
-  () => (
-    <div className="slide">
-      <h3>Current reality</h3>
-      <h1>It&apos;s not a layoff. It&apos;s a funeral.</h1>
-      <p>People aren&apos;t grieving the paycheck. They&apos;re grieving the life they had and the person they thought they were.</p>
-      <p>Which makes the resources we currently provide feel almost offensive:</p>
-      <ul style={{ margin: '0.75rem 0 0.75rem 1.5rem', lineHeight: 1.8 }}>
-        <li>1&ndash;3 months severance</li>
-        <li>A resume workshop</li>
-        <li>A LinkedIn Premium stipend</li>
-      </ul>
-      <p>To what? Send them right back into the system that just spit them out? The bereavement of a professional identity takes 12 to 18 months &mdash; and a chatbot can&apos;t close that gap.</p>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', maxWidth: '100%' }}>All three are collapsing at once. The system worked because it fragmented us &mdash; it paid us to be laborers, but never fully human.</p>
+      <p style={{ marginTop: '0.75rem', textAlign: 'center', maxWidth: '100%', color: 'var(--gold)', fontStyle: 'italic' }}>We need a new solution to actually resource humans.</p>
     </div>
   ),
 
@@ -126,7 +137,7 @@ const slides = [
       <p>Right now, we&apos;re experiencing the largest involuntary liberation in history.</p>
       <p>We were paid to be laborers. We were never taught to be fully human.</p>
       <p>As AI threatens to automate the work, we&apos;re being invited to ask the question the paycheck was paying us not to: <em>what happens when being human is the job?</em></p>
-      <p style={{ marginTop: '1rem', color: 'var(--gold)', fontStyle: 'italic' }}>Looks like the largest crisis. Is actually the largest invitation.</p>
+      <p style={{ marginTop: '1rem', color: 'var(--gold)', fontStyle: 'italic', fontSize: '1.3rem', textAlign: 'center', maxWidth: '100%' }}>Value is no longer what you do. It&apos;s who you are.</p>
     </div>
   ),
 
@@ -143,9 +154,9 @@ const slides = [
     <div className="slide">
       <h3>The name</h3>
       <h1>J.O.B. = <span className="gold">Joy of Being.</span></h1>
-      <p style={{ fontSize: '1.15rem', marginTop: '1rem' }}>For 200 years, a &ldquo;job&rdquo; was the thing you did for money so you could maybe have a life on the weekend.</p>
-      <p style={{ fontSize: '1.15rem' }}>We took the most loaded word in the working world and gave it back its real meaning.</p>
-      <p style={{ fontSize: '1.4rem', color: 'var(--gold)', fontStyle: 'italic', marginTop: '1.5rem', textAlign: 'center', maxWidth: '100%' }}>The only job left is to be human. So we took the word.</p>
+      <p style={{ fontSize: '1.15rem', marginTop: '1rem' }}>For 200 years, a &ldquo;job&rdquo; was the thing you did for money so you could maybe have a life on the weekend. We took the most loaded word in the working world and gave it back its real meaning.</p>
+      <p style={{ fontSize: '1.5rem', color: 'var(--text)', fontWeight: 600, marginTop: '1.25rem', textAlign: 'center', maxWidth: '100%' }}>The work is becoming yourself.</p>
+      <p style={{ fontSize: '1.15rem', color: 'var(--gold)', fontStyle: 'italic', marginTop: '1rem', textAlign: 'center', maxWidth: '100%' }}>The new job is our own inner work &mdash; so we can consciously create a new reality. Otherwise, we&apos;ll just recreate the same thing in a different flavor.</p>
     </div>
   ),
 
@@ -154,10 +165,10 @@ const slides = [
     <div className="slide">
       <h3>The solution</h3>
       <p style={{ fontSize: '1.15rem', color: 'var(--muted)', marginBottom: '0.5rem' }}>We all feel it coming. There&apos;s no clear place to land.</p>
-      <h1>J.O.B. is the missing infrastructure.</h1>
-      <p>For the shift from <em>doing for survival</em> to <em>being as the source of human value</em>.</p>
-      <p style={{ fontSize: '1.35rem', color: 'var(--gold)', fontWeight: 400, margin: '1.25rem 0' }}>How we build is just as important as why and what.</p>
-      <p>Right now, we&apos;re the transition company. Long-term, we&apos;re the infrastructure for the human economy that&apos;s replacing the old one.</p>
+      <h1>J.O.B. is the place for humans to land after work ends.</h1>
+      <p style={{ fontSize: '1.35rem', color: 'var(--gold)', fontWeight: 400, margin: '1rem 0' }}>Infrastructure for being human.</p>
+      <p>The container for the shift from <em>doing for survival</em> to <em>being as the source of human value</em>.</p>
+      <p>Right now, we&apos;re the transition company. Long-term, we&apos;re the infrastructure for the human economy that&apos;s replacing the old one. <strong>How we build is just as important as why and what.</strong></p>
     </div>
   ),
 
@@ -165,7 +176,7 @@ const slides = [
   () => (
     <div className="slide">
       <h3>The differentiator</h3>
-      <h1>J.O.B. is the first RCO in America.</h1>
+      <h1>J.O.B. is the first RCO in the US.</h1>
       <p style={{ fontSize: '1.35rem', color: 'var(--text)', fontWeight: 600, marginBottom: '1rem' }}>Regenerative Community Organism.</p>
       <p>Most corporations are extractive by nature. The RCO is a living system organized around one question:</p>
       <p style={{ fontSize: '1.6rem', color: 'var(--gold)', fontWeight: 400, margin: '1.25rem 0', fontStyle: 'italic', textAlign: 'center' }}>&ldquo;What happens when the only job left is to be human?&rdquo;</p>
@@ -216,7 +227,7 @@ const slides = [
         </div>
         <div className="card">
           <h3>The J.O.B. Board</h3>
-          <p><em>The marketplace.</em> Sovereign humans get paid for what AI can&apos;t do. 20% platform fee.</p>
+          <p><em>The marketplace.</em> Do what AI can&apos;t &mdash; and get paid for it. 20% platform fee.</p>
         </div>
         <div className="card">
           <h3>Business 3.0</h3>
@@ -238,7 +249,7 @@ const slides = [
       <p style={{ fontSize: '1rem', color: 'var(--gold)', fontStyle: 'italic', margin: '0.5rem 0', textAlign: 'center', maxWidth: '100%' }}>
         &ldquo;Man only plays when he is in the fullest sense of the word a human being, and he is only fully a human being when he plays.&rdquo; <span style={{ color: 'var(--muted)', fontStyle: 'normal' }}>&mdash; Friedrich Schiller</span>
       </p>
-      <p style={{ marginBottom: '0.4rem' }}>The passage from old self to new self has stages, and no one&apos;s built infrastructure for any of them. Each experiment exists because a stage requires it &mdash; and each one is legible to the buyer on the outside, transformative on the inside.</p>
+      <p style={{ marginBottom: '0.4rem' }}>Everything we create is designed to point people back to themselves, trick them into doing the inner work, and invite them into consciously creating the new model. Each experiment is legible to the buyer on the outside &mdash; and transformative on the inside.</p>
       <table className="deck-table" style={{ marginTop: '0.4rem', fontSize: '0.88rem' }}>
         <thead>
           <tr>
@@ -285,7 +296,7 @@ const slides = [
           </tr>
         </tbody>
       </table>
-      <p style={{ marginTop: '0.6rem', textAlign: 'center', maxWidth: '100%', fontSize: '0.95rem' }}><strong>Outplacement vendors can&apos;t copy us &mdash; they don&apos;t know what game we&apos;re playing.</strong></p>
+      <p style={{ marginTop: '0.6rem', textAlign: 'center', maxWidth: '100%', fontSize: '1rem' }}><strong>This isn&apos;t outplacement. It&apos;s initiation.</strong> Our competitors can&apos;t copy us &mdash; they don&apos;t know what game we&apos;re playing.</p>
     </div>
   ),
 
@@ -306,7 +317,7 @@ const slides = [
         </div>
         <div className="card">
           <h3>3 &middot; Humans out, new revenue in</h3>
-          <p>They start companies on the Board (20% fee), train as certified Magic Show hosts, build B3.0 companies, come back as Guides. Each path is a new revenue line.</p>
+          <p>They start companies on the Board (20% fee), train as certified Magic Show hosts, build B3.0 companies, or come back as <strong>J.O.B. Guides &mdash; trained to teach the things AI could never do</strong>. Each path is a new revenue line.</p>
         </div>
         <div className="card">
           <h3>4 &middot; Aliveness sets the budget</h3>
@@ -321,33 +332,33 @@ const slides = [
   () => (
     <div className="slide">
       <h3>How it feels</h3>
-      <h1>We stole from what scales. Then we got weird on purpose.</h1>
+      <h1>Imagine if AA, Meow Wolf, and Indeed had a baby.</h1>
       <p style={{ fontSize: '1.05rem', color: 'var(--gold)', fontStyle: 'italic', margin: '0.75rem 0', textAlign: 'center', maxWidth: '100%' }}>
         &ldquo;The opposite of play is not work. It&apos;s depression.&rdquo; <span style={{ color: 'var(--muted)', fontStyle: 'normal' }}>&mdash; Stuart Brown</span>
       </p>
-      <p>The resume trap doesn&apos;t work anymore. So we built a better option &mdash; not from scratch, but from the parts of culture that already proved they could scale. Then we bent each one weird on purpose.</p>
+      <p>Three proven models &mdash; remixed into a better option than the resume trap.</p>
       <div className="three-col" style={{ marginTop: '0.75rem' }}>
         <div className="card">
-          <h3>Stole from AA</h3>
-          <p>The container model that scales spiritual work. People stop performing and tell the truth out loud. Held until something real surfaces.</p>
+          <h3>AA</h3>
+          <p>A decentralized process that self-organizes every day in every city. <strong>J.O.B. transition groups will form the same way</strong> &mdash; wherever the passage is happening, people will hold each other through it.</p>
         </div>
         <div className="card">
-          <h3>Stole from Indeed</h3>
-          <p>The distribution model that scales work. People come because the old job ended. They leave with work LinkedIn doesn&apos;t have a category for yet.</p>
+          <h3>Meow Wolf</h3>
+          <p>Immersive, playful, IRL activations that wake people up. Our Magic Shows and Transition Centers are <strong>weird on purpose</strong>. The professional self can&apos;t be coaxed out &mdash; it has to be surprised.</p>
         </div>
         <div className="card">
-          <h3>Stole from Meow Wolf</h3>
-          <p>The experience model that scales weird. Every experiment is immersive, playful, alive on purpose. The professional self can&apos;t be coaxed out &mdash; it has to be surprised.</p>
+          <h3>Indeed</h3>
+          <p>Indeed leads with demand (&ldquo;we&apos;re looking for a Product Owner&rdquo;). <strong>We&apos;ll lead with supply</strong> &mdash; sovereign humans offering work only humans can do &mdash; until the supply becomes the new demand.</p>
         </div>
       </div>
-      <p style={{ marginTop: '0.85rem', textAlign: 'center', maxWidth: '100%' }}><strong>Trickster economics. A better option than the resume trap. Play is the medicine.</strong></p>
+      <p style={{ marginTop: '0.85rem', textAlign: 'center', maxWidth: '100%' }}><strong>Trickster economics. Play is the medicine.</strong></p>
     </div>
   ),
 
   // 13 — NHR UNIT ECONOMICS (the wedge, by the numbers)
   () => (
     <div className="slide">
-      <h3>The wedge, by the numbers</h3>
+      <h3>Wedge hypothesis</h3>
       <h1>New Human Resources is the engine. Here&apos;s how it pays.</h1>
       <p>Companies already have a budget for layoffs &mdash; severance, outplacement, EAP. We&apos;re the line item that actually does something with it. The 6-month container is what they buy. The 12&ndash;18 month passage is what they get.</p>
       <table className="deck-table" style={{ marginTop: '0.75rem' }}>
