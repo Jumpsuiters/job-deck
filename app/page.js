@@ -260,28 +260,58 @@ const slides = [
   ),
 
   // 2 — THE CURRENT REALITY
-  () => (
-    <div className="slide">
-      <h3>02 · The current reality</h3>
-      <h1>What if <span className="gold">being human IS the job?</span></h1>
-      <div className="three-col" style={{ marginTop: '1rem' }}>
-        <div className="card">
-          <h3>Education</h3>
-          <p>told us <strong>who</strong> to become.</p>
+  () => {
+    const [expanded, setExpanded] = useState(null);
+    const pillars = [
+      {
+        key: 'education',
+        label: 'Education',
+        base: <>told us <strong>who</strong> to become.</>,
+        stat: 'If Mo Gawdat is right, universities are done for.',
+      },
+      {
+        key: 'work',
+        label: 'Work',
+        base: <>told us <strong>what</strong> we were worth.</>,
+        stat: 'In 4 years, 92 million people will be displaced.',
+      },
+      {
+        key: 'religion',
+        label: 'Religion',
+        base: <>told us <strong>why</strong> we were here.</>,
+        stat: '15,000 churches will close within the year.',
+      },
+    ];
+    return (
+      <div className="slide">
+        <h3>02 · The current reality</h3>
+        <h1>What if <span className="gold">being human IS the job?</span></h1>
+        <div className="three-col" style={{ marginTop: '1rem' }}>
+          {pillars.map((p) => {
+            const isOpen = expanded === p.key;
+            return (
+              <div
+                key={p.key}
+                className="card"
+                onClick={() => setExpanded(isOpen ? null : p.key)}
+                style={{ cursor: 'pointer', transition: 'all 0.2s ease', borderColor: isOpen ? 'var(--gold)' : undefined }}
+              >
+                <h3>{p.label}</h3>
+                <p>{p.base}</p>
+                {isOpen ? (
+                  <p style={{ marginTop: '0.75rem', fontSize: '0.95rem', fontWeight: 600 }} className="gold">{p.stat}</p>
+                ) : (
+                  <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', fontStyle: 'italic', opacity: 0.6 }}>click to reveal</p>
+                )}
+              </div>
+            );
+          })}
         </div>
-        <div className="card">
-          <h3>Work</h3>
-          <p>told us <strong>what</strong> we were worth.</p>
-        </div>
-        <div className="card">
-          <h3>Religion</h3>
-          <p>told us <strong>why</strong> we were here.</p>
-        </div>
+        <p style={{ fontSize: '1.15rem', marginTop: '1.25rem', lineHeight: 1.55 }}>AI will take away all jobs that aren&apos;t inherently human. The church used to fund human creativity and consciousness. We&apos;re left with no clear place to go to explore what it means to be uniquely human in this modern era.</p>
+        <p style={{ marginTop: '1.25rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.5rem', fontWeight: 700 }} className="gold">J.O.B. is where humans land after work ends. And where the real work begins.</p>
       </div>
-      <p style={{ fontSize: '1.15rem', marginTop: '1.25rem', lineHeight: 1.55 }}>AI will take away all jobs that aren&apos;t inherently human. The church used to fund human creativity and consciousness. We&apos;re left with no clear place to go to explore what it means to be uniquely human in this modern era.</p>
-      <p style={{ marginTop: '1.25rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.5rem', fontWeight: 700 }} className="gold">J.O.B. is where humans land after work ends. And where the real work begins.</p>
-    </div>
-  ),
+    );
+  },
 
   // 3 — THE OPPORTUNITY
   () => (
