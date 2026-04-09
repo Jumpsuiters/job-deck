@@ -240,21 +240,34 @@ const slides = [
     <div className="slide">
       <h3>01 · The moment</h3>
       <h1>The largest <span className="gold">involuntary liberation</span> in history.</h1>
-      <div className="three-col" style={{ marginTop: '1.5rem' }}>
+      <p style={{ marginTop: '0.5rem', fontSize: '1.05rem' }}>This is bigger than job loss. Every system that gave us meaning, identity, and belonging is collapsing at the same time.</p>
+      <div className="three-col" style={{ marginTop: '0.85rem' }}>
         <div className="stat">
-          <div className="stat-number">30%+</div>
-          <div className="stat-label">of the workforce displaced by 2027</div>
+          <div className="stat-number">300M</div>
+          <div className="stat-label">jobs globally exposed to AI automation <span style={{ display: 'block', fontSize: '0.7rem', opacity: 0.6 }}>Goldman Sachs, 2023</span></div>
         </div>
         <div className="stat">
-          <div className="stat-number">200M+</div>
-          <div className="stat-label">jobs automated this decade</div>
+          <div className="stat-number">15,000+</div>
+          <div className="stat-label">US churches closed in the past decade <span style={{ display: 'block', fontSize: '0.7rem', opacity: 0.6 }}>Lifeway Research</span></div>
         </div>
         <div className="stat">
-          <div className="stat-number">$739B</div>
-          <div className="stat-label">HR &amp; recruiting &mdash; all reactive</div>
+          <div className="stat-number">15 / day</div>
+          <div className="stat-label">cigarettes&apos; equivalent harm of loneliness <span style={{ display: 'block', fontSize: '0.7rem', opacity: 0.6 }}>US Surgeon General, 2023</span></div>
+        </div>
+        <div className="stat">
+          <div className="stat-number">1st</div>
+          <div className="stat-label">US life-expectancy decline in modern history &mdash; &ldquo;deaths of despair&rdquo; <span style={{ display: 'block', fontSize: '0.7rem', opacity: 0.6 }}>Case &amp; Deaton, Princeton</span></div>
+        </div>
+        <div className="stat">
+          <div className="stat-number">42%</div>
+          <div className="stat-label">of US teens report persistent sadness or hopelessness <span style={{ display: 'block', fontSize: '0.7rem', opacity: 0.6 }}>CDC, 2021</span></div>
+        </div>
+        <div className="stat">
+          <div className="stat-number">9%</div>
+          <div className="stat-label">of Americans find &ldquo;a great deal&rdquo; of meaning in their work <span style={{ display: 'block', fontSize: '0.7rem', opacity: 0.6 }}>Pew, 2021</span></div>
         </div>
       </div>
-      <p style={{ marginTop: '1.75rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.75rem', fontWeight: 600 }} className="gold">Human workers were optimized for a system that no longer exists.</p>
+      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.35rem', fontWeight: 600, fontStyle: 'italic' }} className="gold">Even Elon Musk has no answer for where humans will find meaning next.</p>
     </div>
   ),
 
@@ -263,8 +276,18 @@ const slides = [
     <div className="slide">
       <h3>02 · Current reality</h3>
       <h1>A collective existential crisis.</h1>
-      <p>Offboarding has no value anymore. It&apos;s designed to send them right back into the system that just spit them out.</p>
-      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '1.5rem', fontWeight: 600 }} className="gold">Severance is not enough. We need a new way to resource humans.</p>
+      <p>When work ends, people don&apos;t just lose a paycheck. They lose the infrastructure of a whole life &mdash; and the contract that told them they mattered.</p>
+      <div className="two-col" style={{ marginTop: '0.75rem' }}>
+        <div className="card">
+          <h3>The practical crisis</h3>
+          <p>Income. Healthcare. Retirement. Stability. The scaffolding of an ordinary life, yanked out in a 30-minute HR meeting.</p>
+        </div>
+        <div className="card">
+          <h3>The meaning crisis</h3>
+          <p>Identity. Purpose. Community. Reason to get out of bed. The things the paycheck was quietly carrying on its back &mdash; invisible, until it&apos;s gone.</p>
+        </div>
+      </div>
+      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '1.4rem', fontWeight: 600 }} className="gold">Severance solves one. We&apos;re built to solve both.</p>
     </div>
   ),
 
