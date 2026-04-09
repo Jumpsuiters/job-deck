@@ -275,7 +275,6 @@ const slides = [
   () => (
     <div className="slide">
       <h3>02 · The &ldquo;new human&rdquo; job</h3>
-      <h1>What if <span className="gold">being human IS the job?</span></h1>
       <p style={{ fontSize: '1.25rem', marginTop: '1rem', lineHeight: 1.5 }}>AI will take every single job that isn&apos;t inherently human.</p>
       <div className="three-col" style={{ marginTop: '1rem' }}>
         <div className="card">
@@ -299,10 +298,12 @@ const slides = [
   () => (
     <div className="slide">
       <h3>03 · The opportunity</h3>
-      <h1>In order to build something different, <span className="gold">we must first become something different.</span></h1>
-      <p className="big-quote" style={{ marginTop: '2rem', fontSize: '2rem', maxWidth: '1000px' }}>&ldquo;You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete.&rdquo;</p>
+      <p style={{ fontSize: '1.2rem', marginTop: '1rem', lineHeight: 1.55 }}>Not just because AI is taking away jobs that aren&apos;t inherently human. But because <strong>the inner work leads to a new outer reality.</strong></p>
+      <p style={{ fontSize: '1.2rem', marginTop: '0.9rem', lineHeight: 1.55 }}>We&apos;re trying to solve complex systemic issues the same way they were created: <strong>fragmented.</strong></p>
+      <p style={{ fontSize: '1.2rem', marginTop: '0.9rem', lineHeight: 1.55 }}>In order to build something different, <span className="gold"><strong>we must first become something different.</strong></span> De-fragmented, fully integrated humans who can then&mdash;accidentally on purpose&mdash;co-create the kind of world we want to live in.</p>
+      <p className="big-quote" style={{ marginTop: '1.5rem', fontSize: '1.5rem', maxWidth: '900px' }}>&ldquo;You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete.&rdquo;</p>
       <p className="attribution" style={{ textAlign: 'center' }}>&mdash; Buckminster Fuller</p>
-      <p style={{ marginTop: '1.5rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.4rem', fontWeight: 700 }} className="gold">J.O.B. is organizing the new model.</p>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.4rem', fontWeight: 700 }} className="gold">J.O.B. is more than a company. It&apos;s modeling the new model.</p>
     </div>
   ),
 
