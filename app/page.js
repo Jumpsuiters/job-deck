@@ -714,16 +714,16 @@ const slides = [
   () => (
     <div className="slide">
       <h3>19 · Traction</h3>
-      <h1>Not starting from zero. Starting from live.</h1>
-      <p><strong>The organism is already breathing.</strong></p>
+      <h1>The organism is already alive.</h1>
+      <p>The energy is clear. <strong>We need resources to feed it.</strong></p>
       <div className="two-col" style={{ marginTop: '0.75rem' }}>
         <div className="card">
           <h3>In market now</h3>
           <ul>
             <li><strong>itsthejob.com</strong> &mdash; front door live</li>
-            <li><strong>New Human Resources</strong> &mdash; taking inbound, first enterprise conversations open</li>
-            <li><strong>Magic Shows</strong> &mdash; produced in Nashville, Minneapolis, Big Sky</li>
-            <li><strong>The Church</strong> &mdash; app live, Sunday Night Live running weekly</li>
+            <li><strong>New Human Resources</strong> &mdash; taking inbound, first enterprise conversations open; <strong>HR Unconferenced</strong> planned for July</li>
+            <li><strong>Magic Shows</strong> &mdash; 5 executed with a growing waitlist</li>
+            <li><strong>The Church</strong> &mdash; app live, Sunday Night Live running weekly, adding members daily</li>
             <li><strong>J.O.B. Board</strong> &mdash; in development, 20% fee structure in place</li>
             <li><strong>Business 3.0</strong> &mdash; framework built, pricing set, first cohort ready</li>
             <li><strong>JOB Report</strong> &mdash; prototype built with Claude, live inside this deck right now</li>
