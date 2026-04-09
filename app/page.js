@@ -87,10 +87,10 @@ function JobReportSlide() {
 
   return (
     <div className="slide job-report-slide">
-      <h3>07 · JOB Report · Interactive</h3>
+      <h3>11 · JOB Report · Interactive</h3>
       <h1>Contribution as the operating system.</h1>
       <p style={{ marginBottom: '0.75rem' }}>
-        Every system asks people to price their own worth. We ask them to report evidence &mdash; and the AI does the calibration. <strong>Try it.</strong>
+        We ask people to report evidence of non-monetary value &mdash; and the AI does the attribution. For example: investing time early in helping create the JOB Guide program could be redeemed later anywhere in the organism &mdash; say, a month&apos;s stay at a Costa Rica retreat center. <strong>Here, try it.</strong>
       </p>
 
       <div className="jr-grid">
@@ -169,7 +169,7 @@ function RevenueChartSlide() {
   const maxValue = 200;
   return (
     <div className="slide">
-      <h3>18 · Revenue at scale</h3>
+      <h3>17 · Revenue at scale</h3>
       <h1>Many experiments. Many revenue lines. One organism.</h1>
       <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '0.25rem' }}>Click any experiment for the math. Numbers are early-stage models, not promises.</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1rem' }}>
@@ -336,13 +336,42 @@ const slides = [
     </div>
   ),
 
-  // 7 — JOB REPORT INTERACTIVE (new)
-  JobReportSlide,
+  // 7 — TEAM (moved from end)
+  () => (
+    <div className="slide">
+      <h3>06 · Team</h3>
+      <h1>Big idea + big implementation.</h1>
+      <div className="two-col">
+        <div className="card">
+          <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)' }}>Nicole Ayres</h3>
+          <p style={{ color: 'var(--purple)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 700, marginBottom: '0.5rem' }}>The Architect</p>
+          <ul>
+            <li>Jumpsuit &mdash; bootstrapped to $4M/yr, <strong>zero employees</strong></li>
+            <li>Co-founded Jauntboards → acquired (2025)</li>
+            <li>Co-visionary: Business 3.0 + the RCO</li>
+            <li><strong>2,000+ Jumpsuiters</strong> network &mdash; running a B3.0 company for 7 years before it had a name</li>
+            <li>Building J.O.B. in real time with AI</li>
+          </ul>
+        </div>
+        <div className="card">
+          <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)' }}>Pam Kosanke</h3>
+          <p style={{ color: 'var(--purple)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 700, marginBottom: '0.5rem' }}>The Scaler</p>
+          <ul>
+            <li>Former CRO, EOS Worldwide &mdash; $145M revenue, 800+ implementers</li>
+            <li>Unified 700+ independent brands globally</li>
+            <li>Raised $6M Series A (Mark Cuban, General Mills)</li>
+            <li>Invented McDonald&apos;s breakfast dollar menu</li>
+            <li>6× world champion, Team USA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  ),
 
   // 8 — THE RCO
   () => (
     <div className="slide">
-      <h3>06 · The differentiator</h3>
+      <h3>07 · The differentiator</h3>
       <h1>J.O.B. is the first RCO in the US.</h1>
       <p style={{ fontSize: '1.35rem', color: 'var(--text)', fontWeight: 600, marginBottom: '0.75rem' }}>Regenerative Community Organism.</p>
       <div className="two-col">
@@ -369,7 +398,7 @@ const slides = [
   // 9 — STRUCTURE (iframe)
   () => (
     <div className="slide">
-      <h3>07 · The structure</h3>
+      <h3>08 · The structure</h3>
       <h1>Two entities. One organism.</h1>
       <p style={{ marginBottom: '0.5rem' }}>The Church (nonprofit) holds the mission. The HoldCo (C-Corp) houses the experiments and distributes profits.</p>
       <iframe
@@ -391,7 +420,7 @@ const slides = [
   // 10 — EXPERIMENTS
   () => (
     <div className="slide">
-      <h3>08 · Experiments</h3>
+      <h3>09 · Experiments</h3>
       <h1>Many experiments. One question.</h1>
       <p>Every experiment below is currently in motion. The ones that grow get fed. The ones that don&apos;t get composted.</p>
       <div className="three-col" style={{ marginTop: '0.75rem' }}>
@@ -408,7 +437,7 @@ const slides = [
           <p>Psychedelic-adjacent journeys. Human magic rediscovered in days.</p>
         </div>
         <div className="card">
-          <h3>J.O.B. Board <span className="exp-pill">MVP</span></h3>
+          <h3>J.O.B. Board <span className="exp-pill exp-pill-dev">DEV</span></h3>
           <p>Marketplace for human presence. 20% fee. AI can&apos;t do this work.</p>
         </div>
         <div className="card">
@@ -423,12 +452,53 @@ const slides = [
     </div>
   ),
 
-  // 11 — TROJAN HORSE
+  // 11 — MEMBERSHIP ECONOMY (moved up)
   () => (
     <div className="slide">
-      <h3>09 · The pattern</h3>
+      <h3>10 · RCO Membership Economy</h3>
+      <h1>Capital is one input. It&apos;s not the only one.</h1>
+      <p>RCO membership earns JOB Points &mdash; redeemable across whatever the organism builds.</p>
+      <div className="three-col" style={{ marginTop: '0.75rem' }}>
+        <div className="card">
+          <h3 className="gold">Money</h3>
+          <p>Capital investment via Wefunder or direct.</p>
+        </div>
+        <div className="card">
+          <h3 className="gold">Time</h3>
+          <p>Facilitation, delivery, operations.</p>
+        </div>
+        <div className="card">
+          <h3 className="gold">Build</h3>
+          <p>Products, code, design &mdash; including Claude-built tools.</p>
+        </div>
+        <div className="card">
+          <h3 className="gold">Network</h3>
+          <p>Introductions, partnerships, clients.</p>
+        </div>
+        <div className="card">
+          <h3 className="gold">Intellectual</h3>
+          <p>Ideas, IP, frameworks, strategy.</p>
+        </div>
+        <div className="card">
+          <h3 className="gold">Community</h3>
+          <p>Bringing people in, holding the culture.</p>
+        </div>
+      </div>
+      <p style={{ marginTop: '0.85rem', textAlign: 'center', maxWidth: '100%', fontSize: '0.95rem' }}>
+        Points redeem as: retreat stays &middot; course access &middot; revenue share &middot; community governance. <em>Not a security, not equity &mdash; a membership benefit.</em>
+      </p>
+    </div>
+  ),
+
+  // 12 — JOB REPORT INTERACTIVE (moved here from position 7)
+  JobReportSlide,
+
+  // 13 — TROJAN HORSE / THE TRICK
+  () => (
+    <div className="slide">
+      <h3>12 · The trick</h3>
       <h1>Every door is a Trojan Horse.</h1>
-      <p style={{ marginBottom: '0.4rem' }}>Each experiment is legible to the buyer on the outside &mdash; and transformative on the inside.</p>
+      <p style={{ marginBottom: '0.4rem' }}>Each portal is designed to bring you into deep transformational work. It&apos;s all the same thing in the end &mdash; infinite pathways to remembering who you are, and that you can change reality.</p>
       <table className="deck-table" style={{ marginTop: '0.4rem', fontSize: '0.88rem' }}>
         <thead>
           <tr>
@@ -479,50 +549,12 @@ const slides = [
     </div>
   ),
 
-  // 12 — MEMBERSHIP ECONOMY
+  // 15 — DISTRIBUTED AI STUDIO
   () => (
     <div className="slide">
-      <h3>10 · RCO Membership Economy</h3>
-      <h1>Capital is one input. It&apos;s not the only one.</h1>
-      <p>RCO membership earns JOB Points &mdash; redeemable across whatever the organism builds.</p>
-      <div className="three-col" style={{ marginTop: '0.75rem' }}>
-        <div className="card">
-          <h3 className="gold">Money</h3>
-          <p>Capital investment via Wefunder or direct.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Time</h3>
-          <p>Facilitation, delivery, operations.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Build</h3>
-          <p>Products, code, design &mdash; including Claude-built tools.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Network</h3>
-          <p>Introductions, partnerships, clients.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Intellectual</h3>
-          <p>Ideas, IP, frameworks, strategy.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Community</h3>
-          <p>Bringing people in, holding the culture.</p>
-        </div>
-      </div>
-      <p style={{ marginTop: '0.85rem', textAlign: 'center', maxWidth: '100%', fontSize: '0.95rem' }}>
-        Points redeem as: retreat stays &middot; course access &middot; revenue share &middot; community governance. <em>Not a security, not equity &mdash; a membership benefit.</em>
-      </p>
-    </div>
-  ),
-
-  // 13 — DISTRIBUTED AI STUDIO
-  () => (
-    <div className="slide">
-      <h3>11 · Unfair advantage</h3>
+      <h3>13 · Unfair advantage</h3>
       <h1>Distributed AI Studio. Nobody has built this.</h1>
-      <p>Members build products on Claude. They contribute them into the organism. J.O.B. <strong>earns the right of first acquisition</strong> as it provides infrastructure, distribution, and resources. The community is the studio.</p>
+      <p><strong>The Trojan Horse: we use the upskilling to get people building.</strong> Members learn AI fluency inside the program &mdash; and quietly ship real products on Claude. They contribute them into the organism. J.O.B. <strong>earns the right of first acquisition</strong> as it provides infrastructure, distribution, and resources. The community is the studio.</p>
       <div className="flywheel" style={{ maxWidth: '100%', marginTop: '0.75rem' }}>
         <div className="flywheel-step">
           <strong>1 · Member builds</strong>
@@ -548,12 +580,12 @@ const slides = [
     </div>
   ),
 
-  // 14 — NHR WEDGE ECONOMICS
+  // 16 — NHR WEDGE
   () => (
     <div className="slide">
-      <h3>12 · Wedge hypothesis</h3>
-      <h1>New Human Resources is the engine.</h1>
-      <p>Companies already have a budget for layoffs. We&apos;re the line item that actually does something with it.</p>
+      <h3>14 · Wedge</h3>
+      <h1>Something human with it.</h1>
+      <p>Companies already have a budget for layoffs. We&apos;re the line item that actually does something human with it.</p>
       <div className="three-col" style={{ marginTop: '0.5rem' }}>
         <div className="stat"><div className="stat-number">$2,500</div><div className="stat-label">per seat standard</div></div>
         <div className="stat"><div className="stat-number">$3,500</div><div className="stat-label">per seat premium</div></div>
@@ -568,15 +600,15 @@ const slides = [
     </div>
   ),
 
-  // 15 — METABOLISM
+  // 17 — METABOLISM
   () => (
     <div className="slide">
-      <h3>13 · The metabolism</h3>
+      <h3>15 · The metabolism</h3>
       <h1>We optimize for aliveness. Revenue follows.</h1>
       <div className="two-col" style={{ marginTop: '0.75rem' }}>
         <div className="card">
           <h3>1 &middot; Money in</h3>
-          <p>Enterprises pay NHR to hold their people through the passage. The wedge.</p>
+          <p>Enterprises pay J.O.B. to hold their people through the passage. The wedge.</p>
         </div>
         <div className="card">
           <h3>2 &middot; Humans through</h3>
@@ -595,10 +627,10 @@ const slides = [
     </div>
   ),
 
-  // 16 — HOW IT FEELS
+  // 18 — HOW IT FEELS
   () => (
     <div className="slide">
-      <h3>14 · How it feels</h3>
+      <h3>16 · How it feels</h3>
       <h1>Imagine if AA, Meow Wolf, and Indeed had a baby.</h1>
       <p>Three proven models &mdash; remixed into a better option than the resume trap.</p>
       <div className="three-col" style={{ marginTop: '0.75rem' }}>
@@ -619,13 +651,13 @@ const slides = [
     </div>
   ),
 
-  // 17 — REVENUE CHART
+  // 19 — REVENUE CHART
   RevenueChartSlide,
 
-  // 18 — TAM
+  // 20 — TAM
   () => (
     <div className="slide">
-      <h3>15 · Market</h3>
+      <h3>18 · Market</h3>
       <h1>Six broken industries. One fix.</h1>
       <div className="three-col" style={{ marginTop: '1.5rem' }}>
         <div className="stat"><div className="stat-number">$739B</div><div className="stat-label">HR &amp; recruiting</div></div>
@@ -639,10 +671,10 @@ const slides = [
     </div>
   ),
 
-  // 19 — TRACTION
+  // 21 — TRACTION
   () => (
     <div className="slide">
-      <h3>16 · Traction</h3>
+      <h3>19 · Traction</h3>
       <h1>Not starting from zero. Starting from live.</h1>
       <div className="two-col" style={{ marginTop: '0.75rem' }}>
         <div className="card">
@@ -652,50 +684,18 @@ const slides = [
             <li><strong>New Human Resources</strong> — taking inbound</li>
             <li><strong>Magic Shows</strong> — produced in Nashville, Minneapolis, Big Sky</li>
             <li><strong>The Church</strong> — live app, Sunday Night Live running</li>
-            <li><strong>J.O.B. Board</strong> — marketplace MVP, 20% fee in place</li>
+            <li><strong>J.O.B. Board</strong> — in dev, 20% fee in place</li>
             <li><strong>Business 3.0</strong> — framework built, pricing set</li>
-            <li><strong>JOB Report</strong> — prototype built with Claude, live on this slide</li>
+            <li><strong>JOB Report</strong> — prototype built with Claude, live in this deck</li>
           </ul>
         </div>
         <div className="card">
-          <h3>Network &amp; pipeline</h3>
-          <div className="three-col" style={{ marginTop: '0.25rem', gap: '0.75rem' }}>
-            <div className="stat"><div className="stat-number" style={{ fontSize: '1.8rem' }}>800+</div><div className="stat-label">EOS implementers</div></div>
-            <div className="stat"><div className="stat-number" style={{ fontSize: '1.8rem' }}>200+</div><div className="stat-label">Jumpsuit contractors</div></div>
-            <div className="stat"><div className="stat-number" style={{ fontSize: '1.8rem' }}>$4M/yr</div><div className="stat-label">Jumpsuit bootstrapped, zero employees</div></div>
-          </div>
-          <p style={{ marginTop: '0.75rem', fontSize: '0.9rem' }}>Plus: Jauntboards → acquired 2025. Wefunder community round prepped.</p>
-        </div>
-      </div>
-    </div>
-  ),
-
-  // 20 — TEAM
-  () => (
-    <div className="slide">
-      <h3>17 · Team</h3>
-      <h1>Big idea + big implementation.</h1>
-      <div className="two-col">
-        <div className="card">
-          <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)' }}>Nicole Ayres</h3>
-          <p style={{ color: 'var(--purple)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 700, marginBottom: '0.5rem' }}>The Architect</p>
+          <h3>Pipeline &amp; distribution</h3>
           <ul>
-            <li>Jumpsuit &mdash; bootstrapped to $4M/yr, <strong>zero employees</strong></li>
-            <li>Co-founded Jauntboards → acquired (2025)</li>
-            <li>Co-visionary: Business 3.0 + the RCO</li>
-            <li>200+ contractor network &mdash; running a B3.0 company for 7 years before it had a name</li>
-            <li>Building J.O.B. in real time with AI</li>
-          </ul>
-        </div>
-        <div className="card">
-          <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)' }}>Pam Kosanke</h3>
-          <p style={{ color: 'var(--purple)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 700, marginBottom: '0.5rem' }}>The Scaler</p>
-          <ul>
-            <li>Former CRO, EOS Worldwide &mdash; $145M revenue, 800+ implementers</li>
-            <li>Unified 700+ independent brands globally</li>
-            <li>Raised $6M Series A (Mark Cuban, General Mills)</li>
-            <li>Invented McDonald&apos;s breakfast dollar menu</li>
-            <li>6× world champion, Team USA</li>
+            <li><strong>800+ EOS implementers</strong> &mdash; Pam&apos;s direct CHRO network</li>
+            <li><strong>CHRO pipeline</strong> &mdash; warm intros into Fortune 1000</li>
+            <li><strong>Sunday Night Live</strong> &mdash; weekly audience already forming</li>
+            <li><strong>Wefunder community round</strong> &mdash; prepped</li>
           </ul>
         </div>
       </div>
@@ -705,7 +705,7 @@ const slides = [
   // 21 — THE ASK
   () => (
     <div className="slide">
-      <h3>18 · The ask</h3>
+      <h3>20 · The ask</h3>
       <h1><span className="gold">$3&ndash;5M</span> seed. One check into the organism.</h1>
       <p style={{ fontSize: '1.05rem', marginBottom: '0.75rem' }}>SAFE into the HoldCo. You&apos;re not betting on a product line &mdash; you&apos;re betting on a living system that follows aliveness.</p>
       <div className="three-col" style={{ marginTop: '0.25rem' }}>
