@@ -285,6 +285,7 @@ const slides = [
   () => (
     <div className="slide">
       <h3>03 · The question</h3>
+      <h1>What if <span className="gold">being human IS the job?</span></h1>
       <p style={{ fontSize: '1.2rem', marginTop: '1rem', lineHeight: 1.55 }}>For centuries, the church held that role &mdash; funding creativity, community, and consciousness. As AI accelerates a displacement that leaves most people without a livelihood and without a place to go, it begs the question:</p>
       <h1 style={{ marginTop: '1.25rem' }}>Who&apos;s going to create a modern infrastructure for <span className="gold">human transition at scale?</span></h1>
       <div className="three-col" style={{ marginTop: '1.25rem' }}>
@@ -308,7 +309,7 @@ const slides = [
   // 4 — JOY OF BEING (name reveal, moved up)
   () => (
     <div className="slide">
-      <h3>04 · Joy of Being</h3>
+      <h3>04 · The answer</h3>
       <h1>J.O.B. = <span className="gold">Joy of Being.</span></h1>
       <p style={{ fontSize: '1.5rem', marginTop: '1.5rem', lineHeight: 1.5 }}>Work paid us to be laborers, but never fully human &mdash; <strong>until now.</strong></p>
     </div>
