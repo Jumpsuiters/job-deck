@@ -12,6 +12,10 @@
   --accent-solid: #8b5cf6;
 }
 
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {

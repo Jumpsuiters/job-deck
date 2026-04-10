@@ -248,6 +248,7 @@ const slides = [
             }}
           >
             {words[wordIndex]}
+            <span style={{ animation: 'blink 1s step-end infinite', marginLeft: '2px' }}>|</span>
           </span>
         </p>
       </div>
