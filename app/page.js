@@ -310,9 +310,12 @@ const slides = [
     <div className="slide">
       <h3>03 · The question</h3>
       <h1>What if <span className="gold">being human IS the job?</span></h1>
-      <p style={{ fontSize: '1.1rem', marginTop: '1rem', lineHeight: 1.55 }}>For centuries, the church held that role &mdash; funding creativity, community, and consciousness. As AI accelerates a displacement that leaves most people without a livelihood and without a place to go, it begs the question:</p>
-      <h1 style={{ marginTop: '1rem', fontSize: '2rem' }}>Who&apos;s going to create a modern infrastructure for <span className="gold">human transition at scale?</span></h1>
-      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.5rem', fontWeight: 700 }} className="gold">But who&apos;s gonna pay for it?</p>
+      <p style={{ fontSize: '1.1rem', marginTop: '1rem', lineHeight: 1.55 }}>For centuries, the church funded the work of being alive &mdash; creativity, community, consciousness, belonging. It held people through transition. It gave the unmoored somewhere to go.</p>
+      <p style={{ fontSize: '1.1rem', marginTop: '0.75rem', lineHeight: 1.55 }}>It&apos;s gone from the center of modern life. AI is accelerating a displacement that strips people of their livelihood and their identity at the same time. And there is no modern institution equipped to hold what comes next.</p>
+      <p style={{ fontSize: '1.2rem', marginTop: '1rem', lineHeight: 1.55, fontWeight: 600 }}>The gap isn&apos;t a product opportunity. It&apos;s a <span className="gold">civilizational one.</span></p>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.5rem', fontWeight: 700 }} className="gold">But who&apos;s gonna pay for it?</p>
+      <p style={{ marginTop: '0.5rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.3rem', fontWeight: 700 }}>We already are.</p>
+      <p style={{ marginTop: '0.25rem', textAlign: 'center', maxWidth: '100%', fontSize: '1rem', fontStyle: 'italic', opacity: 0.7 }}>Stop asking who&apos;s going to pay for it.</p>
     </div>
   ),
 
