@@ -232,7 +232,6 @@ const slides = [
     <div className="slide cover">
       <h1>J.O.B.</h1>
       <p className="subtitle">The Joy of Being Company</p>
-      <p className="tagline">Being human is the job.</p>
     </div>
   ),
 
