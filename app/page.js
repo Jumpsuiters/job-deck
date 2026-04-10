@@ -334,30 +334,32 @@ const slides = [
       <h3>05 · The Trojan Horse</h3>
       <h1>J.O.B. is a giant <span className="gold">Trojan Horse.</span></h1>
       <p style={{ fontSize: '1.2rem', marginTop: '0.75rem', lineHeight: 1.5 }}>Every door looks different on the outside. Inside, they all lead to the same thing.</p>
-      <div className="three-col" style={{ marginTop: '1rem' }}>
-        <div className="card">
-          <h3 className="gold">New Human Resources</h3>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontStyle: 'italic' }}>What they think they&apos;re buying:</p>
-          <p>Outplacement &mdash; a P&amp;L line item</p>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontStyle: 'italic', marginTop: '0.5rem' }}>What they&apos;re actually getting:</p>
-          <p className="gold">The grief, the deprogramming, and the reinvention their employer accidentally funded</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Magic Shows</h3>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontStyle: 'italic' }}>What they think they&apos;re buying:</p>
-          <p>A retreat experience</p>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontStyle: 'italic', marginTop: '0.5rem' }}>What they&apos;re actually getting:</p>
-          <p className="gold">The fastest route back to yourself that doesn&apos;t require ten years of therapy</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Business 3.0</h3>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontStyle: 'italic' }}>What they think they&apos;re buying:</p>
-          <p>A leadership program</p>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontStyle: 'italic', marginTop: '0.5rem' }}>What they&apos;re actually getting:</p>
-          <p className="gold">Permission to build something alive &mdash; and a map for how to do it without burning out or selling out</p>
-        </div>
-      </div>
-      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.1rem' }}>Every door. Every entry point. <span className="gold" style={{ fontWeight: 700 }}>Deconstruct the old. Embody the new.</span></p>
+      <table style={{ width: '100%', marginTop: '1rem', borderCollapse: 'collapse', fontSize: '0.95rem' }}>
+        <thead>
+          <tr>
+            <th style={{ textAlign: 'left', padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', color: 'var(--text-muted)', fontWeight: 600, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Experiment</th>
+            <th style={{ textAlign: 'left', padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', color: 'var(--text-muted)', fontWeight: 600, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>What they think they&apos;re buying</th>
+            <th style={{ textAlign: 'left', padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', color: 'var(--text-muted)', fontWeight: 600, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>What they&apos;re actually getting</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={{ padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', fontWeight: 700 }} className="gold">New Human Resources</td>
+            <td style={{ padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)' }}>Outplacement &mdash; a P&amp;L line item</td>
+            <td style={{ padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)' }} className="gold">The grief, the deprogramming, and the reinvention their employer accidentally funded</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', fontWeight: 700 }} className="gold">Magic Shows</td>
+            <td style={{ padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)' }}>A retreat experience</td>
+            <td style={{ padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)' }} className="gold">The fastest route back to yourself that doesn&apos;t require ten years of therapy</td>
+          </tr>
+          <tr>
+            <td style={{ padding: '0.6rem 0.75rem', fontWeight: 700 }} className="gold">Business 3.0</td>
+            <td style={{ padding: '0.6rem 0.75rem' }}>A leadership program</td>
+            <td style={{ padding: '0.6rem 0.75rem' }} className="gold">Permission to build something alive &mdash; and a map for how to do it without burning out or selling out</td>
+          </tr>
+        </tbody>
+      </table>
       <p style={{ marginTop: '0.75rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '1.2rem' }}>The rite of passage is the remembering of who you are.</p>
     </div>
   ),
