@@ -646,7 +646,7 @@ const slides = [
   () => (
     <div className="slide">
       <h3>15 · The ask</h3>
-      <h1><span className="gold">$3&ndash;4M.</span> Two layers. One organism.</h1>
+      <h1><span className="gold">$3&ndash;4M.</span> Not a bet on a company. A bet on a species.</h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center' }}>Everything above was built before a single dollar of outside investment. Here&apos;s what capital unlocks.</p>
       <div className="two-col" style={{ marginTop: '0.75rem' }}>
         <div className="card">
