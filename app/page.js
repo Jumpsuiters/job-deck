@@ -575,17 +575,17 @@ const slides = [
       <h1>Six Trojan Horses. <span className="gold">Six real businesses.</span></h1>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
-          ['NHR', 'New Human Resources', 'Looks like corporate offboarding', 'Actually deprogramming disguised as a benefit', 'The budget already exists \u2014 billions spent on severance, redirected'],
-          ['B3.0', 'Business 3.0', 'Looks like a consulting framework', 'Actually an initiation into a new way of operating', 'Premium consulting rates for something that\u2019s actually an initiation'],
-          ['Magic Shows', 'Magic Shows', 'Look like corporate offsites', 'Actually immersive experiences that crack identity open', '$25K\u2013$50K events that cost less than a hotel conference room'],
-          ['JOB Board', 'JOB Board', 'Looks like a job marketplace', 'Actually pricing human services that don\u2019t exist yet', '20% fee on a category we\u2019re creating and owning'],
-          ['JOB Church', 'JOB Church', 'Looks like a community gathering', 'Actually a weekly container for grief, play, and reinvention', 'Tax-exempt 508(c)(1)(a) \u2014 the spiritual container is also a legal one'],
-          ['MSL', 'MagicShowLand', 'Looks like real estate arbitrage', 'Actually sacred ground for becoming human', 'Abandoned churches, colleges, castles \u2014 dying institutions reborn'],
-        ].map(([abbr, name, outside, inside, trick], i) => (
+          ['NHR', 'New Human Resources', 'They think they\u2019re buying outplacement \u2014 a P&L line item', 'They\u2019re getting the grief, deprogramming, and reinvention their employer accidentally funded', 'The budget already exists \u2014 billions in severance, redirected'],
+          ['B3.0', 'Business 3.0', 'They think they\u2019re buying a leadership program', 'They\u2019re getting permission to build something alive \u2014 and a map for doing it without burning out', 'Premium consulting rates for what\u2019s actually an initiation'],
+          ['Magic Shows', 'Magic Shows', 'They think they\u2019re buying a retreat experience', 'They\u2019re getting the fastest route back to themselves without ten years of therapy', '$25K\u2013$50K events that cost less than a hotel conference room'],
+          ['JOB Board', 'JOB Board', 'They think they\u2019re buying a gig marketplace', 'They\u2019re getting proof that what makes them irreplaceable is what AI can\u2019t touch', '20% fee on a category we\u2019re creating and owning'],
+          ['JOB Church', 'JOB Church', 'They think they\u2019re joining a spiritual community', 'They\u2019re getting the place where the professional self finally stops running the show', 'Tax-exempt 508(c)(1)(a) \u2014 the spiritual container is also a legal one'],
+          ['MSL', 'MagicShowLand', 'They think they\u2019re walking into a venue', 'They\u2019re walking into a body of people holding them while they figure out who they are', 'Real estate arbitrage \u2014 abandoned churches, colleges, castles reborn'],
+        ].map(([abbr, name, buying, getting, trick], i) => (
           <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
             <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: '0.2rem' }}><span className="gold">{abbr}</span> {abbr !== name ? <span style={{ color: 'var(--text-muted)', fontWeight: 400, fontSize: '0.8rem' }}>— {name}</span> : null}</div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.45 }}>{outside}</div>
-            <div style={{ fontSize: '0.8rem', lineHeight: 1.45, marginTop: '0.15rem' }}>{inside}</div>
+            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.45 }}>{buying}</div>
+            <div style={{ fontSize: '0.8rem', lineHeight: 1.45, marginTop: '0.15rem' }}>{getting}</div>
             <div style={{ fontSize: '0.75rem', lineHeight: 1.4, marginTop: '0.2rem', fontStyle: 'italic' }} className="gold">{trick}</div>
           </div>
         ))}
