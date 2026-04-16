@@ -249,17 +249,17 @@ const slides = [
       <div className="three-col" style={{ marginTop: '1.5rem' }}>
         <div className="card">
           <p style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem' }} className="gold">Work</p>
-          <p style={{ fontSize: '2rem', fontWeight: 700 }} className="gold">300M</p>
+          <p style={{ fontSize: '2rem', fontWeight: 700 }} className="gold">300M jobs gone.</p>
           <p>full-time job equivalents affected by AI globally (Goldman Sachs)</p>
         </div>
         <div className="card">
           <p style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem' }} className="gold">Religion</p>
-          <p style={{ fontSize: '2rem', fontWeight: 700 }} className="gold">15,000</p>
+          <p style={{ fontSize: '2rem', fontWeight: 700 }} className="gold">15,000 doors closed.</p>
           <p>churches closed last year. Where do people go when the place that held meaning disappears?</p>
         </div>
         <div className="card">
           <p style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem' }} className="gold">Education</p>
-          <p style={{ fontSize: '2rem', fontWeight: 700 }} className="gold">63%</p>
+          <p style={{ fontSize: '2rem', fontWeight: 700 }} className="gold">63% say it&apos;s broken.</p>
           <p>say college isn&apos;t worth it &mdash; including 54% who already have the degree. The path we were promised is broken.</p>
         </div>
       </div>
