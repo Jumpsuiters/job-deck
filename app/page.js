@@ -550,17 +550,16 @@ const slides = [
       <h3>08 · Proof of life</h3>
       <h1>This organism is <span className="gold">already growing.</span></h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>Before a single dollar of outside investment, the network started building itself.</p>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
-          ['JOB Board MVP', 'Live marketplace — built in 6 weeks by one person on Claude'],
-          ['Sunday Night Live', 'Weekly church container running — people keep showing up'],
-          ['Co-founder appeared', 'Pam Kosanke (enterprise sales) materialized from the network'],
-          ['B3.0 framework', 'Paying clients and a live investor deck'],
-          ['Third RCO attracted', 'Organically drawn in — no recruiting, no pitch'],
-          ['Wefunder campaign', 'Community ownership round forming now'],
+          ['The entity structure is forming', 'Legal body taking shape — PPT, RCO, HoldCo, Church'],
+          ['The HoldCo has products', 'NHR, B3.0, JOB Board, Magic Shows — commerce is already flowing'],
+          ['The Church has members', 'People showing up weekly for something with no obvious ROI'],
+          ['The RCO has members', 'People aren\u2019t buying a service — they\u2019re joining an organism'],
+          ['People keep hiring themselves', 'No one asked them to. The thesis is already proving itself.'],
         ].map(([title, desc], i) => (
-          <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
-            <div className="gold" style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: '0.25rem' }}>{title}</div>
+          <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: i === 4 ? 'rgba(201,168,76,0.08)' : 'rgba(255,255,255,0.03)', borderColor: i === 4 ? 'var(--gold)' : 'var(--border)' }}>
+            <div className={i === 4 ? 'gold' : ''} style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: '0.25rem' }}>{title}</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.45 }}>{desc}</div>
           </div>
         ))}
