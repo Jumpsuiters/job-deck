@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Being human is the job.",
-  description: "J.O.B. — The Joy of Being Company",
+  description: "J.O.B. — The Joy of Being",
 };
 
 export default function RootLayout({ children }) {
