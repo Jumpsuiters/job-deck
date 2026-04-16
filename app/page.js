@@ -544,7 +544,32 @@ const slides = [
     );
   },
 
-  // 8 — THE FIRST PORTAL
+  // 8 — PROOF OF LIFE
+  () => (
+    <div className="slide">
+      <h3>08 · Proof of life</h3>
+      <h1>This organism is <span className="gold">already growing.</span></h1>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>Before a single dollar of outside investment, the network started building itself.</p>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto' }}>
+        {[
+          ['JOB Board MVP', 'Live marketplace — built in 6 weeks by one person on Claude'],
+          ['Sunday Night Live', 'Weekly church container running — people keep showing up'],
+          ['Co-founder appeared', 'Pam Kosanke (enterprise sales) materialized from the network'],
+          ['B3.0 framework', 'Paying clients and a live investor deck'],
+          ['Third RCO attracted', 'Organically drawn in — no recruiting, no pitch'],
+          ['Wefunder campaign', 'Community ownership round forming now'],
+        ].map(([title, desc], i) => (
+          <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
+            <div className="gold" style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: '0.25rem' }}>{title}</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.45 }}>{desc}</div>
+          </div>
+        ))}
+      </div>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.2rem', fontWeight: 700 }}>Nobody planted this. <span className="gold">It sprouted.</span></p>
+    </div>
+  ),
+
+  // 9 — THE FIRST PORTAL
   () => (
     <div className="slide">
       <h3>08 · The first portal</h3>
