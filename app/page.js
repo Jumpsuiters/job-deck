@@ -79,13 +79,13 @@ function JobReportSlide() {
       <h3>14 · The moat</h3>
       <h1>Our moat isn&apos;t technology. It&apos;s <span className="gold">memory.</span></h1>
       <p style={{ marginBottom: '0.6rem' }}>
-        Individuals and companies join the RCO as members. Every introduction, every idea, every line of code built at 2am, every transition center opened &mdash; the JOB Report tracks it all. Not as hours logged, but as living contribution that compounds over time.
+        Individuals and companies join the RCO as members. Every introduction, every idea, every line of code built at 2am, every transition center opened &mdash; the JOB Report tracks it all.
       </p>
       <p style={{ marginBottom: '0.6rem' }}>
-        Diane&apos;s introduction today becomes redeemable credit across the organism later &mdash; a month at a Costa Rica retreat center, a seat in a B3.0 cohort, priority access to a MagicShowLand residency. The contribution compounds. The organism remembers. And no competitor can copy what only exists inside.
+        An introduction today becomes redeemable credit across the organism down the road &mdash; a free spot at a Magic Show, a seat in the B3.0 cohort, a month residency at a Costa Rica immersive center.
       </p>
       <p style={{ marginBottom: '0.75rem' }}>
-        <strong>Try it below</strong> &mdash; describe something you&apos;d contribute to J.O.B. and see how the system reads it.
+        We&apos;ve never had the ability to track, attribute, and measure the range of human value until AI. Go figure. <strong>Try it below. Give yourself a job only you can do.</strong>
       </p>
 
       <div className="jr-grid">
