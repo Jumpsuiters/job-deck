@@ -352,8 +352,7 @@ const slides = [
       <h3>05 · The solution</h3>
       <h1>J.O.B. = <span className="gold">Joy of Being.</span></h1>
       <p style={{ fontSize: '1.2rem', marginTop: '1.25rem', lineHeight: 1.6 }}>The world&apos;s first infrastructure for <em>being</em> human. We hold people through this transition, help them discover who they really are, and then pay each other to do that.</p>
-      <p style={{ fontSize: '1.3rem', marginTop: '1.25rem', lineHeight: 1.5, fontWeight: 700 }} className="gold">It&apos;s like if AA, Meow Wolf, and Indeed had a baby.</p>
-      <p style={{ fontSize: '1.1rem', marginTop: '0.75rem', lineHeight: 1.6 }}>Self-replicating community. Immersive experience. A marketplace for work that doesn&apos;t exist yet.</p>
+      <p style={{ fontSize: '1.3rem', marginTop: '1.25rem', lineHeight: 1.5, fontWeight: 700 }} className="gold">It&apos;s like if AA, Meow Wolf, and Indeed teamed up to create the future Human Economy.</p>
     </div>
   ),
 
