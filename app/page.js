@@ -320,71 +320,37 @@ const slides = [
     </div>
   ),
 
-  // 4 — THE PROBLEM
-  () => {
-    const [revealed, setRevealed] = useState(0);
-    const mappings = [
-      { institution: 'The School', role: 'Student' },
-      { institution: 'The Company', role: 'Employee' },
-      { institution: 'The Church', role: 'Believer' },
-      { institution: 'The Culture', role: 'Consumer' },
-    ];
-    return (
-      <div className="slide">
-        <h3>02 · The problem</h3>
-        <h1><span className="gold">We fragmented ourselves.</span></h1>
-        <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6 }}>Every institution gave you a role. You played each one well. You were rewarded for it. That&apos;s because useful humans are predictable. Fully alive humans are not.</p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '520px', marginLeft: 'auto', marginRight: 'auto' }}>
-          {mappings.map((m, i) => (
-            <div
-              key={i}
-              onClick={() => setRevealed(r => Math.max(r, i + 1))}
-              style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: revealed <= i ? 'pointer' : 'default', animation: revealed <= i && i <= revealed ? 'pulseGlow 2s ease-in-out infinite' : 'none' }}
-            >
-              <span style={{ fontSize: '1.15rem', fontWeight: 600, minWidth: '140px', textAlign: 'right', color: 'var(--text-secondary)' }}>{m.institution}</span>
-              <span style={{ flex: '0 0 60px', textAlign: 'center', fontSize: '1.2rem', color: 'var(--gold)', opacity: i < revealed ? 1 : 0.2, transition: 'opacity 0.5s ease' }}>→</span>
-              <span style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--gold)', opacity: i < revealed ? 1 : 0, transition: 'opacity 0.5s ease', minWidth: '120px' }}>{m.role}</span>
-            </div>
-          ))}
-          {revealed >= 4 && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginTop: '0.5rem', animation: 'fadeIn 0.8s ease forwards' }}>
-              <span style={{ fontSize: '1.15rem', fontWeight: 600, minWidth: '140px', textAlign: 'right', color: 'var(--text-secondary)' }}>No one</span>
-              <span style={{ flex: '0 0 60px', textAlign: 'center', fontSize: '1.2rem', color: 'var(--gold)' }}>→</span>
-              <span style={{ fontSize: '1.3rem', fontWeight: 700, background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', minWidth: '120px' }}>Your fully authentic self</span>
-            </div>
-          )}
+  // 4 — THE GAP
+  () => (
+    <div className="slide">
+      <h3>04 · The gap</h3>
+      <h1>Nobody&apos;s building the <span className="gold">infrastructure for being human.</span></h1>
+      <p style={{ fontSize: '1.1rem', marginTop: '1rem', lineHeight: 1.6 }}>AI is automating what people <em>do</em>. But no one is building infrastructure for what people <em>are</em>.</p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
+          <span style={{ color: 'var(--text-muted)' }}>Therapy</span>
+          <span>Treats the symptoms, not the structure</span>
         </div>
-        <p style={{ marginTop: '0.75rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '1.25rem', opacity: revealed >= 4 ? 1 : 0, transition: 'opacity 0.6s ease' }}>A fragmented problem needs a whole solution.</p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
+          <span style={{ color: 'var(--text-muted)' }}>Coaching</span>
+          <span>Optimizes the old identity</span>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
+          <span style={{ color: 'var(--text-muted)' }}>Outplacement</span>
+          <span>Puts you back in the same box</span>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
+          <span style={{ color: 'var(--text-muted)' }}>Religion</span>
+          <span>Lost its hold on modern life</span>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--gold)', borderRadius: '8px', background: 'rgba(201,168,76,0.08)' }}>
+          <span className="gold" style={{ fontWeight: 700 }}>?</span>
+          <span className="gold" style={{ fontWeight: 700 }}>Holds the whole human through the transition</span>
+        </div>
       </div>
-    );
-  },
-
-  // 3 — THE QUESTION
-  () => {
-    const [clickCount, setClickCount] = useState(0);
-    return (
-      <div className="slide">
-        <h3>03 · The question</h3>
-        <h1>What if <span className="gold">being human IS the job?</span></h1>
-        <p style={{ fontSize: '1.1rem', marginTop: '1rem', lineHeight: 1.55 }}>For centuries, the church funded the work of being alive &mdash; creativity, community, consciousness, belonging. It held people through transition. It gave the unmoored somewhere to go.</p>
-        <p style={{ fontSize: '1.1rem', marginTop: '0.75rem', lineHeight: 1.55 }}>It&apos;s gone from the center of modern life. AI is accelerating a displacement that strips people of their livelihood and their identity at the same time. And there is no modern institution equipped to hold what comes next.</p>
-        <p style={{ fontSize: '1.2rem', marginTop: '1rem', lineHeight: 1.55, fontWeight: 600 }}>The gap isn&apos;t a product opportunity. It&apos;s a <span className="gold">civilizational one.</span></p>
-        <h1
-          onClick={() => setClickCount((c) => Math.min(c + 1, 2))}
-          style={{ marginTop: '1.25rem', cursor: clickCount < 2 ? 'pointer' : 'default', animation: clickCount < 2 ? 'pulseGlow 2s ease-in-out infinite' : 'none' }}
-          className="gold"
-        >
-          But who&apos;s gonna pay for it?
-        </h1>
-        {clickCount >= 1 && (
-          <p style={{ marginTop: '0.75rem', fontSize: '1.5rem', fontWeight: 700, opacity: 0, animation: 'fadeIn 0.4s ease forwards' }}>We already are.</p>
-        )}
-        {clickCount >= 2 && (
-          <p style={{ marginTop: '0.5rem', fontSize: '1.1rem', fontStyle: 'italic', opacity: 0, animation: 'fadeIn 0.4s ease forwards' }}>Stop asking who&apos;s going to pay for it.</p>
-        )}
-      </div>
-    );
-  },
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.3rem', fontWeight: 700 }}>The gap isn&apos;t a product opportunity. It&apos;s a <span className="gold">civilizational one.</span></p>
+    </div>
+  ),
 
   // 5 — JOY OF BEING (name reveal)
   () => (
