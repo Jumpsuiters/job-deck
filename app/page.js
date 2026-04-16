@@ -356,30 +356,30 @@ const slides = [
     </div>
   ),
 
-  // 6 — THE STRATEGY
+  // 6 — THE TROJAN HORSE
   () => (
     <div className="slide">
       <h3>06 · The strategy</h3>
-      <h1>We&apos;re going to <span className="gold">model the new model.</span></h1>
-      <p style={{ fontSize: '1.1rem', marginTop: '0.75rem', lineHeight: 1.55 }}>J.O.B. is a new organizational form.</p>
-      <div className="two-col" style={{ marginTop: '1rem' }}>
-        <div className="card">
-          <h3 className="gold">Ask one unanswerable question.</h3>
-          <p>&ldquo;What happens when being human is the job?&rdquo; Every experiment seeks to answer it.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Open infinite portals.</h3>
-          <p>Successful experiments become real, legible businesses on the outside &mdash; transforming humans on the inside.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Feed what&apos;s alive. Compost the rest.</h3>
-          <p>Resources flow to whatever has the most energy. Whatever&apos;s losing energy goes back into the organism.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Reward contribution beyond money.</h3>
-          <p>Your time, ideas, introductions, and presence are tracked, valued over time, and redeemed anywhere in the organism.</p>
-        </div>
+      <h1>Everything is a <span className="gold">Trojan Horse.</span></h1>
+      <p style={{ fontSize: '1.15rem', marginTop: '1rem', lineHeight: 1.6, textAlign: 'center' }}>JOB speaks the language of the old world to smuggle people into the new one.</p>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', gap: '0.6rem 1rem', marginTop: '1.5rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto', alignItems: 'center' }}>
+        {[
+          ['The name', 'sounds like employment', 'it\u2019s about being'],
+          ['The products', 'look like familiar categories', 'they\u2019re transformation disguised as commerce'],
+          ['The company', 'looks like a startup', 'it\u2019s an organism that can\u2019t be extracted from'],
+          ['The pitch', 'sounds like a business opportunity', 'it\u2019s an invitation to build a new civilization'],
+        ].map(([label, outside, inside], i) => (
+          <div key={i} style={{ display: 'contents' }}>
+            <div style={{ textAlign: 'right' }}>
+              <span style={{ fontWeight: 700 }}>{label}</span>{' '}
+              <span style={{ color: 'var(--text-muted)' }}>{outside}</span>
+            </div>
+            <span className="gold" style={{ fontWeight: 700 }}>→</span>
+            <div><span className="gold" style={{ fontWeight: 600 }}>{inside}</span></div>
+          </div>
+        ))}
       </div>
+      <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '1.2rem', fontWeight: 700 }}>Legibility is the delivery mechanism. <span className="gold">Transformation is the payload.</span></p>
     </div>
   ),
 
