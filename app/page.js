@@ -762,8 +762,7 @@ function CloseSlide({ onJoin }) {
     <div className="slide close-slide">
       <p className="big-quote" style={{ fontSize: '1.4rem' }}>&ldquo;Trickster is the creative idiot, the wise fool, the mythic embodiment of ambiguity and paradox.&rdquo;</p>
       <p className="attribution" style={{ marginBottom: '2rem' }}>&mdash; Lewis Hyde</p>
-      <h1>Your body will say yes before your mind understands it. Trust that. Welcome to 3.0.</h1>
-      <p style={{ marginTop: '1.5rem' }}><strong className="gold">Welcome to the Joy of Being Company.</strong></p>
+      <h1>The only job left is to be human. <span className="gold">This is the company that makes it possible.</span></h1>
       <div className="cta-row">
         <button className="waitlist-trigger" onClick={onJoin}>Feed the Organism</button>
       </div>
