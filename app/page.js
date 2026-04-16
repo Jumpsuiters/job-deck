@@ -590,7 +590,6 @@ const slides = [
           </div>
         ))}
       </div>
-      <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '2rem', fontWeight: 700, background: 'linear-gradient(90deg, var(--text) 0%, var(--text) 40%, var(--gold) 50%, var(--text) 60%, var(--text) 100%)', backgroundSize: '200% auto', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', animation: 'shimmer 2s ease-in-out infinite' }}>But who&apos;s gonna pay for it?</p>
     </div>
   ),
 
