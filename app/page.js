@@ -641,7 +641,7 @@ const slides = [
           ['People', 'Because they\u2019re desperate for something that actually holds them through the transition'],
           ['Investors', 'Because this is a new asset class \u2014 an organism that compounds, not a startup that exits'],
           ['Philanthropists', 'Because this is the mission they\u2019ve been looking for \u2014 structural change, not another band-aid'],
-          ['The community itself', 'Because members contribute time, ideas, presence, and relationships \u2014 not just money'],
+          ['Members', 'Because they contribute time, ideas, presence, and relationships \u2014 not just money'],
         ].map(([who, why], i) => (
           <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
             <span className="gold" style={{ fontWeight: 700 }}>{who}.</span>{' '}
