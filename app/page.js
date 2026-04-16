@@ -642,7 +642,32 @@ const slides = [
   // 13 — JOB REPORT
   JobReportSlide,
 
-  // 15 — TEAM
+  // 15 — THE NEXT 12 MONTHS
+  () => (
+    <div className="slide">
+      <h3>15 · The roadmap</h3>
+      <h1>What happens when you <span className="gold">feed the organism.</span></h1>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>Everything above was built before a single dollar of outside investment. Here&apos;s what capital unlocks.</p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '620px', marginLeft: 'auto', marginRight: 'auto' }}>
+        {[
+          ['Q3 2026', 'Entity formation complete \u2014 PPT, RCO, HoldCo, Church legally established'],
+          ['Q3 2026', 'Wefunder community round live \u2014 the people who believe in this own a piece of it'],
+          ['Q3 2026', 'First NHR enterprise pilot \u2014 prove the wedge with a real company and real humans'],
+          ['Q4 2026', 'First Magic Show at scale \u2014 immersive experience as a repeatable revenue event'],
+          ['Q4 2026', 'B3.0 first paid cohort \u2014 consulting IP becomes a live product'],
+          ['Q1 2027', 'JOB Board marketplace launch \u2014 20% fee on human services that don\u2019t exist yet'],
+          ['Q2 2027', 'First MagicShowLand location scouted \u2014 real estate arbitrage begins'],
+        ].map(([when, what], i) => (
+          <div key={i} style={{ display: 'flex', gap: '1rem', padding: '0.55rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)', alignItems: 'baseline' }}>
+            <span className="gold" style={{ fontWeight: 700, fontSize: '0.8rem', whiteSpace: 'nowrap', minWidth: '70px' }}>{when}</span>
+            <span style={{ fontSize: '0.85rem', lineHeight: 1.45 }}>{what}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  ),
+
+  // 16 — TEAM
   () => (
     <div className="slide">
       <h3>09 · Team</h3>
