@@ -642,34 +642,10 @@ const slides = [
   // 13 — JOB REPORT
   JobReportSlide,
 
-  // 15 — NHR BUILD
+  // 15 — THE ASK
   () => (
     <div className="slide">
-      <h3>15 · The build</h3>
-      <h1><span className="gold">New Human Resources</span></h1>
-      <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.7 }}>The first product the organism builds at scale.</p>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.75rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
-        <div className="card" style={{ padding: '0.65rem 0.85rem' }}>
-          <p style={{ fontSize: '0.85rem' }}><strong className="gold">Initiatory process</strong></p>
-          <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Not a workshop. Not a webinar. A rite of passage that helps people meet themselves — possibly for the first time.</p>
-        </div>
-        <div className="card" style={{ padding: '0.65rem 0.85rem' }}>
-          <p style={{ fontSize: '0.85rem' }}><strong className="gold">Guides — AI &amp; Human</strong></p>
-          <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>AI holds the mirror. Humans hold the space. Both work together so nobody walks through this alone.</p>
-        </div>
-        <div className="card" style={{ padding: '0.65rem 0.85rem' }}>
-          <p style={{ fontSize: '0.85rem' }}><strong className="gold">Platform to support layoffs</strong></p>
-          <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Built to hold 2,000 people through transition at once. Companies pay. Their people get held.</p>
-        </div>
-      </div>
-      <p style={{ marginTop: '0.75rem', textAlign: 'center', fontSize: '0.95rem', fontStyle: 'italic', color: 'var(--text-muted)' }}>And then the ones the organism builds next.</p>
-    </div>
-  ),
-
-  // 16 — THE ASK
-  () => (
-    <div className="slide">
-      <h3>16 · The ask</h3>
+      <h3>15 · The ask</h3>
       <h1><span className="gold">$3&ndash;4M.</span> Not a bet on a company. A bet on a species.</h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center' }}>Everything above was built before a single dollar of outside investment. Here&apos;s what capital unlocks.</p>
       <div className="two-col" style={{ marginTop: '0.75rem' }}>
@@ -677,7 +653,7 @@ const slides = [
           <h3 className="gold">Founding Circle &middot; $2.5&ndash;3M</h3>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>Angel + philanthropic capital that makes the organism real.</p>
           <ul style={{ fontSize: '0.8rem' }}>
-            <li><strong>NHR program build</strong> &mdash; curriculum, facilitators, platform to support 2,000 layoffs</li>
+            <li><strong>New Human Resources build</strong> &mdash; initiatory process, guides (AI &amp; human), platform to support layoffs</li>
             <li><strong>JOB Report ledger</strong> &mdash; production OS for tracking and redeeming contribution</li>
             <li><strong>All six experiments</strong> &mdash; working versions live and generating revenue</li>
             <li><strong>Entity formation + founder runway</strong> &mdash; 18&ndash;24 months full-time</li>
@@ -708,14 +684,14 @@ const slides = [
           </div>
         ))}
       </div>
-      <p style={{ marginTop: '0.75rem', textAlign: 'center', fontSize: '1rem', fontStyle: 'italic' }}>You&apos;re not getting equity in one experiment. You&apos;re getting equity in the system that holds all of them. The ones we have now and the ones the organism builds.</p>
+      <p style={{ marginTop: '0.75rem', textAlign: 'center', fontSize: '1rem', fontStyle: 'italic' }}>You&apos;re not getting equity in one experiment. You&apos;re getting equity in the system that holds all of them. The ones we have now and the ones the organism builds in the future.</p>
     </div>
   ),
 
-  // 17 — TEAM
+  // 16 — TEAM
   () => (
     <div className="slide">
-      <h3>17 · Team</h3>
+      <h3>16 · Team</h3>
       <h1>Two Visionaries and <span className="gold">Humanity beside them</span></h1>
       <div className="two-col" style={{ marginTop: '0.75rem' }}>
         <div className="card">
