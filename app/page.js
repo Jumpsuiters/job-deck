@@ -620,7 +620,38 @@ const slides = [
     </div>
   ),
 
-  // 11 — THE FIRST PORTAL
+  // 11 — BUT WHO'S GONNA PAY FOR IT?
+  () => (
+    <div className="slide" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <h1 style={{ fontSize: '2.8rem', textAlign: 'center', background: 'linear-gradient(90deg, var(--text) 0%, var(--text) 40%, var(--gold) 50%, var(--text) 60%, var(--text) 100%)', backgroundSize: '200% auto', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', animation: 'shimmer 2s ease-in-out infinite' }}>But who&apos;s gonna pay for it?</h1>
+    </div>
+  ),
+
+  // 12 — EVERYBODY
+  () => (
+    <div className="slide">
+      <h3>12 · The answer</h3>
+      <h1><span className="gold">Everybody.</span></h1>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>The organism doesn&apos;t have one revenue source. It feeds itself from every direction.</p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '620px', marginLeft: 'auto', marginRight: 'auto' }}>
+        {[
+          ['Companies', 'Because they\u2019re already spending billions on the problem \u2014 they just need somewhere real to send their people'],
+          ['People', 'Because they\u2019re desperate for something that actually holds them through the transition'],
+          ['Investors', 'Because this is a new asset class \u2014 an organism that compounds, not a startup that exits'],
+          ['Philanthropists', 'Because this is the mission they\u2019ve been looking for \u2014 structural change, not another band-aid'],
+          ['The community itself', 'Because members contribute time, ideas, presence, and relationships \u2014 not just money'],
+        ].map(([who, why], i) => (
+          <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
+            <span className="gold" style={{ fontWeight: 700 }}>{who}.</span>{' '}
+            <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{why}</span>
+          </div>
+        ))}
+      </div>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.2rem', fontWeight: 700 }}>The question isn&apos;t who pays. It&apos;s <span className="gold">who doesn&apos;t.</span></p>
+    </div>
+  ),
+
+  // 13 — THE FIRST PORTAL
   () => (
     <div className="slide">
       <h3>08 · The first portal</h3>
