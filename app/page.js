@@ -415,8 +415,13 @@ const slides = [
 
   // 7 — THE STRUCTURE (four layers)
   () => {
-    const [openId, setOpenId] = useState(null);
-    const toggle = (id) => setOpenId(openId === id ? null : id);
+    const [openIds, setOpenIds] = useState(new Set());
+    const toggle = (id) => setOpenIds(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      return next;
+    });
+    const isOpen = (id) => openIds.has(id);
 
     const layerBox = (color, bg) => ({
       width: '100%', padding: '0.55rem 0.75rem', border: `1px solid ${color}`, borderRadius: '8px',
@@ -468,7 +473,7 @@ const slides = [
         <div onClick={(e) => { e.stopPropagation(); toggle(item.id); }} style={childBox(color)}>
           {item.label} {item.children ? '+' : ''}
         </div>
-        {openId === item.id && (
+        {isOpen(item.id) && (
           <div style={{ padding: '0.25rem 0.55rem', fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.4, opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>
             {item.desc}
             {item.children && (
@@ -476,7 +481,7 @@ const slides = [
                 {item.children.map(c => (
                   <div key={c.id}>
                     <div onClick={(e) => { e.stopPropagation(); toggle(c.id); }} style={childBox(color)}>{c.label}</div>
-                    {openId === c.id && <div style={{ padding: '0.2rem 0.55rem', fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.4, opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>{c.desc}</div>}
+                    {isOpen(c.id) &&<div style={{ padding: '0.2rem 0.55rem', fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.4, opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>{c.desc}</div>}
                   </div>
                 ))}
               </div>
@@ -501,7 +506,7 @@ const slides = [
           <div onClick={() => toggle('ppt')} style={layerBox('#c9a84c', 'rgba(201,168,76,0.08)')}>
             <div style={layerLabel}>Perpetual Purpose Trust</div>
             <div style={layerRole('#c9a84c')}>Protects the Purpose</div>
-            {openId === 'ppt' && (
+            {isOpen('ppt') && (
               <p style={layerDesc}>Owns the HoldCo. The trustee&apos;s legal obligation is to the guiding question &mdash; not to founders, not to shareholders. The mission can never be sold, acquired, or diluted. This is why investors can trust that their capital serves something permanent.</p>
             )}
           </div>
@@ -511,11 +516,11 @@ const slides = [
           <div onClick={() => toggle('rco')} style={layerBox('var(--pink)', 'rgba(236,72,153,0.08)')}>
             <div style={layerLabel}>RCO &mdash; Regenerative Community Organism</div>
             <div style={layerRole('var(--pink)')}>Produces the Value</div>
-            {openId === 'rco' && (
+            {isOpen('rco') && (
               <p style={layerDesc}>The coordination layer where people actually participate. Contributors bring money, time, skills, network, ideas, or care &mdash; the RCO routes them into real work and turns participation into revenue-generating output. It feeds both the business engine and the meaning layer.</p>
             )}
           </div>
-          {openId === 'rco' && (
+          {isOpen('rco') && (
             <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '0.25rem', marginBottom: '0.15rem', opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>
               {rcoItems.map(item => <ChildRow key={item.id} item={item} color="rgba(236,72,153,0.25)" />)}
             </div>
@@ -529,11 +534,11 @@ const slides = [
               <div onClick={() => toggle('holdco')} style={layerBox('var(--purple)', 'rgba(139,92,246,0.08)')}>
                 <div style={layerLabel}>For-Profit HoldCo</div>
                 <div style={layerRole('var(--purple)')}>Drives the Business</div>
-                {openId === 'holdco' && (
+                {isOpen('holdco') && (
                   <p style={layerDesc}>The financial engine. Raises capital, funds experiments, graduates winners into SPVs, and returns profits to investors.</p>
                 )}
               </div>
-              {openId === 'holdco' && (
+              {isOpen('holdco') && (
                 <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '0.25rem', marginBottom: '0.15rem', opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>
                   {holdcoItems.map(item => <ChildRow key={item.id} item={item} color="rgba(139,92,246,0.25)" />)}
                 </div>
@@ -546,11 +551,11 @@ const slides = [
               <div onClick={() => toggle('church')} style={layerBox('var(--teal)', 'rgba(45,212,191,0.08)')}>
                 <div style={layerLabel}>The Church</div>
                 <div style={layerRole('var(--teal)')}>Sustains the Soul</div>
-                {openId === 'church' && (
+                {isOpen('church') && (
                   <p style={layerDesc}>The meaning layer. Develops people, holds the values, and ensures the system stays human and aligned. Owns the transformation IP and licenses it to the HoldCo.</p>
                 )}
               </div>
-              {openId === 'church' && (
+              {isOpen('church') && (
                 <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '0.25rem', marginBottom: '0.15rem', opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>
                   {churchItems.map(item => <ChildRow key={item.id} item={item} color="rgba(45,212,191,0.25)" />)}
                 </div>
