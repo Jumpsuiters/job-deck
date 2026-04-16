@@ -325,30 +325,25 @@ const slides = [
     <div className="slide">
       <h3>04 · The gap</h3>
       <h1>Nobody&apos;s building the <span className="gold">infrastructure for being human.</span></h1>
-      <p style={{ fontSize: '1.1rem', marginTop: '1rem', lineHeight: 1.6 }}>AI is automating what people <em>do</em>. But no one is building infrastructure for what people <em>are</em>.</p>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
-          <span style={{ color: 'var(--text-muted)' }}>Therapy</span>
-          <span>Treats the symptoms, not the structure</span>
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
-          <span style={{ color: 'var(--text-muted)' }}>Coaching</span>
-          <span>Optimizes the old identity</span>
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
-          <span style={{ color: 'var(--text-muted)' }}>Outplacement</span>
-          <span>Puts you back in the same box</span>
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
-          <span style={{ color: 'var(--text-muted)' }}>Religion</span>
-          <span>Lost its hold on modern life</span>
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.65rem 0.85rem', border: '1px solid var(--gold)', borderRadius: '8px', background: 'rgba(201,168,76,0.08)' }}>
-          <span className="gold" style={{ fontWeight: 700 }}>?</span>
-          <span className="gold" style={{ fontWeight: 700 }}>Holds the whole human through the transition</span>
-        </div>
+      <p style={{ fontSize: '1.15rem', marginTop: '1rem', lineHeight: 1.6, textAlign: 'center' }}>AI is automating what people <em>do</em>. But no one is building infrastructure for what people <em>are</em>.</p>
+      <div style={{ display: 'grid', gridTemplateColumns: '140px 1fr', gap: '0', marginTop: '1.5rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto', border: '1px solid var(--border)', borderRadius: '10px', overflow: 'hidden' }}>
+        {[
+          ['Therapy', 'Treats the symptoms, not the structure'],
+          ['Coaching', 'Optimizes the old identity'],
+          ['Outplacement', 'Puts you back in the same box'],
+          ['Religion', 'Lost its hold on modern life'],
+        ].map(([label, desc], i) => (
+          <div key={i} style={{ display: 'contents' }}>
+            <div style={{ padding: '0.75rem 1rem', borderBottom: i < 3 ? '1px solid var(--border)' : 'none', color: 'var(--text-muted)', fontWeight: 600, background: 'rgba(255,255,255,0.02)' }}>{label}</div>
+            <div style={{ padding: '0.75rem 1rem', borderBottom: i < 3 ? '1px solid var(--border)' : 'none', borderLeft: '1px solid var(--border)' }}>{desc}</div>
+          </div>
+        ))}
       </div>
-      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.3rem', fontWeight: 700 }}>The gap isn&apos;t a product opportunity. It&apos;s a <span className="gold">civilizational one.</span></p>
+      <div style={{ display: 'grid', gridTemplateColumns: '140px 1fr', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto', marginTop: '0.5rem', border: '2px solid var(--gold)', borderRadius: '10px', overflow: 'hidden', background: 'rgba(201,168,76,0.08)' }}>
+        <div style={{ padding: '0.75rem 1rem', fontWeight: 700 }} className="gold">?</div>
+        <div style={{ padding: '0.75rem 1rem', fontWeight: 700, borderLeft: '2px solid var(--gold)' }} className="gold">Holds the whole human through the transition</div>
+      </div>
+      <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '1.3rem', fontWeight: 700 }}>The gap isn&apos;t a product opportunity. It&apos;s a <span className="gold">civilizational one.</span></p>
     </div>
   ),
 
