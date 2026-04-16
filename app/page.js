@@ -575,21 +575,22 @@ const slides = [
       <h1>Six Trojan Horses. <span className="gold">Six real businesses.</span></h1>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
-          ['NHR', 'New Human Resources', 'Looks like corporate offboarding', 'Actually deprogramming disguised as a benefit'],
-          ['B3.0', 'Business 3.0', 'Looks like a consulting framework', 'Actually an initiation into a new way of operating'],
-          ['Magic Shows', 'Magic Shows', 'Look like corporate offsites', 'Actually immersive experiences that crack identity open'],
-          ['JOB Board', 'JOB Board', 'Looks like a job marketplace', 'Actually pricing human services that don\u2019t exist yet'],
-          ['JOB Church', 'JOB Church', 'Looks like a community gathering', 'Actually a weekly container for grief, play, and reinvention'],
-          ['MSL', 'MagicShowLand', 'Looks like a venue', 'Actually a physical training ground for becoming human'],
-        ].map(([abbr, name, outside, inside], i) => (
+          ['NHR', 'New Human Resources', 'Looks like corporate offboarding', 'Actually deprogramming disguised as a benefit', 'The budget already exists \u2014 billions spent on severance, redirected'],
+          ['B3.0', 'Business 3.0', 'Looks like a consulting framework', 'Actually an initiation into a new way of operating', 'Premium consulting rates for something that\u2019s actually an initiation'],
+          ['Magic Shows', 'Magic Shows', 'Look like corporate offsites', 'Actually immersive experiences that crack identity open', '$25K\u2013$50K events that cost less than a hotel conference room'],
+          ['JOB Board', 'JOB Board', 'Looks like a job marketplace', 'Actually pricing human services that don\u2019t exist yet', '20% fee on a category we\u2019re creating and owning'],
+          ['JOB Church', 'JOB Church', 'Looks like a community gathering', 'Actually a weekly container for grief, play, and reinvention', 'Tax-exempt 508(c)(1)(a) \u2014 the spiritual container is also a legal one'],
+          ['MSL', 'MagicShowLand', 'Looks like real estate arbitrage', 'Actually sacred ground for becoming human', 'Abandoned churches, colleges, castles \u2014 dying institutions reborn'],
+        ].map(([abbr, name, outside, inside, trick], i) => (
           <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
             <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: '0.2rem' }}><span className="gold">{abbr}</span> {abbr !== name ? <span style={{ color: 'var(--text-muted)', fontWeight: 400, fontSize: '0.8rem' }}>— {name}</span> : null}</div>
             <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.45 }}>{outside}</div>
             <div style={{ fontSize: '0.8rem', lineHeight: 1.45, marginTop: '0.15rem' }}>{inside}</div>
+            <div style={{ fontSize: '0.75rem', lineHeight: 1.4, marginTop: '0.2rem', fontStyle: 'italic' }} className="gold">{trick}</div>
           </div>
         ))}
       </div>
-      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 700 }}>Each one is a door in. <span className="gold">All of them lead to the same place.</span></p>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.2rem', fontWeight: 700 }}>But who&apos;s gonna <span className="gold">pay for it?</span></p>
     </div>
   ),
 
