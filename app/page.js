@@ -445,9 +445,9 @@ const slides = [
       { id: 'profits', label: 'Returns to Investors', desc: 'Profits flow back to community investors.' },
     ];
     const rcoItems = [
-      { id: 'members', label: 'Members + Contributors', desc: 'People contribute money, time, skills, network, ideas, or care \u2014 the organism tracks and attributes all of it.' },
-      { id: 'routing', label: 'Routing + Matching', desc: 'Contributors get matched to experiments, SPVs, and projects based on energy and fit \u2014 not job descriptions.' },
-      { id: 'value', label: 'Value Creation', desc: 'Skills and ideas become revenue-generating output. The organism turns participation into commerce.' },
+      { id: 'members', label: 'Members', desc: 'People join and contribute non-monetary investment \u2014 time, skills, network, ideas, care. Financial investment flows through the For-Profit side.' },
+      { id: 'jobreport', label: 'J.O.B. Report', desc: 'The technology layer. Tracks, attributes, and redeems value anywhere in the organism over time. Self-regulating. Informs the HoldCo and Church where to invest next \u2014 grow or compost.' },
+      { id: 'field', label: 'The Field', desc: 'People \u00d7 energy \u00d7 technology. The RCO is the living field where flow happens \u2014 contributions move, value compounds, and the organism senses where to go next.' },
     ];
     const churchItems = [
       { id: 'doctrine', label: 'Doctrine + Sacrament', desc: 'Sunday Night Live, elder-guided tracks, the initiatory journey. Living doctrine, not dogma.' },
