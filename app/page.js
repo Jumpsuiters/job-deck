@@ -82,7 +82,7 @@ function JobReportSlide() {
         Every introduction, every idea, every line of code built at 2am, every transition center opened &mdash; the JOB Report tracks it all. Not as hours logged, but as living contribution that compounds over time.
       </p>
       <p style={{ marginBottom: '0.6rem' }}>
-        Diane&apos;s introduction today becomes redeemable credit across the organism tomorrow &mdash; a month at a Costa Rica retreat center, a seat in a B3.0 cohort, priority access to a MagicShowLand residency. The contribution compounds. The organism remembers. And no competitor can copy what only exists inside.
+        Diane&apos;s introduction today becomes redeemable credit across the organism later &mdash; a month at a Costa Rica retreat center, a seat in a B3.0 cohort, priority access to a MagicShowLand residency. The contribution compounds. The organism remembers. And no competitor can copy what only exists inside.
       </p>
       <p style={{ marginBottom: '0.75rem' }}>
         <strong>Try it below</strong> &mdash; describe something you&apos;d contribute to J.O.B. and see how the system reads it.
