@@ -553,9 +553,9 @@ const slides = [
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
           ['The entity structure is forming', 'Legal body taking shape — PPT, RCO, HoldCo, Church'],
+          ['The RCO has members', 'People aren\u2019t buying a service — they\u2019re joining an organism'],
           ['The HoldCo has products', 'NHR, B3.0, JOB Board, Magic Shows — commerce is already flowing'],
           ['The Church has members', 'People showing up weekly for something with no obvious ROI'],
-          ['The RCO has members', 'People aren\u2019t buying a service — they\u2019re joining an organism'],
           ['People keep hiring themselves', 'No one asked them to. The thesis is already proving itself.'],
         ].map(([title, desc], i) => (
           <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: i === 4 ? 'rgba(201,168,76,0.08)' : 'rgba(255,255,255,0.03)', borderColor: i === 4 ? 'var(--gold)' : 'var(--border)' }}>
