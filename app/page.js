@@ -259,51 +259,66 @@ const slides = [
   () => (
     <div className="slide">
       <h3>01 · The trick</h3>
-      <h1>What if the systems collapse is the largest <span className="gold">involuntary liberation</span> in history?</h1>
+      <h1>What if the systems collapse is actually the largest <span className="gold">involuntary liberation</span> in human history?</h1>
       <div className="three-col" style={{ marginTop: '1.5rem' }}>
         <div className="card">
+          <p style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem' }} className="gold">Work</p>
           <p style={{ fontSize: '2rem', fontWeight: 700 }} className="gold">300M</p>
           <p>full-time job equivalents affected by AI globally (Goldman Sachs)</p>
         </div>
         <div className="card">
+          <p style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem' }} className="gold">Religion</p>
           <p style={{ fontSize: '2rem', fontWeight: 700 }} className="gold">15,000</p>
           <p>churches closed last year &mdash; the most in American history</p>
         </div>
         <div className="card">
+          <p style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem' }} className="gold">Education</p>
           <p style={{ fontSize: '2rem', fontWeight: 700 }} className="gold">63%</p>
           <p>say college isn&apos;t worth it &mdash; including 54% of people who actually have the degree</p>
         </div>
       </div>
-      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '1.15rem' }}>The infrastructure that&apos;s missing is the opportunity.</p>
+      <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '1.15rem' }}>The three institutions who told us who to be are dissolving simultaneously.</p>
     </div>
   ),
 
   // 2 — THE PROBLEM
-  () => (
-    <div className="slide">
-      <h3>02 · The problem</h3>
-      <h1>Pick one. <span className="gold">We&apos;re in a metacrisis.</span></h1>
-      <p style={{ fontSize: '1.1rem', marginTop: '1rem', lineHeight: 1.55 }}>The mistake isn&apos;t bad solutions. It&apos;s the frame. We built institutions that each owned a piece of the human &mdash; the worker, the believer, the student, the citizen. When one breaks, we patch it. But patching the worker doesn&apos;t fix the believer. Fixing the student doesn&apos;t restore the citizen. The pieces were never meant to be separate. We just treated them that way.</p>
-      <div className="three-col" style={{ marginTop: '1rem' }}>
-        <div className="card">
-          <p>We automated the economy.</p>
-          <p>Productivity went up.</p>
-          <p style={{ fontWeight: 700 }} className="gold">Loneliness followed.</p>
+  () => {
+    const [revealed, setRevealed] = useState(0);
+    const mappings = [
+      { institution: 'The School', role: 'Student' },
+      { institution: 'The Company', role: 'Employee' },
+      { institution: 'The Church', role: 'Believer' },
+      { institution: 'The Culture', role: 'Consumer' },
+    ];
+    return (
+      <div className="slide">
+        <h3>02 · The problem</h3>
+        <h1><span className="gold">We fragmented ourselves.</span></h1>
+        <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6 }}>Every institution gave you a role. You played each one well. You were rewarded for it. That&apos;s because useful humans are predictable. Fully alive humans are not.</p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '520px', marginLeft: 'auto', marginRight: 'auto' }}>
+          {mappings.map((m, i) => (
+            <div
+              key={i}
+              onClick={() => setRevealed(r => Math.max(r, i + 1))}
+              style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: revealed <= i ? 'pointer' : 'default', animation: revealed <= i && i <= revealed ? 'pulseGlow 2s ease-in-out infinite' : 'none' }}
+            >
+              <span style={{ fontSize: '1.15rem', fontWeight: 600, minWidth: '140px', textAlign: 'right', color: 'var(--text-secondary)' }}>{m.institution}</span>
+              <span style={{ flex: '0 0 60px', textAlign: 'center', fontSize: '1.2rem', color: 'var(--gold)', opacity: i < revealed ? 1 : 0.2, transition: 'opacity 0.5s ease' }}>→</span>
+              <span style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--gold)', opacity: i < revealed ? 1 : 0, transition: 'opacity 0.5s ease', minWidth: '120px' }}>{m.role}</span>
+            </div>
+          ))}
+          {revealed >= 4 && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginTop: '0.5rem', animation: 'fadeIn 0.8s ease forwards' }}>
+              <span style={{ fontSize: '1.15rem', fontWeight: 600, minWidth: '140px', textAlign: 'right', color: 'var(--text-secondary)' }}>No one</span>
+              <span style={{ flex: '0 0 60px', textAlign: 'center', fontSize: '1.2rem', color: 'var(--gold)' }}>→</span>
+              <span style={{ fontSize: '1.3rem', fontWeight: 700, background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', minWidth: '120px' }}>Your fully authentic self</span>
+            </div>
+          )}
         </div>
-        <div className="card">
-          <p>We built wellness apps.</p>
-          <p>Loneliness went down.</p>
-          <p style={{ fontWeight: 700 }} className="gold">Nobody knew why they were here.</p>
-        </div>
-        <div className="card">
-          <p>We sold them purpose.</p>
-          <p>Meaning went up.</p>
-          <p style={{ fontWeight: 700 }} className="gold">Then they asked: but what do I do for work?</p>
-        </div>
+        <p style={{ marginTop: '0.75rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '1.25rem', opacity: revealed >= 4 ? 1 : 0, transition: 'opacity 0.6s ease' }}>A fragmented problem needs a whole solution.</p>
       </div>
-      <p style={{ marginTop: '1.25rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '1.25rem' }}>What if the whole loop collapses into a single question?</p>
-    </div>
-  ),
+    );
+  },
 
   // 3 — THE QUESTION
   () => {
@@ -332,16 +347,194 @@ const slides = [
     );
   },
 
-  // 4 — JOY OF BEING (name reveal, moved up)
+  // 4 — THE HYPOTHESIS
   () => (
     <div className="slide">
-      <h3>04 · The answer</h3>
-      <h1>J.O.B. = <span className="gold">Joy of Being.</span></h1>
-      <p style={{ fontSize: '1.5rem', marginTop: '1.5rem', lineHeight: 1.5 }}>Work paid us to be laborers, but never fully human &mdash; <strong>until now.</strong></p>
+      <h3>04 · The hypothesis</h3>
+      <h1>In order to build something new, we must first <span className="gold">become it.</span></h1>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1.5rem' }}>
+        <div className="card" style={{ padding: '1rem' }}>
+          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The individual</p>
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>Sovereign humans don&apos;t wait for a job description. They create theirs.</p>
+        </div>
+        <div className="card" style={{ padding: '1rem' }}>
+          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The company</p>
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>Command and control gives way to contribution and aliveness.</p>
+        </div>
+        <div className="card" style={{ padding: '1rem' }}>
+          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The economy</p>
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>A new economy built on what only humans can do.</p>
+        </div>
+        <div className="card" style={{ padding: '1rem' }}>
+          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The world</p>
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>The machines got faster. The humans got more human.</p>
+        </div>
+      </div>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontStyle: 'italic', fontSize: '1.15rem' }}>We&apos;re building the new model that makes the old model obsolete.</p>
     </div>
   ),
 
-  // 5 — THE TROJAN HORSE
+  // 5 — JOY OF BEING (name reveal)
+  () => (
+    <div className="slide">
+      <h3>05 · The solution</h3>
+      <h1>J.O.B. = <span className="gold">Joy of Being.</span></h1>
+      <p style={{ fontSize: '1.2rem', marginTop: '1.25rem', lineHeight: 1.6 }}>Not the joy of producing. Not the joy of performing. The joy of being fully, irreducibly yourself &mdash; and getting paid for the work that requires.</p>
+      <p style={{ fontSize: '1.3rem', marginTop: '1.25rem', lineHeight: 1.5, fontWeight: 700 }} className="gold">Imagine if AA, Meow Wolf, and Indeed had a baby.</p>
+      <p style={{ fontSize: '1.1rem', marginTop: '0.75rem', lineHeight: 1.6 }}>A self-replicating community that shows up because people need it badly enough to make it happen themselves. An experience so immersive it bypasses the professional identity entirely. A marketplace that creates demand for work that doesn&apos;t exist yet.</p>
+      <p style={{ fontSize: '1.3rem', marginTop: '1.25rem', fontWeight: 700, textAlign: 'center' }} className="gold">That&apos;s J.O.B.</p>
+    </div>
+  ),
+
+  // 6 — THE STRATEGY
+  () => (
+    <div className="slide">
+      <h3>06 · The strategy</h3>
+      <h1>We&apos;re going to <span className="gold">model the new model.</span></h1>
+      <p style={{ fontSize: '1.1rem', marginTop: '0.75rem', lineHeight: 1.55 }}>J.O.B. is a new organizational form.</p>
+      <div className="two-col" style={{ marginTop: '1rem' }}>
+        <div className="card">
+          <h3 className="gold">Ask one unanswerable question.</h3>
+          <p>&ldquo;What happens when being human is the job?&rdquo; Every experiment seeks to answer it.</p>
+        </div>
+        <div className="card">
+          <h3 className="gold">Open infinite portals.</h3>
+          <p>Successful experiments become real, legible businesses on the outside &mdash; transforming humans on the inside.</p>
+        </div>
+        <div className="card">
+          <h3 className="gold">Feed what&apos;s alive. Compost the rest.</h3>
+          <p>Resources flow to whatever has the most energy. Whatever&apos;s losing energy goes back into the organism.</p>
+        </div>
+        <div className="card">
+          <h3 className="gold">Reward contribution beyond money.</h3>
+          <p>Your time, ideas, introductions, and presence are tracked, valued over time, and redeemed anywhere in the organism.</p>
+        </div>
+      </div>
+    </div>
+  ),
+
+  // 7 — THE STRUCTURE
+  () => {
+    const [openId, setOpenId] = useState(null);
+    const toggle = (id) => setOpenId(openId === id ? null : id);
+    const holdco = [
+      { id: 'pool', label: 'Investment Pool', desc: 'Community-owned capital via Wefunder / Reg CF equity crowdfunding. The people who believe in JOB own a piece of it.' },
+      { id: 'ops', label: 'Operations + Incubator', desc: 'The nervous system. Runs day-to-day operations and incubates new experiments. When something works, it graduates into its own SPV.' },
+      { id: 'spvs', label: 'SPV Subsidiaries', desc: 'Successful experiments become their own investable entities. Each SPV can raise independently while staying connected to the organism.', children: [
+        { id: 'nhr', label: 'New Human Resources SPV', desc: 'B2B offboarding-as-benefit. The revenue wedge.' },
+        { id: 'b30', label: 'Business 3.0 SPV', desc: 'Consulting IP and organizational transformation.' },
+        { id: 'msl', label: 'MagicShowLand SPV', desc: 'Physical immersive spaces \u2014 abandoned churches, castles, colleges.' },
+        { id: 'ms', label: 'Magic Shows SPV', desc: 'Experiential events. Corporate retreats, public gatherings, initiatory experiences.' },
+        { id: 'board', label: 'J.O.B. Board SPV', desc: 'A marketplace for things AI can\u2019t do.' },
+        { id: 'report', label: 'J.O.B. Report SPV', desc: 'AI contribution tracking engine. Attributes value beyond money across the organism.' },
+      ]},
+      { id: 'ext', label: 'External Investments', desc: 'The organism invests in member projects and aligned ventures, expanding the mycelial network.', children: [
+        { id: 'spirit', label: 'SpiritTech SPV', desc: 'Technology that serves the human spirit.' },
+        { id: 'immersive', label: 'Immersive Centers SPV', desc: 'Spaces designed for transformation.' },
+      ]},
+      { id: 'profits', label: 'Distributes Profits to Investors', desc: 'Profits flow back to community investors \u2014 the people who believed before it was obvious.' },
+    ];
+    const church = [
+      { id: 'doctrine', label: 'Doctrine & Sacrament', desc: 'Living doctrine. The Church, Sunday Night Live, elder-guided tracks, the initiatory journey.' },
+      { id: 'mutual', label: 'Public Benefit / Mutual Aid', desc: 'The organism takes care of its own. Community support, resource sharing, mutual aid networks.' },
+      { id: 'grants', label: 'Grants / MicroGrants', desc: 'Small bets on sovereign humans. The organism invests in the people it creates.' },
+      { id: 'ip', label: 'Church IP (licensed to HoldCo)', desc: 'Transformation methodology owned by the nonprofit, licensed to the HoldCo. Mission-side IP fuels commercial-side revenue.' },
+      { id: 'land', label: 'Holds Land', desc: 'Physical spaces owned by the nonprofit \u2014 sanctuaries, gathering spaces, future MagicShowLand locations.' },
+      { id: 'research', label: 'Research & Publication Arm', desc: 'Studying what happens when humans deprogram. Publishing findings. The organism documents its own evolution.' },
+    ];
+    const Row = ({ item, color }) => (
+      <div>
+        <div onClick={() => toggle(item.id)} style={{ padding: '0.45rem 0.65rem', border: `1px solid ${color}`, borderRadius: '8px', background: 'rgba(255,255,255,0.03)', cursor: 'pointer', fontSize: '0.82rem', fontWeight: 600 }}>
+          {item.label} {item.children ? '+' : ''}
+        </div>
+        {openId === item.id && (
+          <div style={{ padding: '0.35rem 0.65rem', fontSize: '0.78rem', color: 'var(--text-muted)', lineHeight: 1.4, opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>
+            {item.desc}
+            {item.children && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', marginTop: '0.35rem' }}>
+                {item.children.map(c => (
+                  <div key={c.id}>
+                    <div onClick={(e) => { e.stopPropagation(); toggle(c.id); }} style={{ padding: '0.35rem 0.55rem', border: `1px solid ${color}`, borderRadius: '6px', background: 'rgba(255,255,255,0.02)', cursor: 'pointer', fontSize: '0.78rem', fontWeight: 600 }}>{c.label}</div>
+                    {openId === c.id && <div style={{ padding: '0.25rem 0.55rem', fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.4, opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>{c.desc}</div>}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    );
+    return (
+      <div className="slide">
+        <h3>07 · The structure</h3>
+        <h1>Two entities, <span className="gold">one organism.</span></h1>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div style={{ background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '1.5rem', fontWeight: 800 }}>J.O.B.</div>
+          <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>The Joy of Being</div>
+          <div style={{ fontSize: '0.8rem', fontStyle: 'italic', color: 'var(--gold)', marginBottom: '0.4rem' }}>&ldquo;What happens when being human is the job?&rdquo;</div>
+          <div style={{ display: 'flex', gap: '1rem', width: '100%' }}>
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <div style={{ width: '2px', height: '20px', background: 'var(--purple)', opacity: 0.6 }} />
+              <div
+                onClick={() => toggle('holdco')}
+                style={{ width: '100%', padding: '0.6rem 0.75rem', border: '1px solid var(--purple)', borderRadius: '8px', background: 'rgba(139,92,246,0.08)', cursor: 'pointer', marginBottom: '0.4rem' }}
+              >
+                <div style={{ fontWeight: 700, fontSize: '1rem' }}>For-Profit HoldCo</div>
+                <div style={{ fontSize: '0.7rem', color: 'var(--purple)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '0.15rem' }}>Sustainability Engine</div>
+                {openId === 'holdco' && (
+                  <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '0.4rem', lineHeight: 1.4, opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>The commercial arm. Houses investable subsidiaries (SPVs), runs operations, and distributes profits to investors &mdash; without compromising the mission held by the nonprofit.</p>
+                )}
+              </div>
+              <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                {holdco.map(item => <Row key={item.id} item={item} color="rgba(139,92,246,0.25)" />)}
+              </div>
+            </div>
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <div style={{ width: '2px', height: '20px', background: 'var(--teal)', opacity: 0.6 }} />
+              <div
+                onClick={() => toggle('church')}
+                style={{ width: '100%', padding: '0.6rem 0.75rem', border: '1px solid var(--teal)', borderRadius: '8px', background: 'rgba(45,212,191,0.08)', cursor: 'pointer', marginBottom: '0.4rem' }}
+              >
+                <div style={{ fontWeight: 700, fontSize: '1rem' }}>Nonprofit 508(c)(1)(a)</div>
+                <div style={{ fontSize: '0.7rem', color: 'var(--teal)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '0.15rem' }}>Mission Guardian</div>
+                {openId === 'church' && (
+                  <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '0.4rem', lineHeight: 1.4, opacity: 0, animation: 'fadeIn 0.3s ease forwards' }}>The soul of the organism. A religious nonprofit that holds the mission, doctrine, and community functions. Protected by a purpose trust (Patagonia model) so the mission can never be sold or corrupted.</p>
+                )}
+              </div>
+              <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                {church.map(item => <Row key={item.id} item={item} color="rgba(45,212,191,0.25)" />)}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  },
+
+  // 8 — THE FIRST PORTAL
+  () => (
+    <div className="slide">
+      <h3>08 · The first portal</h3>
+      <h1>J.O.B. is the <span className="gold">New Human Resources.</span></h1>
+      <p style={{ fontSize: '1.15rem', marginTop: '1.25rem', lineHeight: 1.65 }}>You don&apos;t have to look them in the eye and feel like you failed them. HR has always wanted to do the right thing. Now there&apos;s something right to do.</p>
+      <p style={{ fontSize: '1.15rem', marginTop: '1rem', lineHeight: 1.65 }}>Severance. Outplacement. EAP. It&apos;s a line item with no ROI and no one inside the company proud of how they spent it. The budget already exists. We&apos;re just the first honest use of it.</p>
+      <p style={{ fontSize: '1.25rem', marginTop: '1.25rem', lineHeight: 1.55, fontStyle: 'italic', textAlign: 'center' }} className="gold">The new model needs a wedge. A place where the old world&apos;s money meets the new world&apos;s work.</p>
+    </div>
+  ),
+
+  // 9 — THE PASSAGE
+  () => (
+    <div className="slide">
+      <h3>09 · The passage</h3>
+      <h1>Every portal leads to <span className="gold">one passage.</span></h1>
+      <p style={{ fontSize: '1.15rem', marginTop: '1.25rem', lineHeight: 1.65 }}>It doesn&apos;t matter how you found us. The corporate offboarding. The retreat. The leadership program. The job board. Every door looks different on the outside.</p>
+      <p style={{ fontSize: '1.25rem', marginTop: '1rem', lineHeight: 1.55, fontWeight: 700 }} className="gold">Inside, the work is always the same.</p>
+      <p style={{ fontSize: '1.15rem', marginTop: '1rem', lineHeight: 1.65 }}>Grieve the old self. Deconstruct the old world. Wake the human underneath. Discover what only you can do. Build from there.</p>
+      <p style={{ fontSize: '1.15rem', marginTop: '1.25rem', lineHeight: 1.55, fontStyle: 'italic', textAlign: 'center' }}>The rite of passage the old economy never had time for. J.O.B. makes it the whole point.</p>
+    </div>
+  ),
+
+  // 10 — THE TROJAN HORSE
   () => {
     const [showPhaseTwo, setShowPhaseTwo] = useState(false);
     const thStyle = { textAlign: 'left', padding: '0.6rem 0.75rem', borderBottom: '1px solid var(--border)', color: 'var(--text-muted)', fontWeight: 600, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' };
@@ -439,53 +632,25 @@ const slides = [
     </div>
   ),
 
-  // 7 — J.O.B.
-  () => (
-    <div className="slide">
-      <h3>07 · J.O.B.</h3>
-      <p style={{ fontSize: '1.15rem', marginTop: '0.75rem', lineHeight: 1.55 }}>In the short term, J.O.B. is the &ldquo;New Human&rdquo; Resources. <strong>The Transition Company.</strong> In the long term, we become the infrastructure for the new human economy.</p>
-      <p style={{ fontSize: '1.15rem', marginTop: '1rem', lineHeight: 1.55 }}>Our strategy is simple:</p>
-      <div className="two-col" style={{ marginTop: '0.75rem' }}>
-        <div className="card">
-          <h3 className="gold">One guiding question</h3>
-          <p>What happens when being human is the job?</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">Many doors in</h3>
-          <p>Infinite ways to explore the question.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">One living infrastructure</h3>
-          <p>The question doesn&apos;t just get asked &mdash; it gets built.</p>
-        </div>
-        <div className="card">
-          <h3 className="gold">One answer that keeps changing</h3>
-          <p>Aliveness is the KPI, not completion.</p>
-        </div>
-      </div>
-      <p style={{ marginTop: '1.25rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.35rem', fontWeight: 700, lineHeight: 1.35 }} className="gold">The organism succeeds when people leave more human than when they arrived.</p>
-    </div>
-  ),
-
-  // 6 — GIVE PEOPLE A NEW JOB
-  () => (
-    <div className="slide">
-      <h3>08 · The solution</h3>
-      <h1>Give people <span className="gold">a new job.</span></h1>
-      <p style={{ fontSize: '1.3rem', marginTop: '1.25rem', lineHeight: 1.55 }}>Our new job is to do the inner transformation work of fully becoming ourselves.</p>
-      <p style={{ fontSize: '1.3rem', marginTop: '1rem', lineHeight: 1.55 }}>This isn&apos;t charity or a nice-to-have &mdash; it&apos;s <strong>the precondition for building a new model entirely.</strong></p>
-      <p style={{ marginTop: '1.5rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.55rem', fontWeight: 700, lineHeight: 1.35 }} className="gold">And make it fun for fuck&apos;s sake.</p>
-    </div>
-  ),
-
-  // 7 — TEAM (moved from end)
+  // 7 — TEAM
   () => (
     <div className="slide">
       <h3>09 · Team</h3>
       <h1>Big idea and big implementation experts.</h1>
       <div className="two-col">
         <div className="card">
-          <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)', marginBottom: '0.5rem' }}>Pam Kosanke</h3>
+          <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)', marginBottom: '0.15rem' }}>Nicole Ayres</h3>
+          <p style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', fontWeight: 700, marginBottom: '0.5rem' }}>The Visionary Architect</p>
+          <ul>
+            <li>Bootstrapped Jumpsuit to $4M/yr with 0 funding, 0 paid ads, and 0 employees</li>
+            <li>Future of Work AI platform acquired in 2024 by Chief Outsiders</li>
+            <li>Co-visionary: Business 3.0 + the RCO</li>
+            <li>Building J.O.B. in real time with AI</li>
+          </ul>
+        </div>
+        <div className="card">
+          <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)', marginBottom: '0.15rem' }}>Pam Kosanke</h3>
+          <p style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', fontWeight: 700, marginBottom: '0.5rem' }}>The Visionary Scaler</p>
           <ul>
             <li>Former CRO, EOS Worldwide &mdash; $145M revenue, 800+ implementers</li>
             <li>Unified 700+ independent brands globally</li>
@@ -493,109 +658,13 @@ const slides = [
             <li>6× world champion, Team USA</li>
           </ul>
         </div>
-        <div className="card">
-          <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)', marginBottom: '0.5rem' }}>Nicole Ayres</h3>
-          <ul>
-            <li>Jumpsuit &mdash; bootstrapped to $4M/yr, <strong>zero employees</strong></li>
-            <li>Jauntboards &mdash; Future of Work platform acquired in 2024 by Chief Outsiders</li>
-            <li>Co-visionary: Business 3.0 + the RCO</li>
-            <li><strong>2,000+ Jumpsuiters</strong> network &mdash; running a B3.0 company for 7 years before it had a name</li>
-            <li>Building J.O.B. in real time with AI</li>
-          </ul>
-        </div>
       </div>
     </div>
   ),
 
   // 8 — THE RCO
-  () => (
-    <div className="slide">
-      <h3>10 · What J.O.B. is</h3>
-      <h1>A Business 3.0 company.<br/>And the first RCO in the US.</h1>
-      <p style={{ marginBottom: '0.75rem' }}>
-        <strong>Business 3.0</strong> is the philosophy — a new paradigm for organizing companies around aliveness, contribution, and regeneration. <strong>The RCO</strong> (Regenerative Community Organism) is the structure that philosophy produced. <strong>J.O.B.</strong> is where we prove both — and become the vehicle that spreads them throughout the world.
-      </p>
-      <div className="two-col" style={{ marginTop: '0.5rem' }}>
-        <div className="card">
-          <h3>It starts with a question</h3>
-          <p>&ldquo;What happens when being human is the job?&rdquo; Every product, every hire, every experiment answers it.</p>
-        </div>
-        <div className="card">
-          <h3>Aliveness is the KPI</h3>
-          <p>Resources flow to whatever has the most energy. What stops serving the question gets composted.</p>
-        </div>
-        <div className="card">
-          <h3>Living organism, not a machine</h3>
-          <p>The organism adapts. It breathes. It grows what works and releases what doesn&apos;t.</p>
-        </div>
-        <div className="card">
-          <h3>Tracks value beyond capital</h3>
-          <p>Money is one input. So is time, code, introductions, presence, relationships. All of it tracked. All of it honored.</p>
-        </div>
-      </div>
-      <p style={{ marginTop: '0.85rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic' }} className="gold">
-        The future company doesn&apos;t look like a company at all. It looks like a decentralized network and living system.
-      </p>
-    </div>
-  ),
 
-  // 9 — STRUCTURE (iframe)
-  () => (
-    <div className="slide">
-      <h3>11 · The structure</h3>
-      <h1>Two entities, one organism.</h1>
-      <p style={{ marginBottom: '0.5rem' }}>The RCO introduces a new model that still fits in the old world: a nonprofit Church that holds the question, and a C-Corp HoldCo that houses the experiments, SPVs, and LLCs answering it &mdash; and distributes profits.</p>
-      <iframe
-        src="https://rco-explorer.vercel.app/"
-        title="J.O.B. RCO Structure — interactive"
-        style={{
-          width: '100%',
-          height: '52vh',
-          border: '1px solid rgba(139,92,246,0.3)',
-          borderRadius: '8px',
-          background: '#0a0a0a',
-          marginTop: '0.25rem',
-        }}
-      />
-      <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)' }}>Click any row to explore. Live at rco-explorer.vercel.app.</p>
-    </div>
-  ),
 
-  // 10 — EXPERIMENTS
-  () => (
-    <div className="slide">
-      <h3>12 · Experiments</h3>
-      <h1><span className="gold">What happens when being human is the job?</span></h1>
-      <p>Everything we do is in service of the question. We build with curiosity towards it &mdash; the ideas that have energy get resources, the ones that lose energy get composted. The HoldCo decides which experiments to nurture into profitable SPVs and LLCs.</p>
-      <p style={{ marginTop: '0.85rem', marginBottom: '0.25rem', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', fontWeight: 700 }}>Current experiments</p>
-      <div className="three-col" style={{ marginTop: '0.25rem' }}>
-        <div className="card" style={{ borderColor: 'var(--purple)' }}>
-          <h3 style={{ color: 'var(--text)' }}>★ New Human Resources <span style={{ fontSize: '0.65rem', fontWeight: 600, background: 'var(--iridescent)', color: 'var(--bg)', padding: '0.15rem 0.4rem', borderRadius: '4px', marginLeft: '0.3rem', WebkitBackgroundClip: 'padding-box', WebkitTextFillColor: 'var(--bg)' }}>WEDGE · LIVE</span></h3>
-          <p>Corporate transition as initiation. The revenue engine.</p>
-        </div>
-        <div className="card">
-          <h3>The Church <span className="exp-pill">LIVE</span></h3>
-          <p>Grief container, initiatory passage, spiritual accountability.</p>
-        </div>
-        <div className="card">
-          <h3>Magic Shows <span className="exp-pill">LIVE</span></h3>
-          <p>Psychedelic-adjacent journeys. Human magic rediscovered in days.</p>
-        </div>
-        <div className="card">
-          <h3>J.O.B. Board <span className="exp-pill exp-pill-dev">DEV</span></h3>
-          <p>Marketplace for human presence. 20% fee. AI can&apos;t do this work.</p>
-        </div>
-        <div className="card">
-          <h3>Business 3.0 <span className="exp-pill">LIVE</span></h3>
-          <p>Curriculum for regenerative company building. The what&apos;s next.</p>
-        </div>
-        <div className="card">
-          <h3>Transition Centers <span className="exp-pill exp-pill-dev">DEV</span></h3>
-          <p>Physical spaces in abandoned buildings. The room you walk into.</p>
-        </div>
-      </div>
-    </div>
-  ),
 
   // 11 — MEMBERSHIP ECONOMY (moved up)
   () => (
@@ -798,34 +867,6 @@ const slides = [
     </div>
   ),
 
-  // 18 — HOW IT FEELS
-  () => (
-    <div className="slide">
-      <h3>19 · How it feels</h3>
-      <h1>Imagine if AA, Meow Wolf, and Indeed had a baby.</h1>
-      <div className="three-col" style={{ marginTop: '0.75rem' }}>
-        <div className="card">
-          <h3>AA</h3>
-          <p>Nobody owns it. Nobody runs it. It just shows up &mdash; every day, in every city, in church basements and rented rooms &mdash; because people need it badly enough to make it happen themselves. <strong>J.O.B. transition groups will form the same way.</strong> Wherever the passage is happening, people will hold each other through it. The organism self-replicates because the need is real.</p>
-        </div>
-        <div className="card">
-          <h3>Meow Wolf</h3>
-          <p>You can&apos;t talk someone out of their professional identity. You can&apos;t workshop it away or coach it into submission. You have to surprise it. Our Magic Shows and Transition Centers are <strong>weird on purpose</strong> &mdash; immersive, playful, slightly disorienting. The professional self walks in. Something else walks out.</p>
-        </div>
-        <div className="card">
-          <h3>Indeed</h3>
-          <p>Indeed built the world&apos;s largest labor marketplace by leading with demand. <strong>We&apos;re doing the opposite: we&apos;re creating the supply.</strong> The new human jobs don&apos;t exist yet &mdash; you have to see them to want them. That&apos;s why every portal we build (Magic Shows, Transition Centers, the J.O.B. Board, job fairs) is really a <em>showroom for a self you haven&apos;t imagined yet</em>.</p>
-        </div>
-      </div>
-      <p style={{ marginTop: '0.85rem', textAlign: 'center', maxWidth: '100%', fontSize: '1.1rem', fontWeight: 600 }}>
-        People&apos;s minds are being blown by what AI can do. <span className="gold">The same thing is about to happen with humanity.</span>
-      </p>
-      <p style={{ marginTop: '0.3rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '0.95rem', color: 'var(--text-muted)' }}>Trickster economics. Play is the medicine. The joke is that it works.</p>
-    </div>
-  ),
-
-  // 19 — REVENUE CHART
-  RevenueChartSlide,
 
   // 20 — TAM
   () => (
