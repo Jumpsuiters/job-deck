@@ -9,15 +9,15 @@ import { supabase } from '../lib/supabase';
 
 const SEEDED_ENTRIES = [
   {
-    id: 'seed-pam',
-    who: 'Nicole',
-    description: 'Spent $100k on Telepathy Tapes ads for Jumpsuit. Made 5x ROI so far — but also met Pam Kosanke (I would have easily spent $100k just to meet her) and attracted the third RCO.',
+    id: 'seed-diane',
+    who: 'Diane',
+    description: 'Introduced Nicole to a CHRO at a Fortune 500 who\'s now piloting NHR for a 2,000-person transition.',
     category: 'Network',
     bucket: 'C',
-    points_min: 2000,
-    points_max: 3500,
-    explanation: 'Validated 5x ROI on the ad spend, plus two catalytic open loops: the Pam relationship and a third RCO attracted into orbit. No spreadsheet would have logged either.',
-    open_loop_reason: 'Pam became co-founder of J.O.B. and the enterprise sales pathway into CHROs. The third RCO is still unfolding. Full compounded value is yet to land.',
+    points_min: 2500,
+    points_max: 4000,
+    explanation: 'A single introduction that opened a potential six-figure enterprise contract. No invoice, no billable hours — just a relationship offered freely. This is the kind of value the old economy has no way to track.',
+    open_loop_reason: 'The pilot is still in negotiation. If it lands, this one introduction could become the highest-ROI contribution in the organism\'s history. The ledger keeps it alive until it compounds.',
   },
   {
     id: 'seed-sarah',
