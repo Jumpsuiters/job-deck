@@ -736,8 +736,6 @@ const slides = [
     </div>
   ),
 
-  // 12 — JOB REPORT INTERACTIVE (moved here from position 7)
-  JobReportSlide,
 
   // 13 — TROJAN HORSE / THE TRICK
   () => (
