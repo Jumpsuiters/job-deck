@@ -700,32 +700,32 @@ const slides = [
   // 16 — THE ASK
   () => (
     <div className="slide">
-      <h3>23 · The ask</h3>
-      <h1><span className="gold">$3&ndash;5M</span> seed. One check into the organism.</h1>
-      <p><strong>J.O.B. is the ultimate portfolio investment strategy.</strong> What you&apos;re seeing in this deck was built by three people. Now imagine a whole economy of brilliant humans &mdash; freshly liberated from their jobs &mdash; throwing themselves at the same question. You own a piece of everything they build.</p>
-      <p style={{ marginBottom: '0.75rem' }}>SAFE into the HoldCo. <strong>You&apos;re not getting equity in one experiment. You&apos;re getting equity in the system that holds all of them.</strong></p>
-      <div className="two-col" style={{ marginTop: '0.25rem' }}>
+      <h3>16 · The ask</h3>
+      <h1><span className="gold">$3&ndash;4M.</span> Two layers. One organism.</h1>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>The founding investors build the infrastructure. The community owns it with us.</p>
+      <div className="two-col" style={{ marginTop: '1rem' }}>
         <div className="card">
-          <h3>Where the $4M goes</h3>
-          <ul style={{ fontSize: '0.9rem' }}>
-            <li><strong>40% · $1.6M</strong> Team of 7 + delivery staff</li>
-            <li><strong>20% · $800K</strong> First Transition Center</li>
-            <li><strong>15% · $600K</strong> Platform &amp; tech &mdash; JOB Report, Board, Church</li>
-            <li><strong>15% · $600K</strong> GTM &mdash; enterprise sales, brand</li>
-            <li><strong>10% · $400K</strong> RCO formation + operating buffer</li>
+          <h3 className="gold">Founding Circle &middot; $2.5&ndash;3M</h3>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>Angel + philanthropic capital that makes the organism real.</p>
+          <ul style={{ fontSize: '0.85rem' }}>
+            <li><strong>NHR program build</strong> &mdash; curriculum, facilitators, delivery platform to support 2,000 layoffs</li>
+            <li><strong>JOB Report ledger</strong> &mdash; production OS for tracking and redeeming contribution</li>
+            <li><strong>All six experiments</strong> &mdash; working versions of NHR, B3.0, Magic Shows, JOB Board, JOB Church, MagicShowLand</li>
+            <li><strong>Entity formation</strong> &mdash; PPT, RCO, HoldCo, Church legally established</li>
+            <li><strong>Founder runway</strong> &mdash; Nicole + Pam full-time for 18&ndash;24 months</li>
+            <li><strong>Key hires</strong> &mdash; engineering, community, operations</li>
           </ul>
         </div>
         <div className="card">
-          <h3>What 24 months builds</h3>
-          <p style={{ fontSize: '0.9rem' }}>First 10 NHR enterprise deals. First Transition Center open. 3,000 humans through the program. 25 certified Guides running cohorts. The RCO formally structured &mdash; nonprofit, HoldCo, first SPVs. JOB Report live as the organism&apos;s operating system.</p>
-          <p style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>And the thing that doesn&apos;t fit in a milestone list: a community of people whose lives changed, who are now building the next layer of the organism because that&apos;s what happens when the passage is real.</p>
+          <h3 className="gold">Community Round &middot; $500K&ndash;1M</h3>
+          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>Wefunder. The people who believe in this own a piece of it.</p>
+          <ul style={{ fontSize: '0.85rem' }}>
+            <li><strong>Community ownership</strong> &mdash; members become investors, investors become members</li>
+            <li><strong>Working capital</strong> &mdash; fuel for the experiments as they come alive</li>
+            <li><strong>Signal</strong> &mdash; hundreds of people saying &ldquo;this matters&rdquo; with their wallets</li>
+          </ul>
+          <p style={{ fontSize: '0.85rem', marginTop: '0.5rem', fontStyle: 'italic' }}>You&apos;re not getting equity in one experiment. You&apos;re getting equity in the system that holds all of them.</p>
         </div>
-      </div>
-      <div className="card" style={{ marginTop: '0.85rem' }}>
-        <h3>The honest risk</h3>
-        <p style={{ fontSize: '0.9rem' }}>The RCO framing is unusual. The category doesn&apos;t exist yet. We know that.</p>
-        <p style={{ fontSize: '0.9rem' }}>Our mitigation is also our strategy: every conversation leads with New Human Resources &mdash; the wedge that already makes financial sense to a CHRO and a CFO. The organism reveals itself from there. People don&apos;t have to understand the whole thing to say yes to the part in front of them.</p>
-        <p style={{ fontSize: '0.9rem', fontStyle: 'italic' }} className="gold">That&apos;s not a workaround. That&apos;s the Trojan Horse working exactly as designed.</p>
       </div>
     </div>
   ),
