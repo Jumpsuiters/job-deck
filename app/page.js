@@ -20,17 +20,6 @@ const SEEDED_ENTRIES = [
     open_loop_reason: 'Pam became co-founder of J.O.B. and the enterprise sales pathway into CHROs. The third RCO is still unfolding. Full compounded value is yet to land.',
   },
   {
-    id: 'seed-levi',
-    who: 'Levi',
-    description: 'Built the JOB Board MVP on Claude — marketplace, auth, Stripe integration, 20% platform fee logic. 6 weeks solo.',
-    category: 'Build',
-    bucket: 'B',
-    points_min: 1800,
-    points_max: 2400,
-    explanation: 'Shipped a working marketplace end-to-end in 6 weeks. This is validated execution capital — the product is live and ready for supply.',
-    open_loop_reason: null,
-  },
-  {
     id: 'seed-sarah',
     who: 'Sarah',
     description: 'Showed up to Sunday Night Live for 8 weeks straight. Helped hold the container for the grief work.',
