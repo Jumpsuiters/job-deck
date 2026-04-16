@@ -343,8 +343,7 @@ const slides = [
         <div style={{ padding: '0.75rem 1rem', fontWeight: 700 }} className="gold">?</div>
         <div style={{ padding: '0.75rem 1rem', fontWeight: 700, borderLeft: '2px solid var(--gold)' }} className="gold">Holds the whole human through the transition</div>
       </div>
-      <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '1.1rem', lineHeight: 1.6 }}>You can&apos;t solve a fragmented human problem with a fragmented solution.</p>
-      <p style={{ marginTop: '0.75rem', textAlign: 'center', fontSize: '1.3rem', fontWeight: 700 }}>The gap isn&apos;t a product opportunity. It&apos;s a <span className="gold">civilizational one.</span></p>
+      <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '1.3rem', fontWeight: 700 }}>A fragmented human problem demands a <span className="gold">whole new kind of infrastructure.</span></p>
     </div>
   ),
 
