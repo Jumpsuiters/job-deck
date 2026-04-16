@@ -593,7 +593,33 @@ const slides = [
     </div>
   ),
 
-  // 10 — THE FIRST PORTAL
+  // 10 — THE MARKET
+  () => (
+    <div className="slide">
+      <h3>10 · The market</h3>
+      <h1>Remember those <span className="gold">fragments?</span></h1>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>Each one is already a massive industry. They just don&apos;t know they&apos;re pieces of the same puzzle.</p>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto' }}>
+        {[
+          ['$461B', 'Mental health & therapy', 'Holds your pain'],
+          ['$5.3B', 'Coaching', 'Holds your goals'],
+          ['$2.5B', 'Outplacement', 'Holds your resume'],
+          ['$739B', 'HR & recruiting', 'Holds your role'],
+          ['$222B', 'Wellness & retreats', 'Holds your body'],
+          ['$124B', 'Religion & spiritual orgs', 'Holds your spirit'],
+        ].map(([amount, industry, fragment], i) => (
+          <div key={i} style={{ padding: '0.65rem 0.75rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)', textAlign: 'center' }}>
+            <div className="gold" style={{ fontWeight: 700, fontSize: '1.3rem' }}>{amount}</div>
+            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>{industry}</div>
+            <div style={{ fontSize: '0.75rem', fontStyle: 'italic', marginTop: '0.15rem' }}>{fragment}</div>
+          </div>
+        ))}
+      </div>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.2rem', fontWeight: 700 }}>Total: <span className="gold">$1.5 trillion</span> spent treating symptoms. Zero spent <span className="gold">holding the whole human.</span></p>
+    </div>
+  ),
+
+  // 11 — THE FIRST PORTAL
   () => (
     <div className="slide">
       <h3>08 · The first portal</h3>
