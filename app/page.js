@@ -765,8 +765,7 @@ function CloseSlide({ onJoin }) {
       <h1>Your body will say yes before your mind understands it. Trust that. Welcome to 3.0.</h1>
       <p style={{ marginTop: '1.5rem' }}><strong className="gold">Welcome to the Joy of Being Company.</strong></p>
       <div className="cta-row">
-        <button className="waitlist-trigger" onClick={onJoin}>Join the Investor Waitlist</button>
-        <a href="https://donorbox.org/j-o-b-founding-member-donations" target="_blank" rel="noopener noreferrer" className="waitlist-trigger donate-btn">Invest Now with Church Donation (tax exempt)</a>
+        <button className="waitlist-trigger" onClick={onJoin}>Feed the Organism</button>
       </div>
     </div>
   );
@@ -811,8 +810,8 @@ function WaitlistModal({ onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal" onClick={e => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>&times;</button>
-        <h2>Join the Waitlist</h2>
-        <p>Be first to invest in the transition company.</p>
+        <h2>Feed the Organism</h2>
+        <p>Be the first to invest in the new human economy.</p>
         <form onSubmit={handleSubmit}>
           <div className="form-field">
             <label>Name *</label>
@@ -839,7 +838,7 @@ function WaitlistModal({ onClose }) {
             </select>
           </div>
           <button type="submit" className="waitlist-btn" disabled={status === 'submitting'}>
-            {status === 'submitting' ? 'Joining...' : status === 'error' ? 'Try again' : 'Join the Organism'}
+            {status === 'submitting' ? 'Joining...' : status === 'error' ? 'Try again' : 'Feed the Organism'}
           </button>
         </form>
       </div>
