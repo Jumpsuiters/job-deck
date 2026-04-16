@@ -281,7 +281,42 @@ const slides = [
     </div>
   ),
 
-  // 2 — THE PROBLEM
+  // 2 — BUCKY FULLER
+  () => (
+    <div className="slide" style={{ justifyContent: 'center', textAlign: 'center' }}>
+      <h1 style={{ fontSize: '2.4rem', lineHeight: 1.3, maxWidth: '720px', margin: '0 auto' }}>&ldquo;You never change things by fighting the existing reality. To change something, build a <span className="gold">new model</span> that makes the existing model obsolete.&rdquo;</h1>
+      <p style={{ marginTop: '1.5rem', fontSize: '1rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>&mdash; Buckminster Fuller</p>
+    </div>
+  ),
+
+  // 3 — THE OPPORTUNITY (was Hypothesis)
+  () => (
+    <div className="slide">
+      <h3>03 · The opportunity</h3>
+      <h1>In order to build something new, we must first <span className="gold">become it.</span></h1>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1.5rem' }}>
+        <div className="card" style={{ padding: '1rem' }}>
+          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The individual</p>
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>Sovereign humans don&apos;t wait for a job description. They create theirs.</p>
+        </div>
+        <div className="card" style={{ padding: '1rem' }}>
+          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The company</p>
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>Command and control gives way to contribution and aliveness.</p>
+        </div>
+        <div className="card" style={{ padding: '1rem' }}>
+          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The economy</p>
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>A new economy built on what only humans can do.</p>
+        </div>
+        <div className="card" style={{ padding: '1rem' }}>
+          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The world</p>
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>The machines got faster. The humans got more human.</p>
+        </div>
+      </div>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontStyle: 'italic', fontSize: '1.15rem' }}>We&apos;re building the new model that makes the existing model obsolete.</p>
+    </div>
+  ),
+
+  // 4 — THE PROBLEM
   () => {
     const [revealed, setRevealed] = useState(0);
     const mappings = [
@@ -346,33 +381,6 @@ const slides = [
       </div>
     );
   },
-
-  // 4 — THE HYPOTHESIS
-  () => (
-    <div className="slide">
-      <h3>04 · The hypothesis</h3>
-      <h1>In order to build something new, we must first <span className="gold">become it.</span></h1>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1.5rem' }}>
-        <div className="card" style={{ padding: '1rem' }}>
-          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The individual</p>
-          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>Sovereign humans don&apos;t wait for a job description. They create theirs.</p>
-        </div>
-        <div className="card" style={{ padding: '1rem' }}>
-          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The company</p>
-          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>Command and control gives way to contribution and aliveness.</p>
-        </div>
-        <div className="card" style={{ padding: '1rem' }}>
-          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The economy</p>
-          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>A new economy built on what only humans can do.</p>
-        </div>
-        <div className="card" style={{ padding: '1rem' }}>
-          <p style={{ fontWeight: 700, marginBottom: '0.3rem' }} className="gold">The world</p>
-          <p style={{ fontSize: '0.95rem', lineHeight: 1.5 }}>The machines got faster. The humans got more human.</p>
-        </div>
-      </div>
-      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontStyle: 'italic', fontSize: '1.15rem' }}>We&apos;re building the new model that makes the old model obsolete.</p>
-    </div>
-  ),
 
   // 5 — JOY OF BEING (name reveal)
   () => (
