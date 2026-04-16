@@ -466,7 +466,7 @@ const slides = [
       <div className="slide">
         <h3>07 · The structure</h3>
         <h1>Four layers, <span className="gold">one organism.</span></h1>
-        <p style={{ fontSize: '1rem', marginTop: '0.5rem', marginBottom: '1rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>To pull off a Trojan Horse at this scale, you need a structure the old world can&apos;t buy, break, or co-opt. Here&apos;s ours.</p>
+        <p style={{ fontSize: '1rem', marginTop: '0.5rem', marginBottom: '1rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>To pull off a Trojan Horse at this scale, you need a structure the old world can&apos;t buy, break, or co-opt. So we built one that works like nature.</p>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
 
           {/* J.O.B. */}
