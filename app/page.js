@@ -696,20 +696,20 @@ const slides = [
       <div className="two-col" style={{ marginTop: '0.75rem' }}>
         <div className="card">
           <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)', marginBottom: '0.15rem' }}>Nicole Ayres</h3>
-          <p style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', fontWeight: 700, marginBottom: '0.5rem' }}>The Visionary Architect</p>
+          <p style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', fontWeight: 700, marginBottom: '0.5rem' }}>Founder / The Question</p>
           <ul>
-            <li>Bootstrapped Jumpsuit to $4M/yr &mdash; 0 funding, 0 ads, 0 employees</li>
-            <li>Future of Work AI platform acquired 2024</li>
-            <li>Building J.O.B. in real time with AI</li>
+            <li>Built a $4M agency that runs itself &mdash; zero funding, zero employees. <em>She already proved the model.</em></li>
+            <li>Future of Work AI platform acquired 2024. <em>She sees what&apos;s coming before it arrives.</em></li>
+            <li>Building J.O.B. in real time with AI. <em>She doesn&apos;t pitch the future. She builds it.</em></li>
           </ul>
         </div>
         <div className="card">
           <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)', marginBottom: '0.15rem' }}>Pam Kosanke</h3>
-          <p style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', fontWeight: 700, marginBottom: '0.5rem' }}>The Visionary Scaler</p>
+          <p style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', fontWeight: 700, marginBottom: '0.5rem' }}>Founder / The Scale</p>
           <ul>
-            <li>Former CRO, EOS Worldwide &mdash; $145M revenue, 800+ implementers</li>
-            <li>Invented McDonald&apos;s breakfast dollar menu</li>
-            <li>6× world champion, Team USA</li>
+            <li>Former CRO, EOS Worldwide &mdash; $145M revenue, 800+ implementers. <em>She already knows how to scale an organism.</em></li>
+            <li>Invented McDonald&apos;s breakfast dollar menu. <em>She sees money where nobody&apos;s looking.</em></li>
+            <li>6× world champion, Team USA. <em>She doesn&apos;t stop.</em></li>
           </ul>
         </div>
       </div>
