@@ -724,7 +724,7 @@ const slides = [
             <li><strong>Working capital</strong> &mdash; fuel for the experiments as they come alive</li>
             <li><strong>Signal</strong> &mdash; hundreds of people saying &ldquo;this matters&rdquo; with their wallets</li>
           </ul>
-          <p style={{ fontSize: '0.85rem', marginTop: '0.5rem', fontStyle: 'italic' }}>You&apos;re not getting equity in one experiment. You&apos;re getting equity in the system that holds all of them.</p>
+          <p style={{ fontSize: '0.85rem', marginTop: '0.5rem', fontStyle: 'italic' }}>You&apos;re not getting equity in one experiment. You&apos;re getting equity in the system that holds all of them. The ones we have now and the ones the organism builds.</p>
         </div>
       </div>
     </div>
