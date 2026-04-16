@@ -328,10 +328,10 @@ const slides = [
       <p style={{ fontSize: '1.15rem', marginTop: '1rem', lineHeight: 1.6, textAlign: 'center' }}>AI is automating what people <em>do</em> &mdash; and now we have no idea who we <em>are</em>.</p>
       <div style={{ display: 'grid', gridTemplateColumns: '140px 1fr', gap: '0', marginTop: '1.5rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto', border: '1px solid var(--border)', borderRadius: '10px', overflow: 'hidden' }}>
         {[
-          ['Therapy', 'Treats the symptoms, not the structure'],
-          ['Coaching', 'Optimizes the old identity'],
-          ['Outplacement', 'Puts you back in the same box'],
-          ['Religion', 'Lost its hold on modern life'],
+          ['Therapy', 'Holds your pain. Ignores your purpose.'],
+          ['Coaching', 'Holds your goals. Ignores your soul.'],
+          ['Outplacement', 'Holds your resume. Ignores your identity.'],
+          ['Religion', 'Holds your spirit. Ignores your Monday.'],
         ].map(([label, desc], i) => (
           <div key={i} style={{ display: 'contents' }}>
             <div style={{ padding: '0.75rem 1rem', borderBottom: i < 3 ? '1px solid var(--border)' : 'none', color: 'var(--text-muted)', fontWeight: 600, background: 'rgba(255,255,255,0.02)' }}>{label}</div>
@@ -341,7 +341,7 @@ const slides = [
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: '140px 1fr', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto', marginTop: '0.5rem', border: '2px solid var(--gold)', borderRadius: '10px', overflow: 'hidden', background: 'rgba(201,168,76,0.08)' }}>
         <div style={{ padding: '0.75rem 1rem', fontWeight: 700 }} className="gold">?</div>
-        <div style={{ padding: '0.75rem 1rem', fontWeight: 700, borderLeft: '2px solid var(--gold)' }} className="gold">Holds the whole human through the transition</div>
+        <div style={{ padding: '0.75rem 1rem', fontWeight: 700, borderLeft: '2px solid var(--gold)' }} className="gold">Holds the whole human.</div>
       </div>
       <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '1.3rem', fontWeight: 700 }}>A fragmented human problem demands a <span className="gold">whole new kind of infrastructure.</span></p>
     </div>
