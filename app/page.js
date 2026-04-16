@@ -325,7 +325,7 @@ const slides = [
     <div className="slide">
       <h3>04 · The gap</h3>
       <h1>Nobody&apos;s building the <span className="gold">infrastructure for being human.</span></h1>
-      <p style={{ fontSize: '1.15rem', marginTop: '1rem', lineHeight: 1.6, textAlign: 'center' }}>AI is automating what people <em>do</em>. But no one is building infrastructure for what people <em>are</em>.</p>
+      <p style={{ fontSize: '1.15rem', marginTop: '1rem', lineHeight: 1.6, textAlign: 'center' }}>AI is automating what people <em>do</em> &mdash; and now we have no idea who we <em>are</em>.</p>
       <div style={{ display: 'grid', gridTemplateColumns: '140px 1fr', gap: '0', marginTop: '1.5rem', maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto', border: '1px solid var(--border)', borderRadius: '10px', overflow: 'hidden' }}>
         {[
           ['Therapy', 'Treats the symptoms, not the structure'],
@@ -343,7 +343,8 @@ const slides = [
         <div style={{ padding: '0.75rem 1rem', fontWeight: 700 }} className="gold">?</div>
         <div style={{ padding: '0.75rem 1rem', fontWeight: 700, borderLeft: '2px solid var(--gold)' }} className="gold">Holds the whole human through the transition</div>
       </div>
-      <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '1.3rem', fontWeight: 700 }}>The gap isn&apos;t a product opportunity. It&apos;s a <span className="gold">civilizational one.</span></p>
+      <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '1.1rem', lineHeight: 1.6 }}>You can&apos;t solve a fragmented human problem with a fragmented solution.</p>
+      <p style={{ marginTop: '0.75rem', textAlign: 'center', fontSize: '1.3rem', fontWeight: 700 }}>The gap isn&apos;t a product opportunity. It&apos;s a <span className="gold">civilizational one.</span></p>
     </div>
   ),
 
