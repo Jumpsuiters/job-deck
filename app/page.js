@@ -833,14 +833,14 @@ function WaitlistModal({ onClose }) {
       <div className="modal-overlay" onClick={onClose}>
         <div className="modal" onClick={e => e.stopPropagation()}>
           <button className="modal-close" onClick={onClose}>&times;</button>
-          <h2>Feed the Organism</h2>
-          <p style={{ marginBottom: '1.5rem' }}>Two doors. Same organism.</p>
+          <h2>There&apos;s a fork in the road.</h2>
+          <p style={{ marginBottom: '1.5rem' }}>Which path are you going to take?</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            <button className="waitlist-btn" onClick={() => setMode('ticket')} style={{ background: 'transparent', border: '1px solid var(--gold)', color: 'var(--gold)' }}>
-              Request a Golden Ticket to the Magic Show
-            </button>
             <button className="waitlist-btn" onClick={() => setMode('invest')}>
               Invest in Our Species
+            </button>
+            <button className="waitlist-btn" onClick={() => setMode('ticket')} style={{ background: 'var(--gold)', color: '#0a0a0a' }}>
+              Request a Golden Ticket to the Magic Show
             </button>
           </div>
         </div>
