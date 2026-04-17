@@ -758,19 +758,20 @@ const slides = [
 // CLOSE SLIDE + WAITLIST
 // ============================================================
 
-function CloseSlide({ onJoin }) {
+function CloseSlide({ onJoin, onTicket }) {
   return (
     <div className="slide close-slide">
       <h1 style={{ fontSize: '1.8rem', lineHeight: 1.5 }}>Some things can&apos;t be explained in a deck. <span className="gold">They must be experienced.</span></h1>
-      <div className="cta-row" style={{ marginTop: '2rem' }}>
+      <div className="cta-row" style={{ marginTop: '2rem', flexDirection: 'column', gap: '0.75rem' }}>
+        <button className="waitlist-trigger" onClick={onTicket} style={{ background: 'var(--gold)', color: '#0a0a0a', border: 'none' }}>Request a Golden Ticket to the Magic Show</button>
         <button className="waitlist-trigger" onClick={onJoin}>Feed the Organism</button>
       </div>
     </div>
   );
 }
 
-function WaitlistModal({ onClose }) {
-  const [mode, setMode] = useState(null); // null = choose, 'invest' or 'ticket'
+function WaitlistModal({ onClose, initialMode }) {
+  const [mode, setMode] = useState(initialMode || null);
   const [form, setForm] = useState({ name: '', email: '', phone: '', investment_level: '', why: '' });
   const [status, setStatus] = useState('idle');
 
@@ -924,6 +925,7 @@ function WaitlistModal({ onClose }) {
 export default function Deck() {
   const [current, setCurrent] = useState(0);
   const [showWaitlist, setShowWaitlist] = useState(false);
+  const [modalMode, setModalMode] = useState(null);
   const total = slides.length;
 
   const next = useCallback(() => setCurrent(c => Math.min(c + 1, total - 1)), [total]);
@@ -955,7 +957,7 @@ export default function Deck() {
       {slides.map((SlideContent, i) => (
         <div key={i} className={`slide-wrapper ${i === current ? 'active' : ''}`}>
           {i === lastIndex ? (
-            <CloseSlide onJoin={() => setShowWaitlist(true)} />
+            <CloseSlide onJoin={() => { setModalMode('invest'); setShowWaitlist(true); }} onTicket={() => { setModalMode('ticket'); setShowWaitlist(true); }} />
           ) : (
             <SlideContent />
           )}
@@ -979,7 +981,7 @@ export default function Deck() {
         </div>
       </div>
 
-      {showWaitlist && <WaitlistModal onClose={() => setShowWaitlist(false)} />}
+      {showWaitlist && <WaitlistModal onClose={() => { setShowWaitlist(false); setModalMode(null); }} initialMode={modalMode} />}
     </div>
   );
 }
