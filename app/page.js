@@ -249,7 +249,7 @@ const slides = [
         <p style={{ marginTop: '1rem' }}>The three systems that told us who to be &mdash; work, church, and school &mdash; are all collapsing. They disconnected us. Disembodied us. And no one knows who they are.</p>
         <p style={{ marginTop: '1rem' }}>So when AI takes every job that isn&apos;t human &mdash; and it will &mdash; what&apos;s left is the most important work there is. Because on the other side of this is a New Human Economy. One led by the most integrated, healed, alive versions of us.</p>
         <p style={{ marginTop: '1rem' }}>But in order to build something new, we must first become it.</p>
-        <p style={{ marginTop: '1rem' }}>We&apos;re raising a $3&ndash;5M seed. We&apos;re not betting on capitalism. <span className="gold" style={{ fontWeight: 700 }}>We&apos;re betting on a species.</span></p>
+        <p style={{ marginTop: '1rem' }}>We&apos;re raising as much as humanly possible. We&apos;re not betting on capitalism. <span className="gold" style={{ fontWeight: 700 }}>We&apos;re betting on a species.</span></p>
         <p style={{ marginTop: '1rem' }}>Being human is the job now. We&apos;re the first ones paying people to do it.</p>
       </div>
     </div>
