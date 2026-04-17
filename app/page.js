@@ -761,25 +761,20 @@ const slides = [
 function CloseSlide({ onJoin }) {
   return (
     <div className="slide close-slide">
-      <p className="big-quote" style={{ fontSize: '1.4rem' }}>&ldquo;Trickster is the creative idiot, the wise fool, the mythic embodiment of ambiguity and paradox.&rdquo;</p>
-      <p className="attribution" style={{ marginBottom: '2rem' }}>&mdash; Lewis Hyde</p>
-      <h1>The only job left is to be human. <span className="gold">This is the company that makes it possible.</span></h1>
-      <div className="cta-row">
+      <h1 style={{ fontSize: '1.8rem', lineHeight: 1.5 }}>Some things can&apos;t be explained in a deck. <span className="gold">They must be experienced.</span></h1>
+      <div className="cta-row" style={{ marginTop: '2rem' }}>
         <button className="waitlist-trigger" onClick={onJoin}>Feed the Organism</button>
-      </div>
-      <p style={{ marginTop: '2rem', fontSize: '0.95rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>Some things can&apos;t be explained in a deck. They have to be felt.</p>
-      <div className="cta-row" style={{ marginTop: '0.75rem' }}>
-        <a href="https://magic-show-pi.vercel.app" target="_blank" rel="noopener noreferrer" className="waitlist-trigger" style={{ background: 'transparent', border: '1px solid var(--gold)', color: 'var(--gold)' }}>Request a Golden Ticket</a>
       </div>
     </div>
   );
 }
 
 function WaitlistModal({ onClose }) {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', investment_level: '' });
+  const [mode, setMode] = useState(null); // null = choose, 'invest' or 'ticket'
+  const [form, setForm] = useState({ name: '', email: '', phone: '', investment_level: '', why: '' });
   const [status, setStatus] = useState('idle');
 
-  async function handleSubmit(e) {
+  async function handleInvestSubmit(e) {
     e.preventDefault();
     setStatus('submitting');
     const { error } = await supabase.from('deck_waitlist').insert([{
@@ -788,12 +783,20 @@ function WaitlistModal({ onClose }) {
       phone: form.phone || null,
       investment_level: form.investment_level || null,
     }]);
-    if (error) {
-      console.error(error);
-      setStatus('error');
-    } else {
-      setStatus('success');
-    }
+    if (error) { console.error(error); setStatus('error'); }
+    else { setStatus('success'); }
+  }
+
+  async function handleTicketSubmit(e) {
+    e.preventDefault();
+    setStatus('submitting');
+    const { error } = await supabase.from('golden_tickets').insert([{
+      name: form.name,
+      email: form.email,
+      why: form.why || null,
+    }]);
+    if (error) { console.error(error); setStatus('error'); }
+    else { setStatus('ticket-success'); }
   }
 
   if (status === 'success') {
@@ -810,13 +813,80 @@ function WaitlistModal({ onClose }) {
     );
   }
 
+  if (status === 'ticket-success') {
+    return (
+      <div className="modal-overlay" onClick={onClose}>
+        <div className="modal" onClick={e => e.stopPropagation()}>
+          <button className="modal-close" onClick={onClose}>&times;</button>
+          <div className="form-success">
+            <h2>We see you.</h2>
+            <p>If it&apos;s meant to be, you&apos;ll hear from us.</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Choose mode
+  if (!mode) {
+    return (
+      <div className="modal-overlay" onClick={onClose}>
+        <div className="modal" onClick={e => e.stopPropagation()}>
+          <button className="modal-close" onClick={onClose}>&times;</button>
+          <h2>Feed the Organism</h2>
+          <p style={{ marginBottom: '1.5rem' }}>Two doors. Same organism.</p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <button className="waitlist-btn" onClick={() => setMode('ticket')} style={{ background: 'transparent', border: '1px solid var(--gold)', color: 'var(--gold)' }}>
+              Request a Golden Ticket to the Magic Show
+            </button>
+            <button className="waitlist-btn" onClick={() => setMode('invest')}>
+              Invest in Our Species
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Golden Ticket form
+  if (mode === 'ticket') {
+    return (
+      <div className="modal-overlay" onClick={onClose}>
+        <div className="modal" onClick={e => e.stopPropagation()}>
+          <button className="modal-close" onClick={onClose}>&times;</button>
+          <h2 style={{ color: 'var(--gold)' }}>Request a Golden Ticket</h2>
+          <p>Some things can&apos;t be explained in a deck.</p>
+          <form onSubmit={handleTicketSubmit}>
+            <div className="form-field">
+              <label>Name *</label>
+              <input type="text" required value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} />
+            </div>
+            <div className="form-field">
+              <label>Email *</label>
+              <input type="email" required value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} />
+            </div>
+            <div className="form-field">
+              <label>Why do you want in?</label>
+              <textarea rows={3} value={form.why} onChange={e => setForm(f => ({ ...f, why: e.target.value }))} style={{ resize: 'vertical' }} />
+            </div>
+            <button type="submit" className="waitlist-btn" disabled={status === 'submitting'} style={{ background: 'transparent', border: '1px solid var(--gold)', color: 'var(--gold)' }}>
+              {status === 'submitting' ? 'Requesting...' : status === 'error' ? 'Try again' : 'Request a Golden Ticket'}
+            </button>
+          </form>
+          <button onClick={() => { setMode(null); setStatus('idle'); }} style={{ marginTop: '0.75rem', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.8rem' }}>&larr; Back</button>
+        </div>
+      </div>
+    );
+  }
+
+  // Invest form
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal" onClick={e => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>&times;</button>
-        <h2>Feed the Organism</h2>
+        <h2>Invest in Our Species</h2>
         <p>Be the first to invest in the new human economy.</p>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleInvestSubmit}>
           <div className="form-field">
             <label>Name *</label>
             <input type="text" required value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} />
@@ -842,9 +912,10 @@ function WaitlistModal({ onClose }) {
             </select>
           </div>
           <button type="submit" className="waitlist-btn" disabled={status === 'submitting'}>
-            {status === 'submitting' ? 'Joining...' : status === 'error' ? 'Try again' : 'Feed the Organism'}
+            {status === 'submitting' ? 'Joining...' : status === 'error' ? 'Try again' : 'Invest in Our Species'}
           </button>
         </form>
+        <button onClick={() => { setMode(null); setStatus('idle'); }} style={{ marginTop: '0.75rem', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.8rem' }}>&larr; Back</button>
       </div>
     </div>
   );
