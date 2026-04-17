@@ -763,7 +763,7 @@ function CloseSlide({ onJoin, onTicket }) {
     <div className="slide close-slide">
       <h1 style={{ fontSize: '1.8rem', lineHeight: 1.5 }}>Some things can&apos;t be explained in a deck. <span className="gold">They must be experienced.</span></h1>
       <div className="cta-row" style={{ marginTop: '2rem', flexDirection: 'column', gap: '0.75rem' }}>
-        <button className="waitlist-trigger" onClick={onTicket} style={{ background: 'var(--gold)', color: '#0a0a0a', border: 'none' }}>Request a Golden Ticket to the Magic Show</button>
+        <button className="waitlist-trigger gold-btn" onClick={onTicket}>Request a Golden Ticket to the Magic Show</button>
         <button className="waitlist-trigger" onClick={onJoin}>Feed the Organism</button>
       </div>
     </div>
@@ -840,7 +840,7 @@ function WaitlistModal({ onClose, initialMode }) {
             <button className="waitlist-btn" onClick={() => setMode('invest')}>
               Invest in Our Species
             </button>
-            <button className="waitlist-btn" onClick={() => setMode('ticket')} style={{ background: 'var(--gold)', color: '#0a0a0a' }}>
+            <button className="waitlist-btn gold-btn" onClick={() => setMode('ticket')}>
               Request a Golden Ticket to the Magic Show
             </button>
           </div>
@@ -870,7 +870,7 @@ function WaitlistModal({ onClose, initialMode }) {
               <label>Why do you want in?</label>
               <textarea rows={3} value={form.why} onChange={e => setForm(f => ({ ...f, why: e.target.value }))} style={{ resize: 'vertical' }} />
             </div>
-            <button type="submit" className="waitlist-btn" disabled={status === 'submitting'} style={{ background: 'var(--gold)', border: 'none', color: '#0a0a0a' }}>
+            <button type="submit" className="waitlist-btn gold-btn" disabled={status === 'submitting'}>
               {status === 'submitting' ? 'Requesting...' : status === 'error' ? 'Try again' : 'Request a Golden Ticket'}
             </button>
           </form>
