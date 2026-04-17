@@ -13,7 +13,7 @@ export default function Admin() {
 
   function handleLogin(e) {
     e.preventDefault();
-    if (password === 'joborganism') {
+    if (password === 'P@cM@n123') {
       setAuthed(true);
     }
   }
