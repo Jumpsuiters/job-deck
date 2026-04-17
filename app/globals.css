@@ -629,9 +629,9 @@ a { color: inherit; text-decoration: none; }
 .waitlist-btn:hover { opacity: 0.9; }
 .waitlist-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 .waitlist-btn.gold-btn {
-  background: var(--gold);
-  color: #0a0a0a;
-  -webkit-text-fill-color: #0a0a0a;
+  background: #c9a84c !important;
+  color: #0a0a0a !important;
+  -webkit-text-fill-color: #0a0a0a !important;
 }
 
 .waitlist-trigger {
@@ -654,9 +654,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .waitlist-trigger.gold-btn {
-  background: var(--gold);
-  color: #0a0a0a;
-  -webkit-text-fill-color: #0a0a0a;
+  background: #c9a84c !important;
+  color: #0a0a0a !important;
+  -webkit-text-fill-color: #0a0a0a !important;
 }
 
 .donate-btn {
