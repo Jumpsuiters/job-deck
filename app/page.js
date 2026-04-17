@@ -767,6 +767,10 @@ function CloseSlide({ onJoin }) {
       <div className="cta-row">
         <button className="waitlist-trigger" onClick={onJoin}>Feed the Organism</button>
       </div>
+      <p style={{ marginTop: '2rem', fontSize: '0.95rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>Some things can&apos;t be explained in a deck. They have to be felt.</p>
+      <div className="cta-row" style={{ marginTop: '0.75rem' }}>
+        <a href="https://magic-show-pi.vercel.app" target="_blank" rel="noopener noreferrer" className="waitlist-trigger" style={{ background: 'transparent', border: '1px solid var(--gold)', color: 'var(--gold)' }}>Request a Golden Ticket</a>
+      </div>
     </div>
   );
 }
