@@ -442,7 +442,7 @@ const slides = [
       { id: 'doctrine', label: 'Doctrine + Sacrament', desc: 'The sacred container. Sunday Night Live, elder-guided tracks, the initiatory journey. Living doctrine that evolves with the community, not dogma handed down. The deprogramming is the root \u2014 everything else is a surface for that transformation to show up.' },
       { id: 'mutual', label: 'Mutual Aid', desc: 'The organism takes care of its own. Community support, resource sharing, mutual aid networks. When a member is in crisis, the Church responds \u2014 not with a form, but with presence. Humans helping humans, the original technology.' },
       { id: 'grants', label: 'Grants + MicroGrants', desc: 'Small bets on sovereign humans. Funding for members who are building something from the inside out. The organism invests in the people it creates \u2014 before the market would.' },
-      { id: 'ip', label: 'Church IP (licensed to HoldCo)', desc: 'The transformation methodology, curriculum, and practices \u2014 owned by the nonprofit, licensed to the HoldCo. This is the bridge: mission-side IP fuels commercial-side revenue without the mission losing control. The Perpetual Purpose Trust ensures it stays that way.' },
+      { id: 'ip', label: 'Church IP (licensed to HoldCo)', desc: 'The transformation methodology, curriculum, and practices \u2014 owned by the nonprofit, licensed to the HoldCo. This is the bridge: mission-side IP fuels commercial-side revenue without the mission losing control. The RCO agreement ensures it stays that way.' },
       { id: 'land', label: 'Holds Land', desc: 'Physical spaces owned by the nonprofit \u2014 sanctuaries, gathering spaces, future MagicShowLand locations. Land held in trust for the community, not for profit. These are the rooms the organism builds in.' },
       { id: 'research', label: 'Research + Publication', desc: 'Studying what happens when humans deprogram. Publishing findings. Building the evidence base for a new way of being. The organism documents its own evolution so others can learn from it.' },
     ];
@@ -475,7 +475,7 @@ const slides = [
         <h3>11 · The structure</h3>
         <h1><span className="gold">Incorruptible</span> by design.</h1>
         <p style={{ fontSize: '1rem', marginTop: '0.5rem', marginBottom: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>A game this big needs a structure the old world can&apos;t swallow. Can&apos;t acquire it. Can&apos;t extract from it. Can&apos;t shut it down. So we didn&apos;t build a company. We grew an organism. JOB is a Business 3.0 entity and the first RCO in the United States.</p>
-        <p style={{ fontSize: '0.85rem', marginBottom: '1rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Every organism has a lifecycle. JOB is no different. It&apos;s born. It grows. It fruits. And when the question is answered &mdash; or no longer needs asking &mdash; it composts itself entirely. On purpose. The trust guarantees the full arc. When the cycle completes, IP becomes commons, capital returns to members, and the infrastructure becomes soil for whatever grows next. <span style={{ color: 'var(--gold)' }}>The organism knows its JOB.</span></p>
+        <p style={{ fontSize: '0.85rem', marginBottom: '1rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Every organism has a lifecycle. JOB is no different. It&apos;s born. It grows. It fruits. And when the question is answered &mdash; or no longer needs asking &mdash; it composts itself entirely. On purpose. The RCO agreement guarantees the full arc. When the cycle completes, IP becomes commons, capital returns to members, and the infrastructure becomes soil for whatever grows next. <span style={{ color: 'var(--gold)' }}>The organism knows its JOB.</span></p>
         <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', textAlign: 'center', marginBottom: '0.5rem', opacity: 0.6 }}>&#9758; Click any layer to explore</p>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
 
@@ -483,13 +483,13 @@ const slides = [
           <div style={{ background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontSize: '1.4rem', fontWeight: 800 }}>J.O.B.</div>
           <div style={{ fontSize: '1.1rem', fontWeight: 700, fontStyle: 'italic', color: 'var(--gold)', marginBottom: '0.3rem' }}>&ldquo;What happens when being human is the job?&rdquo;</div>
 
-          {/* LAYER 1: PPT */}
+          {/* LAYER 1: RCO Agreement */}
           <div style={connector('#c9a84c')} />
           <div onClick={() => toggle('ppt')} style={layerBox('#c9a84c', 'rgba(201,168,76,0.08)')}>
-            <div style={layerLabel}>Perpetual Purpose Trust</div>
+            <div style={layerLabel}>RCO Agreement</div>
             <div style={layerRole('#c9a84c')}>Protects the Purpose</div>
             {isOpen('ppt') && (
-              <p style={layerDesc}>Owns the HoldCo. The trustee&apos;s legal obligation is to the guiding question &mdash; not to founders, not to shareholders. The mission can never be sold, acquired, or diluted. This is why investors can trust that their capital serves something permanent.</p>
+              <p style={layerDesc}>Binds the nonprofit and for-profit together. The agreement&apos;s legal obligation is to the guiding question &mdash; not to founders, not to shareholders. The mission can never be sold, acquired, or diluted. And when the question is no longer alive or relevant, the agreement guides the organism to compost itself on purpose.</p>
             )}
           </div>
 
@@ -547,7 +547,7 @@ const slides = [
 
           {/* Summary line */}
           <p style={{ marginTop: '0.6rem', fontSize: '0.8rem', color: 'var(--text-muted)', textAlign: 'center', lineHeight: 1.5 }}>
-            The <span style={{ color: '#c9a84c' }}>Trust</span> protects the purpose. The <span style={{ color: 'var(--pink)' }}>RCO</span> produces the value. The <span style={{ color: 'var(--purple)' }}>HoldCo</span> drives the business. The <span style={{ color: 'var(--teal)' }}>Church</span> sustains the soul.
+            The <span style={{ color: '#c9a84c' }}>Agreement</span> protects the purpose. The <span style={{ color: 'var(--pink)' }}>RCO</span> produces the value. The <span style={{ color: 'var(--purple)' }}>HoldCo</span> drives the business. The <span style={{ color: 'var(--teal)' }}>Church</span> sustains the soul.
           </p>
         </div>
       </div>
@@ -562,7 +562,7 @@ const slides = [
       <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>Before a single dollar of outside investment, the network started building itself.</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
-          ['The entity structure is forming', 'Legal body taking shape — PPT, RCO, HoldCo, Church'],
+          ['The entity structure is forming', 'Legal body taking shape — RCO Agreement, HoldCo, Church'],
           ['The RCO has members', 'People aren\u2019t buying a service \u2014 they\u2019re joining an organism'],
           ['The HoldCo has products', 'Four products designed, built, or in motion — before the entity even exists'],
           ['The Church has members', 'People showing up weekly for something with no obvious ROI'],
@@ -649,31 +649,10 @@ const slides = [
       </div>
       <div style={{ marginTop: '0.75rem', padding: '0.65rem 0.85rem', border: '1px solid var(--gold)', borderRadius: '8px', background: 'rgba(201,168,76,0.05)' }}>
         <p className="gold" style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.4rem' }}>The organism is already building itself.</p>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
-          {[
-            ['Amit Paul', 'leading European enterprise company through B3.0'],
-            ['John Noonan', 'VC supporting fundraise'],
-            ['Bennet Zelner', 'regenerative economist'],
-            ['Diane Wilde Olcott', 'designing NHR offering'],
-            ['Leigh Siegfried', 'implementing B3.0'],
-            ['Jumpsuit', 'building MVPs'],
-            ['Nils von Heijne', 'visionary of the RCO'],
-            ['Denise Hontiveros', 'holding space at Magic Shows'],
-            ['Nicole BZ', 'church treasurer'],
-            ['Sara B. Stern', 'writing church docs'],
-            ['Tracy Call', 'implementing B3.0'],
-            ['Max Rigano', 'practicing being'],
-            ['Laura Gill', 'planning B3.0 UnConference'],
-            ['Dogcultr', 'dogs helping humans be human'],
-          ].map(([name, role], i) => (
-            <span key={i} style={{ padding: '0.25rem 0.5rem', border: '1px solid var(--border)', borderRadius: '4px', fontSize: '0.7rem', background: 'rgba(255,255,255,0.03)' }}>
-              <strong>{name}</strong> <span style={{ color: 'var(--text-muted)' }}>{role}</span>
-            </span>
-          ))}
-        </div>
-        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.4rem', fontStyle: 'italic' }}>Nobody asked them to. They just showed up.</p>
+        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>A decentralized network of humans &mdash; builders, healers, economists, facilitators, technologists, dogs &mdash; self-organizing around the guiding question. Nobody assigned roles. Nobody drew an org chart. They felt the pull and started building.</p>
+        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.4rem', fontStyle: 'italic' }}>This is what an organism does. It grows toward aliveness.</p>
       </div>
-      <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6 }}><span className="gold" style={{ fontWeight: 700 }}>Hundreds more</span> are already members of the church and hundreds of others are waiting to become members of the RCO. We&apos;re not driving growth. It&apos;s just happening.</p>
+      <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6 }}><span className="gold" style={{ fontWeight: 700 }}>Hundreds</span> are already members of the church and hundreds more are waiting to join the RCO. We&apos;re not driving growth. The network is building itself.</p>
     </div>
   ),
 
