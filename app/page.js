@@ -472,7 +472,7 @@ const slides = [
     <div className="slide">
       <h3>06 · The insight</h3>
       <h1>No one&apos;s building the infrastructure for <span className="gold">humans being.</span></h1>
-      <p style={{ fontSize: '1.3rem', marginTop: '1.5rem', textAlign: 'center', color: 'var(--text-muted)' }}>We&apos;re about to have time on our hands. We can either wait for UBI or figure out who we really are and what we really want to create.</p>
+      <p style={{ fontSize: '1.3rem', marginTop: '1.5rem', textAlign: 'center', color: 'var(--text-muted)' }}>UBI gives people money. It doesn&apos;t give them meaning. We&apos;re building the infrastructure for the part that no one seems to have an answer for.</p>
     </div>
   ),
 
