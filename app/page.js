@@ -90,7 +90,7 @@ function JobReportSlide() {
       <h3>15 · The JOB Report</h3>
       <h1>Your contribution has always mattered. Now it has a <span className="gold">receipt.</span></h1>
       <p style={{ marginBottom: '0.75rem' }}>
-        Go figure. <strong>Try it below. Give yourself a job only you can do.</strong>
+        <strong>Try it below. Give yourself a job only you can do for the organism.</strong>
       </p>
 
       <div className="jr-grid">
