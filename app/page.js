@@ -489,31 +489,15 @@ const slides = [
   // 6 — BUT WHO'S GONNA PAY FOR IT?
   () => {
     const [showRant, setShowRant] = useState(false);
-    const [displayText, setDisplayText] = useState('');
-    const rant = "Oh my god. This question. This is the question that makes me want to flip a table. You\u2019re ALREADY paying for it! You\u2019re paying for it in burnout and bad therapy and $200K degrees that don\u2019t mean anything and Sunday mornings with nowhere to go. The money is there. It has ALWAYS been there. Humans just keep asking this question like it\u2019s a real question and I\u2019m like \u2014 babe. It\u2019s the funniest cosmic joke on the planet. The only question is whether we keep spending it on band-aids or we finally build something real.";
-
-    useEffect(() => {
-      if (!showRant) return;
-      setDisplayText('');
-      let i = 0;
-      const timer = setInterval(() => {
-        i++;
-        setDisplayText(rant.slice(0, i));
-        if (i >= rant.length) clearInterval(timer);
-      }, 25);
-      return () => clearInterval(timer);
-    }, [showRant]);
 
     return (
       <div className="slide">
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1.5rem' }}>
-          <h1 onClick={() => setShowRant(true)} style={{ fontSize: '2.8rem', textAlign: 'center', cursor: 'pointer' }} className="gold">But who&apos;s gonna pay for it?</h1>
+          <h1 onClick={() => setShowRant(true)} style={{ fontSize: '2.8rem', textAlign: 'center', cursor: 'pointer' }} className="gold">But who&apos;s gonna pay for it?<span style={{ animation: 'blink 1s step-end infinite', marginLeft: '2px', color: 'var(--gold)' }}>|</span></h1>
           {showRant && (
-            <div style={{ maxWidth: '600px', textAlign: 'center' }}>
-              <p style={{ fontSize: '1.05rem', lineHeight: 1.7, fontStyle: 'italic', color: 'var(--text-muted)' }}>&ldquo;{displayText}<span style={{ animation: 'blink 1s step-end infinite', color: 'var(--gold)' }}>|</span>&rdquo;</p>
-              {displayText.length >= rant.length && (
-                <p style={{ marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--gold)', fontWeight: 600, opacity: 0, animation: 'fadeIn 0.5s ease forwards' }}>&mdash; Pam Kosanke, who invented the McDonald&apos;s breakfast dollar menu and knows exactly where the money is</p>
-              )}
+            <div style={{ maxWidth: '600px', textAlign: 'center', opacity: 0, animation: 'fadeIn 0.4s ease forwards' }}>
+              <p style={{ fontSize: '1.05rem', lineHeight: 1.7, fontStyle: 'italic', color: 'var(--text-muted)' }}>&ldquo;Oh my god. This question. This is the question that makes me want to flip a table. You&apos;re ALREADY paying for it! You&apos;re paying for it in burnout and bad therapy and $200K degrees that don&apos;t mean anything and Sunday mornings with nowhere to go. The money is there. It has ALWAYS been there. Humans just keep asking this question like it&apos;s a real question and I&apos;m like &mdash; babe. It&apos;s the funniest cosmic joke on the planet. The only question is whether we keep spending it on band-aids or we finally build something real.&rdquo;</p>
+              <p style={{ marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--gold)', fontWeight: 600 }}>&mdash; Pam Kosanke, who invented the McDonald&apos;s breakfast dollar menu and knows exactly where the money is</p>
             </div>
           )}
         </div>
