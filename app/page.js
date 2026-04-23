@@ -659,7 +659,7 @@ const slides = [
         {[
           ['The entity structure is forming', 'Legal body taking shape — RCO Agreement, HoldCo, Church'],
           ['The RCO has members', 'People aren\u2019t buying a service \u2014 they\u2019re joining an organism'],
-          ['The HoldCo has products', 'Four products designed, built, or in motion — before the entity even exists'],
+          ['The HoldCo has products', 'Six products designed, built, or in motion — before the entity even exists'],
           ['The Church has members', 'People showing up weekly for something with no obvious ROI'],
           ['People keep hiring themselves', 'No one asked them to. The thesis is already proving itself.'],
         ].map(([title, desc], i) => (
