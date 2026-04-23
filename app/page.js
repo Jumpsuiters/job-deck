@@ -859,6 +859,7 @@ function CloseSlide({ onJoin, onTicket }) {
         <button className="waitlist-trigger" onClick={onJoin}>Investor Waitlist</button>
         <button className="waitlist-trigger gold-btn" onClick={onTicket}>Request a Golden Ticket</button>
       </div>
+      <p style={{ marginTop: '2.5rem', fontSize: '0.7rem', color: '#666', textAlign: 'center', maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.6 }}>J.O.B. is currently in the process of legally forming its entities and preparing its community investment round. This is not a solicitation of investment. Joining the waitlist does not constitute a commitment, offer, or guarantee of future investment opportunity.</p>
     </div>
   );
 }
