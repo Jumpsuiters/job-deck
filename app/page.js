@@ -17,7 +17,7 @@ const SEEDED_ENTRIES = [
     points_min: 2500,
     points_max: 4000,
     explanation: 'A single introduction that opened a potential six-figure enterprise contract. No invoice, no billable hours — just a relationship offered freely. This is the kind of value the old economy has no way to track.',
-    open_loop_reason: 'The pilot is still in negotiation. If it lands, this one introduction could become the highest-ROI contribution in the organism\'s history. The ledger keeps it alive until it compounds.',
+    open_loop_reason: 'The pilot is still in negotiation. If it lands, this one introduction could become the highest-ROI contribution in JOB\'s history. The ledger keeps it alive until it compounds.',
   },
   {
     id: 'seed-jumpsuit',
@@ -27,8 +27,8 @@ const SEEDED_ENTRIES = [
     bucket: 'C',
     points_min: 3000,
     points_max: 5000,
-    explanation: 'A company contributing proprietary IP directly into the organism. This isn\'t a vendor contract — it\'s a member building infrastructure that the whole ecosystem will run on.',
-    open_loop_reason: 'B3.0 hasn\'t launched paid cohorts yet. When it does, this contribution becomes the revenue engine for an entire SPV. The organism tracks it now so the value is honored later.',
+    explanation: 'A company contributing proprietary IP directly into JOB. This isn\'t a vendor contract — it\'s a member building infrastructure that the whole ecosystem will run on.',
+    open_loop_reason: 'B3.0 hasn\'t launched paid cohorts yet. When it does, this contribution becomes the revenue engine for an entire SPV. JOB tracks it now so the value is honored later.',
   },
   {
     id: 'seed-levi',
@@ -38,8 +38,8 @@ const SEEDED_ENTRIES = [
     bucket: 'B',
     points_min: 1500,
     points_max: 3000,
-    explanation: 'Thirty personal invitations sent into the world — each one a door into the organism. No ad spend, no funnel. Just a human saying "you need to experience this." That\'s distribution you can\'t buy.',
-    open_loop_reason: 'Each ticket is a potential new member. The organism tracks how many convert and what those humans go on to contribute — turning one act of generosity into a compounding network effect.',
+    explanation: 'Thirty personal invitations sent into the world — each one a door into JOB. No ad spend, no funnel. Just a human saying "you need to experience this." That\'s distribution you can\'t buy.',
+    open_loop_reason: 'Each ticket is a potential new member. JOB tracks how many convert and what those humans go on to contribute — turning one act of generosity into a compounding network effect.',
   },
 ];
 
@@ -90,7 +90,7 @@ function JobReportSlide() {
       <h3>15 · The JOB Report</h3>
       <h1>Your contribution has always mattered. Now it has a <span className="gold">receipt.</span></h1>
       <p style={{ marginBottom: '0.75rem' }}>
-        <strong>Try it below. Give yourself a job only you can do for the organism.</strong>
+        <strong>Try it below. Give yourself a job only you can do for JOB.</strong>
       </p>
 
       <div className="jr-grid">
@@ -172,7 +172,7 @@ function RevenueChartSlide() {
     <div className="slide">
       <h3>17 · Revenue at scale</h3>
       <h1>Where the money gets made.</h1>
-      <p style={{ fontSize: '1.05rem', marginTop: '0.25rem' }}><strong>Seven revenue lines. One organism.</strong> JOB Training is the wedge &mdash; biggest, fastest, already selling. The rest compound behind it as the network grows. Click any experiment for the math.</p>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.25rem' }}><strong>Seven revenue lines. One JOB.</strong> JOB Training is the wedge &mdash; biggest, fastest, already selling. The rest compound behind it as the network grows. Click any experiment for the math.</p>
       <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '0.25rem' }}>Numbers are early-stage models, not promises.</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1rem' }}>
         {experiments.map((exp, i) => (
@@ -281,9 +281,9 @@ function OrganismChatSlide() {
         body: JSON.stringify({ messages: next }),
       });
       const data = await res.json();
-      setMessages(prev => [...prev, { role: 'assistant', content: data.answer || 'The organism is quiet right now.' }]);
+      setMessages(prev => [...prev, { role: 'assistant', content: data.answer || 'JOB is quiet right now.' }]);
     } catch {
-      setMessages(prev => [...prev, { role: 'assistant', content: 'The organism is resting. Try again in a moment.' }]);
+      setMessages(prev => [...prev, { role: 'assistant', content: 'JOB is resting. Try again in a moment.' }]);
     } finally {
       setLoading(false);
     }
@@ -291,10 +291,10 @@ function OrganismChatSlide() {
 
   return (
     <div className="slide">
-      <h3>19 · The organism</h3>
+      <h3>19 · Ask JOB</h3>
       <h1>Don&apos;t take our word for it. <span className="gold">Ask it yourself.</span></h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
-        This is a living organism. It knows what it is, what it&apos;s building, and why. Go ahead &mdash; ask it anything.
+        JOB is a living organism. It knows what it is, what it&apos;s building, and why. Go ahead &mdash; ask it anything.
       </p>
 
       <div className="organism-slide-chat">
@@ -318,7 +318,7 @@ function OrganismChatSlide() {
             className="organism-slide-input"
             value={input}
             onChange={e => setInput(e.target.value)}
-            placeholder="Ask the organism anything..."
+            placeholder="Ask JOB anything..."
             disabled={loading || messages.length >= 20}
             maxLength={500}
           />
@@ -512,7 +512,7 @@ const slides = [
         {[
           ['Companies', 'Because they\u2019re already spending billions on the problem, so here\u2019s a better option that lets them sleep at night'],
           ['People', 'Because they\u2019re already paying for therapy, coaching, wellness, and spiritual communities \u2014 separately'],
-          ['Investors', 'Because this is a new asset class \u2014 an organism that compounds, not a startup that exits'],
+          ['Investors', 'Because this is a new asset class \u2014 a living system that compounds, not a startup that exits'],
           ['Philanthropists', 'Because this is the mission they\u2019ve been looking for \u2014 structural change, not another band-aid'],
           ['Members', 'Because they\u2019re going to pay with more than money: they\u2019ll contribute time, skills, presence, and connection as legitimate value'],
         ].map(([who, why], i) => (
@@ -551,34 +551,34 @@ const slides = [
 
     const holdcoItems = [
       { id: 'pool', label: 'Investment Pool', desc: 'Community-owned capital via Wefunder / Reg CF equity crowdfunding. The people who believe in J.O.B. own a piece of it. Capital flows into experiments, and successful ones become their own investable entities.' },
-      { id: 'ops', label: 'Operations + Incubator', desc: 'The nervous system of the organism. Runs day-to-day operations and incubates new experiments. When something works, it graduates into its own SPV. When it doesn\u2019t, it gets composted \u2014 learnings and relationships recycled back into the system.' },
-      { id: 'spvs', label: 'SPV Subsidiaries', desc: 'Each successful experiment becomes its own investable entity. SPVs can raise independently while staying connected to the organism. This is how the HoldCo scales without centralizing.', children: [
+      { id: 'ops', label: 'Operations + Incubator', desc: 'The nervous system of JOB. Runs day-to-day operations and incubates new experiments. When something works, it graduates into its own SPV. When it doesn\u2019t, it gets composted \u2014 learnings and relationships recycled back into the system.' },
+      { id: 'spvs', label: 'SPV Subsidiaries', desc: 'Each successful experiment becomes its own investable entity. SPVs can raise independently while staying connected to JOB. This is how the HoldCo scales without centralizing.', children: [
         { id: 'nhr', label: 'JOB Training', desc: 'B2B transition-as-benefit. The revenue wedge. Companies pay to train their people through J.O.B. instead of handing them a severance check and a LinkedIn link. The budget already exists \u2014 we\u2019re the first honest use of it.' },
-        { id: 'b30', label: 'JOB Shift', desc: 'Organizational transformation consulting. Helps companies shift from machine to organism. Founder cohorts, certified Guides, and a framework built on nature\u2019s intelligence \u2014 not another management theory.' },
+        { id: 'b30', label: 'JOB Shift', desc: 'Organizational transformation consulting. Helps companies shift from machine to living system. Founder cohorts, certified Guides, and a framework built on nature\u2019s intelligence \u2014 not another management theory.' },
         { id: 'msl', label: 'JOB Sites', desc: 'Physical immersive spaces in abandoned churches, castles, and colleges \u2014 where humans go to remember what they are. Each site is its own experience. MagicShowLand is the flagship.' },
         { id: 'ms', label: 'Magic Shows', desc: 'Experiential events that crack people open. Corporate retreats, public gatherings, initiatory experiences. Psychedelic-adjacent journeys where human magic gets rediscovered in days, not years.' },
-        { id: 'board', label: 'J.O.B. Board', desc: 'A marketplace for things AI can\u2019t do. Humans post uniquely human offers \u2014 presence, care, craft, mentorship. Other humans pay for them. 20% platform fee. The Trojan Horse: it looks like a gig platform, but it\u2019s a doorway into the organism.' },
+        { id: 'board', label: 'J.O.B. Board', desc: 'A marketplace for things AI can\u2019t do. Humans post uniquely human offers \u2014 presence, care, craft, mentorship. Other humans pay for them. 20% platform fee. The Trojan Horse: it looks like a gig platform, but it\u2019s a doorway into JOB.' },
         { id: 'fair', label: 'JOB Fair', desc: 'A traveling expo of the new human economy. Death doulas, trip sitters, nervous system regulators, craft workers \u2014 every job AI can\u2019t do, showcased in one place. Part trade show, part awakening.' },
       ]},
-      { id: 'ext', label: 'External Investments', desc: 'The organism can invest in member projects and aligned ventures, expanding the mycelial network. Not acquisitions \u2014 resonance-based partnerships where the whole gets stronger.', children: [
+      { id: 'ext', label: 'External Investments', desc: 'JOB can invest in member projects and aligned ventures, expanding the mycelial network. Not acquisitions \u2014 resonance-based partnerships where the whole gets stronger.', children: [
         { id: 'spirit', label: 'SpiritTech', desc: 'Technology that serves the human spirit, not the other way around. Investments in tools and platforms that honor human sovereignty.' },
         { id: 'immersive', label: 'Immersive Centers', desc: 'Spaces designed for transformation beyond JOB Sites \u2014 experiential environments where the work of becoming human has a physical home.' },
       ]},
-      { id: 'profits', label: 'Returns to Investors', desc: 'The organism rewards the humans who fund it. Profits flow back to community investors \u2014 the people who believed before it was obvious. Not charity, not extraction \u2014 regenerative returns.' },
+      { id: 'profits', label: 'Returns to Investors', desc: 'JOB rewards the humans who fund it. Profits flow back to community investors \u2014 the people who believed before it was obvious. Not charity, not extraction \u2014 regenerative returns.' },
     ];
     const rcoItems = [
-      { id: 'members', label: 'Members', desc: 'People join the organism and contribute non-monetary investment \u2014 time, skills, network, ideas, care. This is how the RCO grows: not through hiring, but through attraction. Financial investment flows through the For-Profit side.' },
-      { id: 'matching', label: 'Matching', desc: 'The organism routes humans to needs, projects, and each other \u2014 based on energy, fit, and what\u2019s alive right now. This is the internal intelligence that powers the J.O.B. Board and every other surface where humans meet work.' },
-      { id: 'contribution', label: 'Contribution', desc: 'Every human in the organism gives something \u2014 time, skills, presence, connection. Contribution tracking makes the invisible visible: who gave what, where it flowed, what grew from it. This is how the organism knows what\u2019s alive and what\u2019s ready to compost.' },
-      { id: 'intelligence', label: 'Collective Intelligence', desc: 'The brain of the organism. A living dashboard where the entire network can see itself \u2014 every human, every connection, every journey across every door. When the organism can see itself, it self-regulates. Elders fill gaps. Members send energy where it\u2019s needed. No one at the center has to decide.' },
+      { id: 'members', label: 'Members', desc: 'People join JOB and contribute non-monetary investment \u2014 time, skills, network, ideas, care. This is how the RCO grows: not through hiring, but through attraction. Financial investment flows through the For-Profit side.' },
+      { id: 'matching', label: 'Matching', desc: 'JOB routes humans to needs, projects, and each other \u2014 based on energy, fit, and what\u2019s alive right now. This is the internal intelligence that powers the J.O.B. Board and every other surface where humans meet work.' },
+      { id: 'contribution', label: 'Contribution', desc: 'Every human in JOB gives something \u2014 time, skills, presence, connection. Contribution tracking makes the invisible visible: who gave what, where it flowed, what grew from it. This is how JOB knows what\u2019s alive and what\u2019s ready to compost.' },
+      { id: 'intelligence', label: 'Collective Intelligence', desc: 'The brain of JOB. A living dashboard where the entire network can see itself \u2014 every human, every connection, every journey across every door. When JOB can see itself, it self-regulates. Elders fill gaps. Members send energy where it\u2019s needed. No one at the center has to decide.' },
     ];
     const churchItems = [
       { id: 'doctrine', label: 'Doctrine + Sacrament', desc: 'The sacred container. Sunday Night Live, elder-guided tracks, the initiatory journey. Living doctrine that evolves with the community, not dogma handed down. The deprogramming is the root \u2014 everything else is a surface for that transformation to show up.' },
-      { id: 'mutual', label: 'Mutual Aid', desc: 'The organism takes care of its own. Community support, resource sharing, mutual aid networks. When a member is in crisis, the Church responds \u2014 not with a form, but with presence. Humans helping humans, the original technology.' },
-      { id: 'grants', label: 'Grants + MicroGrants', desc: 'Small bets on sovereign humans. Funding for members who are building something from the inside out. The organism invests in the people it creates \u2014 before the market would.' },
+      { id: 'mutual', label: 'Mutual Aid', desc: 'JOB takes care of its own. Community support, resource sharing, mutual aid networks. When a member is in crisis, the Church responds \u2014 not with a form, but with presence. Humans helping humans, the original technology.' },
+      { id: 'grants', label: 'Grants + MicroGrants', desc: 'Small bets on sovereign humans. Funding for members who are building something from the inside out. JOB invests in the people it creates \u2014 before the market would.' },
       { id: 'ip', label: 'Church IP (licensed to HoldCo)', desc: 'The transformation methodology, curriculum, and practices \u2014 owned by the nonprofit, licensed to the HoldCo. This is the bridge: mission-side IP fuels commercial-side revenue without the mission losing control. The RCO agreement ensures it stays that way.' },
-      { id: 'land', label: 'Holds Land', desc: 'Physical spaces owned by the nonprofit \u2014 sanctuaries, gathering spaces, future JOB Sites. Land held in trust for the community, not for profit. These are the rooms the organism builds in.' },
-      { id: 'research', label: 'Research + Publication', desc: 'Studying what happens when humans deprogram. Publishing findings. Building the evidence base for a new way of being. The organism documents its own evolution so others can learn from it.' },
+      { id: 'land', label: 'Holds Land', desc: 'Physical spaces owned by the nonprofit \u2014 sanctuaries, gathering spaces, future JOB Sites. Land held in trust for the community, not for profit. These are the rooms JOB builds in.' },
+      { id: 'research', label: 'Research + Publication', desc: 'Studying what happens when humans deprogram. Publishing findings. Building the evidence base for a new way of being. JOB documents its own evolution so others can learn from it.' },
     ];
 
     const ChildRow = ({ item, color }) => (
@@ -608,8 +608,8 @@ const slides = [
       <div className="slide">
         <h3>10 · The structure</h3>
         <h1><span className="gold">Incorruptible</span> by design.</h1>
-        <p style={{ fontSize: '1rem', marginTop: '0.5rem', marginBottom: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>A game this big needs a structure the old world can&apos;t swallow. Can&apos;t acquire it. Can&apos;t extract from it. Can&apos;t shut it down. So we didn&apos;t build a company. We grew an organism. JOB is a Business 3.0 entity and the first RCO in the United States.</p>
-        <p style={{ fontSize: '0.85rem', marginBottom: '1rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Every organism has a lifecycle. JOB is no different. It&apos;s born. It grows. It fruits. And when the question is answered &mdash; or no longer needs asking &mdash; it composts itself entirely. On purpose. The RCO agreement guarantees the full arc. When the cycle completes, IP becomes commons, capital returns to members, and the infrastructure becomes soil for whatever grows next. <span style={{ color: 'var(--gold)' }}>The organism knows its JOB.</span></p>
+        <p style={{ fontSize: '1rem', marginTop: '0.5rem', marginBottom: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>A game this big needs a structure the old world can&apos;t swallow. Can&apos;t acquire it. Can&apos;t extract from it. Can&apos;t shut it down. So we didn&apos;t build a company. We grew a living organism. JOB is a Business 3.0 entity and the first RCO in the United States.</p>
+        <p style={{ fontSize: '0.85rem', marginBottom: '1rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Every organism has a lifecycle. JOB is no different. It&apos;s born. It grows. It fruits. And when the question is answered &mdash; or no longer needs asking &mdash; it composts itself entirely. On purpose. The RCO agreement guarantees the full arc. When the cycle completes, IP becomes commons, capital returns to members, and the infrastructure becomes soil for whatever grows next. <span style={{ color: 'var(--gold)' }}>JOB knows its JOB.</span></p>
         <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', textAlign: 'center', marginBottom: '0.5rem', opacity: 0.6 }}>&#9758; Click any layer to explore</p>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
 
@@ -623,7 +623,7 @@ const slides = [
             <div style={layerLabel}>RCO Agreement</div>
             <div style={layerRole('#c9a84c')}>Protects the Purpose</div>
             {isOpen('ppt') && (
-              <p style={layerDesc}>Binds the nonprofit and for-profit together. The agreement&apos;s legal obligation is to the guiding question &mdash; not to founders, not to shareholders. The mission can never be sold, acquired, or diluted. And when the question is no longer alive or relevant, the agreement guides the organism to compost itself on purpose.</p>
+              <p style={layerDesc}>Binds the nonprofit and for-profit together. The agreement&apos;s legal obligation is to the guiding question &mdash; not to founders, not to shareholders. The mission can never be sold, acquired, or diluted. And when the question is no longer alive or relevant, the agreement guides JOB to compost itself on purpose.</p>
             )}
           </div>
 
@@ -633,7 +633,7 @@ const slides = [
             <div style={layerLabel}>RCO &mdash; Regenerative Community Organism</div>
             <div style={layerRole('var(--pink)')}>Produces the Value</div>
             {isOpen('rco') && (
-              <p style={layerDesc}>Members contribute more than money &mdash; time, skills, presence, connection. The organism tracks what they give, and they redeem that value over time. The mycelial network makes it all visible &mdash; so the organism always knows where to grow itself next.</p>
+              <p style={layerDesc}>Members contribute more than money &mdash; time, skills, presence, connection. JOB tracks what they give, and they redeem that value over time. The mycelial network makes it all visible &mdash; so JOB always knows where to grow itself next.</p>
             )}
           </div>
           {isOpen('rco') && (
@@ -692,12 +692,12 @@ const slides = [
   () => (
     <div className="slide">
       <h3>11 · Proof of life</h3>
-      <h1>This organism is <span className="gold">already growing.</span></h1>
+      <h1>JOB is <span className="gold">already growing.</span></h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>Before a single dollar of outside investment, the network started building itself.</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
           ['The entity structure is forming', 'Legal body taking shape — RCO Agreement, HoldCo, Church'],
-          ['The RCO has members', 'People aren\u2019t buying a service \u2014 they\u2019re joining an organism'],
+          ['The RCO has members', 'People aren\u2019t buying a service \u2014 they\u2019re joining JOB'],
           ['The HoldCo has products', 'Six experiments designed, built, or in motion — before a single dollar of outside capital'],
           ['The Church has members', 'People showing up weekly for something with no obvious ROI'],
           ['People keep hiring themselves', 'No one asked them to. The thesis is already proving itself.'],
@@ -717,7 +717,7 @@ const slides = [
     <div className="slide">
       <h3>12 · The portfolio</h3>
       <h1>Successful experiments become SPVs. <span className="gold">The rest get composted.</span></h1>
-      <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Venture studios take bets. Incubators run cohorts. We do both &mdash; but ours are in service of the question. What works graduates into an SPV. What doesn&apos;t gets composted back into the organism &mdash; not as a failed experiment, but as nutrient-rich soil that the rest of the organism can feed from.</p>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Venture studios take bets. Incubators run cohorts. We do both &mdash; but ours are in service of the question. What works graduates into an SPV. What doesn&apos;t gets composted back into JOB &mdash; not as a failed experiment, but as nutrient-rich soil that the rest of the system can feed from.</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
           ['JOB Training', null, 'HR & Enterprise', 'Outplacement for their layoff', 'People who come out more alive than they went in', 'We create the New Human Resources.'],
@@ -768,10 +768,10 @@ const slides = [
           <p className="gold" style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.5rem' }}>Memory</p>
           <p style={{ fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text-muted)' }}>Members contribute more than money &mdash; introductions, ideas, presence, care. Thanks to AI, we can finally track the impact of human contribution over time.</p>
           <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginTop: '0.5rem' }}>An intro you make today could turn into a free Magic Show. A JOB Shift cohort. A year-long residency in Costa Rica.</p>
-          <p style={{ fontSize: '0.85rem', lineHeight: 1.6, marginTop: '0.5rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>The organism remembers. And it doesn&apos;t just track contribution. It learns where to grow next.</p>
+          <p style={{ fontSize: '0.85rem', lineHeight: 1.6, marginTop: '0.5rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>JOB remembers. And it doesn&apos;t just track contribution. It learns where to grow next.</p>
         </div>
       </div>
-      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 700, background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>One moat no one can outbuild. Another no one can copy. Together, they make the organism uncatchable.</p>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 700, background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>One moat no one can outbuild. Another no one can copy. Together, they make JOB uncatchable.</p>
     </div>
   ),
 
@@ -797,16 +797,16 @@ const slides = [
           <h3 style={{ color: 'var(--text)', textTransform: 'none', letterSpacing: '-0.01em', fontSize: '1.3rem', WebkitTextFillColor: 'var(--text)', marginBottom: '0.15rem' }}>Pam Kosanke</h3>
           <p style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', fontWeight: 700, marginBottom: '0.5rem' }}>Co-Founder / Category Creator + Global Scale Expert</p>
           <ul>
-            <li>Former CRO, EOS Worldwide &mdash; $145M revenue, 800+ implementers. <em>She already knows how to scale an organism.</em></li>
+            <li>Former CRO, EOS Worldwide &mdash; $145M revenue, 800+ implementers. <em>She already knows how to scale a living system.</em></li>
             <li>Invented McDonald&apos;s breakfast dollar menu. <em>She sees money where nobody&apos;s looking.</em></li>
             <li>6× world champion, Team USA. <em>She doesn&apos;t stop.</em></li>
           </ul>
         </div>
       </div>
       <div style={{ marginTop: '0.75rem', padding: '0.65rem 0.85rem', border: '1px solid var(--gold)', borderRadius: '8px', background: 'rgba(201,168,76,0.05)' }}>
-        <p className="gold" style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.4rem' }}>The organism is already building itself.</p>
+        <p className="gold" style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '0.4rem' }}>JOB is already building itself.</p>
         <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>A decentralized network of humans &mdash; builders, healers, economists, facilitators, technologists, dogs &mdash; self-organizing around the guiding question. Nobody assigned roles. Nobody drew an org chart. They felt the pull and started building.</p>
-        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.4rem', fontStyle: 'italic' }}>This is what an organism does. It grows toward aliveness.</p>
+        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.4rem', fontStyle: 'italic' }}>This is what JOB does. It grows toward aliveness.</p>
       </div>
       <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6 }}><span className="gold" style={{ fontWeight: 700 }}>Hundreds</span> are already members of the church and hundreds more are waiting to join the RCO. We&apos;re not driving growth. The network is building itself.</p>
     </div>
@@ -932,7 +932,7 @@ function WaitlistModal({ onClose, initialMode }) {
           <button className="modal-close" onClick={onClose}>&times;</button>
           <div className="form-success">
             <h2>You&apos;re in.</h2>
-            <p>We&apos;ll be in touch when the organism is ready for you.</p>
+            <p>We&apos;ll be in touch when JOB is ready for you.</p>
           </div>
         </div>
       </div>
@@ -1014,7 +1014,7 @@ function WaitlistModal({ onClose, initialMode }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal" onClick={e => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>&times;</button>
-        <h2 style={{ color: 'var(--gold)' }}>Fund the organism.</h2>
+        <h2 style={{ color: 'var(--gold)' }}>Fund JOB.</h2>
         <p style={{ fontStyle: 'italic', color: 'var(--text-muted)' }}>And everything it creates.</p>
         <form onSubmit={handleInvestSubmit}>
           <div className="form-field">
