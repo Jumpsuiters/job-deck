@@ -360,14 +360,13 @@ function OrganismChatSlide() {
 const slides = [
   // 0 — COVER
   () => {
-    const words = ['Company', 'Church', 'School', 'Human'];
+    const words = ['JOB Inc.', 'The Joy of Being'];
     const [wordIndex, setWordIndex] = useState(0);
 
     return (
       <div className="slide cover">
         <h1>J.O.B.</h1>
         <p className="subtitle">
-          The Joy of Being{' '}
           <span
             onClick={() => setWordIndex((i) => (i + 1) % words.length)}
             style={{
