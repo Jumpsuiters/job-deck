@@ -856,7 +856,7 @@ function CloseSlide({ onJoin, onTicket }) {
       <h1>As much as <span className="gold">humanly possible.</span></h1>
       <p style={{ fontSize: '1.3rem', marginTop: '0.5rem', fontWeight: 700 }}>Put your money where your species is.</p>
       <div className="cta-row" style={{ marginTop: '2rem', flexDirection: 'column', gap: '0.75rem' }}>
-        <button className="waitlist-trigger" onClick={onJoin}>Invest</button>
+        <button className="waitlist-trigger" onClick={onJoin}>Investor Waitlist</button>
         <button className="waitlist-trigger gold-btn" onClick={onTicket}>Request a Golden Ticket</button>
       </div>
     </div>
