@@ -484,7 +484,6 @@ const slides = [
       <h1>Being human <span className="gold">IS the job.</span></h1>
       <p style={{ fontSize: '1.3rem', marginTop: '1.25rem', lineHeight: 1.5, fontWeight: 700 }} className="gold">Imagine if AA, Meow Wolf, and Indeed teamed up and accidentally on purpose created the New Human Economy.</p>
       <p style={{ fontSize: '1.1rem', marginTop: '1.25rem', lineHeight: 1.7 }}>J.O.B. is the first economy built on being human. We resource people through this existential transition &mdash; helping them grieve, self-regulate, remember who they are, and build the world that comes next.</p>
-      <p style={{ fontSize: '1.05rem', marginTop: '1rem', lineHeight: 1.7, color: 'var(--text-muted)' }}>The RCO makes J.O.B. the first company where what you contribute &mdash; including the parts no one used to pay for &mdash; actually compounds.</p>
     </div>
   ),
 
