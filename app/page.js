@@ -714,7 +714,7 @@ const slides = [
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
           ['JOB Training', null, 'HR & Enterprise', 'Outplacement for their layoff', 'People who come out more alive than they went in', 'We create the New Human Resources.'],
-          ['JOB Shift', 'Business 3.0', 'Consulting', 'Organizational transformation', 'A company that runs on aliveness instead of extraction', 'We create companies that can hold new humans.'],
+          ['JOB Shift', 'Business 3.0', 'Consulting', 'Organizational transformation', 'A company that runs on aliveness instead of extraction', 'We create the new model.'],
           ['JOB Board', null, 'Marketplace', 'A gig platform', 'A place where presence, not productivity, is the product', 'We create a marketplace from supply, not demand.'],
           ['JOB Sites', null, 'Real Estate', 'An immersive experience', 'Where the most abandoned spaces become the most alive', 'We create 4th spaces and real estate arbitrage.'],
           ['JOB Fair', null, 'Events & Expo', 'A job fair', 'Every job AI can\u2019t touch, in one place', 'We create the new human economy.'],
