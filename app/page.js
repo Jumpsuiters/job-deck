@@ -714,11 +714,11 @@ const slides = [
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
           ['JOB Training', null, 'HR & Enterprise', 'Outplacement for their layoff', 'People who come out more alive than they went in', 'We create the New Human Resources.'],
-          ['JOB Shift', 'Business 3.0', 'Consulting', 'Organizational transformation', 'A company that runs on aliveness instead of extraction', 'They pay to change their business. Their business changes them.'],
-          ['JOB Board', null, 'Marketplace', 'A gig platform', 'A place where presence, not productivity, is the product', 'AI took the jobs. We turned being human into one.'],
-          ['JOB Sites', null, 'Real Estate', 'An immersive experience', 'Proof that the most abandoned spaces can hold the most alive humans', 'The old world is selling off its temples. We\u2019re turning them into ours.'],
-          ['JOB Fair', null, 'Events & Expo', 'A job fair', 'The first world expo of the new human economy \u2014 every job AI can\u2019t touch, in one place', 'They came looking for a job. They found out they already are one.'],
-          ['Magic Shows', null, 'Entertainment', 'Tickets to the show', 'The fastest way back to themselves', 'They came for a show. Surprise, you\u2019re the magic.'],
+          ['JOB Shift', 'Business 3.0', 'Consulting', 'Organizational transformation', 'A company that runs on aliveness instead of extraction', 'We create companies that can hold new humans.'],
+          ['JOB Board', null, 'Marketplace', 'A gig platform', 'A place where presence, not productivity, is the product', 'We create a marketplace from supply, not demand.'],
+          ['JOB Sites', null, 'Real Estate', 'An immersive experience', 'Where the most abandoned spaces become the most alive', 'We create 4th spaces and real estate arbitrage.'],
+          ['JOB Fair', null, 'Events & Expo', 'A job fair', 'Every job AI can\u2019t touch, in one place', 'We create the new human economy.'],
+          ['Magic Shows', null, 'Entertainment', 'Tickets to the show', 'The fastest way back to themselves', 'We trick people into remembering that they\u2019re the magic.'],
         ].map(([abbr, name, tag, buying, getting, trick], i) => (
           <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}><div><span className="gold" style={{ fontWeight: 700, fontSize: '0.95rem' }}>{abbr}</span>{name ? <span style={{ color: 'var(--text-muted)', fontWeight: 400, fontSize: '0.8rem' }}> — {name}</span> : null}</div><span style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', border: '1px solid var(--border)', borderRadius: '4px', padding: '0.15rem 0.4rem' }}>{tag}</span></div>
