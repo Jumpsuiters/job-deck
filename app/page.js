@@ -390,19 +390,25 @@ const slides = [
   () => (
     <div className="slide">
       <div style={{ maxWidth: '680px', marginLeft: 'auto', marginRight: 'auto', fontSize: '1.15rem', lineHeight: 1.8 }}>
-        <p>The church used to fund Michelangelo. Let that sink in. The most powerful institution on earth looked at a human being and said &ldquo;we&apos;re going to resource everything inside of you.&rdquo; And it worked. We got the Renaissance.</p>
-        <p style={{ marginTop: '1rem' }}>Then somewhere along the way we stopped investing in humans and started mining them. We invented Human Resources &mdash; literally named it that &mdash; and turned people into line items. Hire them. Optimize them. Terminate them. Next.</p>
-        <p style={{ marginTop: '1rem' }}>And now? The job that told you who you were is being automated. The degree you went into debt for is worthless. The church is closing 15,000 doors a year.</p>
-        <p style={{ marginTop: '1rem' }}>And the best we can offer is a therapist you can&apos;t afford and a r&eacute;sum&eacute; workshop to send you back into the system that just spit you out?</p>
-        <p style={{ marginTop: '1rem' }}>$2.6 trillion a year. That&apos;s what we spend. Not on humans &mdash; on the fragments of humans.</p>
-        <p style={{ marginTop: '1rem' }}>Who&apos;s gonna pay for it? <span className="gold" style={{ fontWeight: 700 }}>You are. We all are.</span></p>
-        <p style={{ marginTop: '1rem' }}>And we&apos;re going to build the infrastructure that should have never stopped existing.</p>
-        <p style={{ marginTop: '1rem' }}>And we&apos;re going to do our damndest to build it in a way that won&apos;t corrupt.</p>
+        <p>The church used to fund humans to be themselves. They paid Michelangelo to be Michelangelo, and we got the Renaissance.</p>
+        <p style={{ marginTop: '1rem' }}>Somewhere along the way, we stopped investing in humans and started mining them as resources. We invented Human Resources and literally named it that.</p>
+        <p style={{ marginTop: '1rem' }}>It fragmented us into outputs. Told us what to produce. Ignored everything else. And now? The job that told you who you were is being automated.</p>
+        <p style={{ marginTop: '1rem' }}>And the best we have to offer is COBRA and a r&eacute;sum&eacute; workshop to put you back into the same system that&apos;s spitting you out?</p>
+        <p style={{ marginTop: '1rem' }}>People are oscillating between desperately needing a new job and desperately just wanting to be.</p>
+        <p style={{ marginTop: '1rem' }}><span style={{ fontWeight: 700, background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>What if we could give them both?</span></p>
       </div>
     </div>
   ),
 
-  // 2 — THE FLIP (opening reframe)
+  // 2 — BUCKY FULLER
+  () => (
+    <div className="slide" style={{ justifyContent: 'center', textAlign: 'center' }}>
+      <h1 style={{ fontSize: '2.4rem', lineHeight: 1.3, maxWidth: '720px', margin: '0 auto' }}>&ldquo;You never change things by fighting the existing reality. To change something, build a <span className="gold">new model</span> that makes the existing model obsolete.&rdquo;</h1>
+      <p style={{ marginTop: '1.5rem', fontSize: '1rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>&mdash; Buckminster Fuller</p>
+    </div>
+  ),
+
+  // 3 — THE FLIP (opening reframe)
   () => (
     <div className="slide">
       <h3>03 · The trick</h3>
@@ -425,14 +431,6 @@ const slides = [
         </div>
       </div>
       <p style={{ marginTop: '1rem', textAlign: 'center', maxWidth: '100%', fontStyle: 'italic', fontSize: '1.15rem' }}>The three institutions who told us who to be are dissolving simultaneously. What are we going to build in their place?</p>
-    </div>
-  ),
-
-  // 2 — BUCKY FULLER
-  () => (
-    <div className="slide" style={{ justifyContent: 'center', textAlign: 'center' }}>
-      <h1 style={{ fontSize: '2.4rem', lineHeight: 1.3, maxWidth: '720px', margin: '0 auto' }}>&ldquo;You never change things by fighting the existing reality. To change something, build a <span className="gold">new model</span> that makes the existing model obsolete.&rdquo;</h1>
-      <p style={{ marginTop: '1.5rem', fontSize: '1rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>&mdash; Buckminster Fuller</p>
     </div>
   ),
 
