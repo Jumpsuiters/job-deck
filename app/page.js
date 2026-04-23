@@ -487,13 +487,39 @@ const slides = [
   ),
 
   // 6 — BUT WHO'S GONNA PAY FOR IT?
-  () => (
-    <div className="slide">
-      <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <h1 style={{ fontSize: '2.8rem', textAlign: 'center' }} className="gold">But who&apos;s gonna pay for it?</h1>
+  () => {
+    const [showRant, setShowRant] = useState(false);
+    const [displayText, setDisplayText] = useState('');
+    const rant = "Oh my god. This question. This is the question that makes me want to flip a table. You\u2019re ALREADY paying for it. You\u2019re paying for it in burnout and therapy and degrees that don\u2019t mean anything and jobs that make people sick. And if you don\u2019t pay for it on purpose? You\u2019ll pay for it anyway. You\u2019ll just pay more. And it\u2019ll be uglier. The money is there. It\u2019s always been there. Everyone just keeps asking this like it\u2019s a real question. It\u2019s a cosmic joke.";
+
+    useEffect(() => {
+      if (!showRant) return;
+      setDisplayText('');
+      let i = 0;
+      const timer = setInterval(() => {
+        i++;
+        setDisplayText(rant.slice(0, i));
+        if (i >= rant.length) clearInterval(timer);
+      }, 25);
+      return () => clearInterval(timer);
+    }, [showRant]);
+
+    return (
+      <div className="slide">
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1.5rem' }}>
+          <h1 onClick={() => setShowRant(true)} style={{ fontSize: '2.8rem', textAlign: 'center', cursor: 'pointer' }} className="gold">But who&apos;s gonna pay for it?</h1>
+          {showRant && (
+            <div style={{ maxWidth: '600px', textAlign: 'center' }}>
+              <p style={{ fontSize: '1.05rem', lineHeight: 1.7, fontStyle: 'italic', color: 'var(--text-muted)' }}>&ldquo;{displayText}<span style={{ animation: 'blink 1s step-end infinite', color: 'var(--gold)' }}>|</span>&rdquo;</p>
+              {displayText.length >= rant.length && (
+                <p style={{ marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--gold)', fontWeight: 600, opacity: 0, animation: 'fadeIn 0.5s ease forwards' }}>&mdash; Pam Kosanke, who invented the McDonald&apos;s breakfast dollar menu and knows exactly where the money is</p>
+              )}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
-  ),
+    );
+  },
 
   // 7 — EVERYBODY
   () => (
