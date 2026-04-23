@@ -815,37 +815,61 @@ const slides = [
   ),
 
   // 17 — THE MARKET
-  () => (
-    <div className="slide">
-      <h3>18 · The market</h3>
-      <h1>We&apos;re not entering a market. We&apos;re the first place it <span className="gold">converges.</span></h1>
-      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>Every one of these industries exists because humans are fragmented &mdash; each one holds a piece of the person, none of them hold the whole. $2.6 trillion a year flows into solving parts of the same problem.</p>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '780px', marginLeft: 'auto', marginRight: 'auto' }}>
-        {[
-          ['$739B', 'HR & recruiting', 'Holds your role', 'JOB Training'],
-          ['$680B', 'Entertainment & events', 'Holds your escape', 'Magic Shows'],
-          ['$461B', 'Mental health & therapy', 'Holds your pain', 'JOB Church'],
-          ['$382B', 'Higher education', 'Holds your credentials', 'JOB Shift'],
-          ['$222B', 'Wellness & retreats', 'Holds your body', 'JOB Sites'],
-          ['$124B', 'Religion & spiritual orgs', 'Holds your spirit', 'JOB Church'],
-          ['$5.3B', 'Coaching', 'Holds your goals', 'JOB Board'],
-          ['$2.5B', 'Outplacement', 'Holds your resume', 'JOB Training'],
-        ].map(([amount, industry, fragment, experiment], i) => (
-          <div key={i} style={{ padding: '0.65rem 0.75rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)', textAlign: 'center' }}>
-            <div className="gold" style={{ fontWeight: 700, fontSize: '1.3rem' }}>{amount}</div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>{industry}</div>
-            <div style={{ fontSize: '0.75rem', fontStyle: 'italic', marginTop: '0.15rem' }}>{fragment}</div>
-            <div style={{ fontSize: '0.7rem', marginTop: '0.3rem', fontWeight: 700, color: 'var(--gold)' }}>&rarr; {experiment}</div>
+  () => {
+    const [showJobs, setShowJobs] = useState(false);
+    const jobs = [
+      'Death Doula', 'Nervous System Regulator', 'Grief Worker', 'Transition Guide',
+      'Chief Consciousness Officer', 'Somatic Coach', 'Ceremony Designer', 'Community Weaver',
+      'Business 3.0 Guide', 'Director of Deprogramming', 'Rite of Passage Guide', 'Space Holder',
+      'Head of Human Being', 'JOB Fair Producer', 'Elder', 'Certified Magic Show Host',
+      'Presence Practitioner', 'Chief Aliveness Officer', 'Organizational Aliveness Consultant',
+      'JOB Site Caretaker', 'RCO Architect', 'JOB Training Facilitator', 'Compost Specialist',
+      'Golden Ticket Curator', 'Human Reminder',
+    ];
+    return (
+      <div className="slide">
+        <h3>18 · The market</h3>
+        <h1>We&apos;re not entering a market. We&apos;re the first place it <span className="gold">converges.</span></h1>
+        <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>Every one of these industries exists because humans are fragmented &mdash; each one holds a piece of the person, none of them hold the whole. $2.6 trillion a year flows into solving parts of the same problem.</p>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '780px', marginLeft: 'auto', marginRight: 'auto' }}>
+          {[
+            ['$739B', 'HR & recruiting', 'Holds your role', 'JOB Training'],
+            ['$680B', 'Entertainment & events', 'Holds your escape', 'Magic Shows'],
+            ['$461B', 'Mental health & therapy', 'Holds your pain', 'JOB Church'],
+            ['$382B', 'Higher education', 'Holds your credentials', 'JOB Shift'],
+            ['$222B', 'Wellness & retreats', 'Holds your body', 'JOB Sites'],
+            ['$124B', 'Religion & spiritual orgs', 'Holds your spirit', 'JOB Church'],
+            ['$5.3B', 'Coaching', 'Holds your goals', 'JOB Board'],
+            ['$2.5B', 'Outplacement', 'Holds your resume', 'JOB Training'],
+          ].map(([amount, industry, fragment, experiment], i) => (
+            <div key={i} style={{ padding: '0.65rem 0.75rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)', textAlign: 'center' }}>
+              <div className="gold" style={{ fontWeight: 700, fontSize: '1.3rem' }}>{amount}</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>{industry}</div>
+              <div style={{ fontSize: '0.75rem', fontStyle: 'italic', marginTop: '0.15rem' }}>{fragment}</div>
+              <div style={{ fontSize: '0.7rem', marginTop: '0.3rem', fontWeight: 700, color: 'var(--gold)' }}>&rarr; {experiment}</div>
+            </div>
+          ))}
+        </div>
+        <p style={{ marginTop: '1rem', textAlign: 'center', fontSize: '0.95rem', lineHeight: 1.6, color: 'var(--text-muted)', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>This is what a $2.6 trillion market looks like before someone names it. Here&apos;s our working title:</p>
+        <p onClick={() => setShowJobs(true)} style={{ marginTop: '0.75rem', textAlign: 'center', fontSize: '1.6rem', fontWeight: 800, cursor: 'pointer' }}>
+          <span className="gold">The New Human Resources that create the New Human Economy.</span><span style={{ animation: 'blink 1s step-end infinite', marginLeft: '4px', color: 'var(--purple)', WebkitTextFillColor: 'var(--purple)' }}>|</span>
+        </p>
+        {!showJobs && (
+          <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 700 }}>And we&apos;re going to do it with <span className="gold">joy, love, and play.</span></p>
+        )}
+        {showJobs && (
+          <div style={{ marginTop: '0.75rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto', opacity: 0, animation: 'fadeIn 0.4s ease forwards' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.35rem' }}>
+              {jobs.map((job, i) => (
+                <span key={i} style={{ padding: '0.3rem 0.65rem', border: '1px solid var(--border)', borderRadius: '20px', fontSize: '0.75rem', color: i % 3 === 0 ? 'var(--gold)' : 'var(--text-muted)', background: 'rgba(255,255,255,0.03)', whiteSpace: 'nowrap' }}>{job}</span>
+              ))}
+            </div>
+            <p style={{ marginTop: '0.75rem', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>These are the jobs AI will never do. And we&apos;re going to do it with <span className="gold" style={{ fontStyle: 'normal', fontWeight: 700 }}>joy, love, and play.</span></p>
           </div>
-        ))}
+        )}
       </div>
-      <p style={{ marginTop: '1rem', textAlign: 'center', fontSize: '0.95rem', lineHeight: 1.6, color: 'var(--text-muted)', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>This is what a $2.6 trillion market looks like before someone names it. Here&apos;s our working title:</p>
-      <p style={{ marginTop: '0.75rem', textAlign: 'center', fontSize: '1.6rem', fontWeight: 800 }}>
-        <span className="gold">The New Human Resources that create the New Human Economy.</span><span style={{ animation: 'blink 1s step-end infinite', marginLeft: '2px', color: 'var(--gold)', WebkitTextFillColor: 'var(--gold)' }}>|</span>
-      </p>
-      <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 700 }}>And we&apos;re going to do it with <span className="gold">joy, love, and play.</span></p>
-    </div>
-  ),
+    );
+  },
 
   // 18 — ASK THE ORGANISM (live chat)
   OrganismChatSlide,
