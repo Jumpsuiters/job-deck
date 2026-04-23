@@ -713,7 +713,7 @@ const slides = [
       <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Venture studios take bets. Incubators run cohorts. We do both &mdash; but ours are in service of the question. What works graduates into an SPV. What doesn&apos;t gets composted back into the organism &mdash; not as a failed experiment, but as nutrient-rich soil that the rest of the organism can feed from.</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
-          ['JOB Training', null, 'HR & Enterprise', 'Outplacement for their layoff', 'People who come out more alive than they went in', 'The company pays to end the job. We use it to begin the human.'],
+          ['JOB Training', null, 'HR & Enterprise', 'Outplacement for their layoff', 'People who come out more alive than they went in', 'We create the New Human Resources.'],
           ['JOB Shift', 'Business 3.0', 'Consulting', 'Organizational transformation', 'A company that runs on aliveness instead of extraction', 'They pay to change their business. Their business changes them.'],
           ['JOB Board', null, 'Marketplace', 'A gig platform', 'A place where presence, not productivity, is the product', 'AI took the jobs. We turned being human into one.'],
           ['JOB Sites', null, 'Real Estate', 'An immersive experience', 'Proof that the most abandoned spaces can hold the most alive humans', 'The old world is selling off its temples. We\u2019re turning them into ours.'],
