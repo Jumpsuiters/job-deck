@@ -471,8 +471,8 @@ const slides = [
   () => (
     <div className="slide">
       <h3>06 · The insight</h3>
-      <h1>No one&apos;s building the infrastructure for <span className="gold">humans being.</span></h1>
-      <p style={{ fontSize: '1.3rem', marginTop: '1.5rem', textAlign: 'center', color: 'var(--text-muted)' }}>It&apos;s counterintuitive, but this is how it works.</p>
+      <h1>We&apos;re about to have <span className="gold">time on our hands.</span></h1>
+      <p style={{ fontSize: '1.3rem', marginTop: '1.5rem', textAlign: 'center', color: 'var(--text-muted)' }}>We can either wait for UBI or figure out who we really are and what we really want to create.</p>
     </div>
   ),
 
