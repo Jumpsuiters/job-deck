@@ -832,9 +832,9 @@ const slides = [
       </div>
       <p style={{ marginTop: '1rem', textAlign: 'center', fontSize: '0.95rem', lineHeight: 1.6, color: 'var(--text-muted)', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>This is what a $2.6 trillion market looks like before someone names it. Here&apos;s our working title:</p>
       <p style={{ marginTop: '0.75rem', textAlign: 'center', fontSize: '1.6rem', fontWeight: 800 }}>
-        <span className="gold">The New Human Resource.</span><span style={{ animation: 'blink 1s step-end infinite', marginLeft: '2px', color: 'var(--gold)', WebkitTextFillColor: 'var(--gold)' }}>|</span>
+        <span className="gold">The New Human Resources that create the New Human Economy.</span><span style={{ animation: 'blink 1s step-end infinite', marginLeft: '2px', color: 'var(--gold)', WebkitTextFillColor: 'var(--gold)' }}>|</span>
       </p>
-      <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '0.95rem', fontWeight: 700 }}>One organism. Every fragment. <span className="gold">No ceiling.</span></p>
+      <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 700 }}>And we&apos;re going to do it with <span className="gold">joy, love, and play.</span></p>
     </div>
   ),
 
