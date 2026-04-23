@@ -214,6 +214,101 @@ function RevenueChartSlide() {
 }
 
 // ============================================================
+// ASK THE ORGANISM — LIVE CHAT SLIDE
+// ============================================================
+
+function OrganismChatSlide() {
+  const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState('');
+  const [loading, setLoading] = useState(false);
+  const msgsRef = useCallback(node => {
+    if (node) node.scrollTop = node.scrollHeight;
+  }, []);
+
+  async function send(e) {
+    e.preventDefault();
+    if (!input.trim() || loading) return;
+    const userMsg = { role: 'user', content: input.trim() };
+    const next = [...messages, userMsg];
+    setMessages(next);
+    setInput('');
+    setLoading(true);
+    try {
+      const apiUrl = process.env.NEXT_PUBLIC_PULSE_URL || 'http://localhost:3001';
+      const res = await fetch(`${apiUrl}/api/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: next }),
+      });
+      const data = await res.json();
+      setMessages(prev => [...prev, { role: 'assistant', content: data.answer || 'The organism is quiet right now.' }]);
+    } catch {
+      setMessages(prev => [...prev, { role: 'assistant', content: 'The organism is resting. Try again in a moment.' }]);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <div className="slide">
+      <h3>18 · The organism</h3>
+      <h1>Don&apos;t take our word for it. <span className="gold">Ask it yourself.</span></h1>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
+        This is a living organism. It knows what it is, what it&apos;s building, and why. Go ahead &mdash; ask it anything.
+      </p>
+
+      <div className="organism-slide-chat">
+        {messages.length > 0 && (
+          <div className="organism-slide-messages" ref={msgsRef}>
+            {messages.map((m, i) => (
+              <div key={i} className={`organism-slide-msg ${m.role}`}>
+                {m.content}
+              </div>
+            ))}
+            {loading && <div className="organism-slide-msg assistant" style={{ opacity: 0.5 }}>...</div>}
+          </div>
+        )}
+        <form onSubmit={send} className="organism-slide-form">
+          <input
+            className="organism-slide-input"
+            value={input}
+            onChange={e => setInput(e.target.value)}
+            placeholder="Ask the organism anything..."
+            disabled={loading || messages.length >= 20}
+            maxLength={500}
+          />
+          <button type="submit" className="organism-slide-send" disabled={loading || !input.trim()}>
+            &#8593;
+          </button>
+        </form>
+        {messages.length === 0 && (
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '0.75rem', justifyContent: 'center' }}>
+            {['What is JOB?', 'How does the RCO work?', 'What\'s the revenue model?', 'Why should I invest?'].map((q, i) => (
+              <button
+                key={i}
+                onClick={() => { setInput(q); }}
+                style={{
+                  background: 'rgba(139,92,246,0.1)',
+                  border: '1px solid rgba(139,92,246,0.25)',
+                  borderRadius: '20px',
+                  padding: '0.35rem 0.75rem',
+                  color: 'var(--text-muted)',
+                  fontSize: '0.8rem',
+                  cursor: 'pointer',
+                  fontFamily: 'inherit',
+                }}
+              >
+                {q}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ============================================================
 // SLIDES ARRAY
 // ============================================================
 
@@ -700,8 +795,10 @@ const slides = [
     );
   },
 
-  // 18 — THE ASK
-  // 18 — THE ASK + CLOSE (handled separately)
+  // 18 — ASK THE ORGANISM (live chat)
+  OrganismChatSlide,
+
+  // 19 — THE ASK + CLOSE (handled separately)
   null,
 ];
 
@@ -712,7 +809,7 @@ const slides = [
 function CloseSlide({ onJoin, onTicket }) {
   return (
     <div className="slide close-slide">
-      <h3>18 · The ask</h3>
+      <h3>19 · The ask</h3>
       <h1>As much as <span className="gold">humanly possible.</span></h1>
       <p style={{ fontSize: '1.3rem', marginTop: '0.5rem', fontWeight: 700 }}>Put your money where your species is.</p>
       <div className="cta-row" style={{ marginTop: '2rem', flexDirection: 'column', gap: '0.75rem' }}>
