@@ -496,8 +496,7 @@ const slides = [
           <h1 onClick={() => setShowRant(true)} style={{ fontSize: '2.8rem', textAlign: 'center', cursor: 'pointer' }} className="gold">But who&apos;s gonna pay for it?<span style={{ animation: 'blink 1s step-end infinite', marginLeft: '2px', color: 'var(--gold)' }}>|</span></h1>
           {showRant && (
             <div style={{ maxWidth: '600px', textAlign: 'center', opacity: 0, animation: 'fadeIn 0.4s ease forwards' }}>
-              <p style={{ fontSize: '1.05rem', lineHeight: 1.7, fontStyle: 'italic', color: 'var(--text-muted)' }}>&ldquo;Oh my god. This question. This is the question that makes me want to flip a table. You&apos;re ALREADY paying for it! You&apos;re paying for it in burnout and bad therapy and $200K degrees that don&apos;t mean anything and Sunday mornings with nowhere to go. The money is there. It has ALWAYS been there. Humans just keep asking this question like it&apos;s a real question and I&apos;m like &mdash; babe. It&apos;s the funniest cosmic joke on the planet. The only question is whether we keep spending it on band-aids or we finally build something real.&rdquo;</p>
-              <p style={{ marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--gold)', fontWeight: 600 }}>&mdash; Pam Kosanke, who invented the McDonald&apos;s breakfast dollar menu and knows exactly where the money is</p>
+              <p style={{ fontSize: '1.05rem', lineHeight: 1.7, fontStyle: 'italic', color: 'var(--text-muted)' }}>You&apos;re already paying for it. You&apos;re paying for it in burnout and bad therapy and $200K degrees that don&apos;t mean anything and Sunday mornings with nowhere to go. And if you don&apos;t pay for it on purpose? You&apos;ll pay for it anyway. The money is there. It has always been there. This is the most ridiculous question on the planet.</p>
             </div>
           )}
         </div>
