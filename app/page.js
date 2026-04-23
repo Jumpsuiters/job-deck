@@ -159,11 +159,12 @@ function JobReportSlide() {
 function RevenueChartSlide() {
   const [openIndex, setOpenIndex] = useState(null);
   const experiments = [
-    { name: 'New Human Resources', label: 'Per-seat enterprise + Magic Show add-on', revenue: '$200M+', max: 200, breakdown: 'One enterprise deal at 30K seats × $2,500 = $75M. 10 deals/yr at varied scale = $200M+. Magic Show add-on adds 10–30% per cohort.' },
-    { name: 'Business 3.0', label: 'Founder cohorts + certification', revenue: '$50M', max: 50, breakdown: '2,000 founders × $25K entry = $50M. Plus platform fees from certified implementers and ongoing cohorts.' },
+    { name: 'JOB Shift', label: 'Per-seat enterprise + Magic Show add-on', revenue: '$200M+', max: 200, breakdown: 'One enterprise deal at 30K seats × $2,500 = $75M. 10 deals/yr at varied scale = $200M+. Magic Show add-on adds 10–30% per cohort.' },
+    { name: 'JOB Training', label: 'Founder cohorts + certification', revenue: '$50M', max: 50, breakdown: '2,000 founders × $25K entry = $50M. Plus platform fees from certified implementers and ongoing cohorts.' },
     { name: 'Magic Shows', label: 'Immersions + host certification', revenue: '$40M', max: 40, breakdown: 'Two streams: (1) attendees pay to be transformed (~3,500/yr blended across formats). (2) Members pay to be trained as certified Magic Show hosts — spaceholding, sacrament training, facilitation craft.' },
-    { name: 'Transition Centers', label: 'Physical cohorts + residencies', revenue: '$30M', max: 30, breakdown: '10 centers × ~$3M each (cohorts, retreats, residencies). Real estate arbitrage on the collapse of the old economy.' },
+    { name: 'JOB Sites', label: 'Physical cohorts + residencies', revenue: '$30M', max: 30, breakdown: '10 sites × ~$3M each (cohorts, retreats, residencies). Each site is its own experience — MagicShowLand is the flagship. Real estate arbitrage on the collapse of the old economy.' },
     { name: 'J.O.B. Board', label: 'Marketplace fees', revenue: '$20M', max: 20, breakdown: '20% platform fee on $100M GMV. Sovereign humans selling what AI can\u2019t do — coaching, mediation, hands-on craft, presence work.' },
+    { name: 'JOB Fair', label: 'Tickets + vendor fees + city licensing', revenue: '$25M', max: 25, breakdown: 'Traveling expo model — ticket sales, booth fees from practitioners, corporate sponsorships, city licensing for local fairs. 50 fairs/yr × $500K avg = $25M.' },
     { name: 'The Church', label: 'Tracks + community', revenue: '$5M', max: 5, breakdown: 'Paid tracks ($500–$2K), community membership tiers, doctrine licensing to HoldCo experiments.' },
   ];
   const maxValue = 200;
@@ -171,7 +172,7 @@ function RevenueChartSlide() {
     <div className="slide">
       <h3>17 · Revenue at scale</h3>
       <h1>Where the money gets made.</h1>
-      <p style={{ fontSize: '1.05rem', marginTop: '0.25rem' }}><strong>Six revenue lines. One organism.</strong> NHR is the wedge &mdash; biggest, fastest, already selling. The rest compound behind it as the network grows. Click any experiment for the math.</p>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.25rem' }}><strong>Seven revenue lines. One organism.</strong> JOB Shift is the wedge &mdash; biggest, fastest, already selling. The rest compound behind it as the network grows. Click any experiment for the math.</p>
       <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '0.25rem' }}>Numbers are early-stage models, not promises.</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1rem' }}>
         {experiments.map((exp, i) => (
@@ -501,7 +502,7 @@ const slides = [
     <div className="slide">
       <h3>09 · The answer</h3>
       <h1><span className="gold">Everybody.</span> We&apos;re already paying for it.</h1>
-      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>In more ways than one. But the question isn&apos;t who pays. It&apos;s who doesn&apos;t. The money is already being spent &mdash; it&apos;s just scattered across industries that each hold a piece of the person. We&apos;re the first place it converges.</p>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>The money is already being spent &mdash; it&apos;s just scattered across industries that each hold a piece of the person. We&apos;re the first place it converges.</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '620px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
           ['Companies', 'Because they\u2019re already spending billions on the problem \u2014 they just need somewhere real to send their people'],
@@ -547,15 +548,16 @@ const slides = [
       { id: 'pool', label: 'Investment Pool', desc: 'Community-owned capital via Wefunder / Reg CF equity crowdfunding. The people who believe in J.O.B. own a piece of it. Capital flows into experiments, and successful ones become their own investable entities.' },
       { id: 'ops', label: 'Operations + Incubator', desc: 'The nervous system of the organism. Runs day-to-day operations and incubates new experiments. When something works, it graduates into its own SPV. When it doesn\u2019t, it gets composted \u2014 learnings and relationships recycled back into the system.' },
       { id: 'spvs', label: 'SPV Subsidiaries', desc: 'Each successful experiment becomes its own investable entity. SPVs can raise independently while staying connected to the organism. This is how the HoldCo scales without centralizing.', children: [
-        { id: 'nhr', label: 'New Human Resources', desc: 'B2B offboarding-as-benefit. The revenue wedge. Companies pay to transition their people through J.O.B. instead of handing them a severance check and a LinkedIn link. The budget already exists \u2014 we\u2019re the first honest use of it.' },
-        { id: 'b30', label: 'Business 3.0', desc: 'Consulting IP and organizational transformation. Helps companies become organisms, not machines. Founder cohorts, certified Guides, and a framework built on nature\u2019s intelligence \u2014 not another management theory.' },
-        { id: 'msl', label: 'MagicShowLand', desc: 'Physical immersive spaces in abandoned churches, castles, and colleges \u2014 where humans go to remember what they are. The real-world training grounds for the organism.' },
+        { id: 'nhr', label: 'JOB Shift', desc: 'B2B transition-as-benefit. The revenue wedge. Companies pay to shift their people through J.O.B. instead of handing them a severance check and a LinkedIn link. The budget already exists \u2014 we\u2019re the first honest use of it.' },
+        { id: 'b30', label: 'JOB Training', desc: 'Organizational transformation consulting. Helps companies become organisms, not machines. Founder cohorts, certified Guides, and a framework built on nature\u2019s intelligence \u2014 not another management theory.' },
+        { id: 'msl', label: 'JOB Sites', desc: 'Physical immersive spaces in abandoned churches, castles, and colleges \u2014 where humans go to remember what they are. Each site is its own experience. MagicShowLand is the flagship.' },
         { id: 'ms', label: 'Magic Shows', desc: 'Experiential events that crack people open. Corporate retreats, public gatherings, initiatory experiences. Psychedelic-adjacent journeys where human magic gets rediscovered in days, not years.' },
         { id: 'board', label: 'J.O.B. Board', desc: 'A marketplace for things AI can\u2019t do. Humans post uniquely human offers \u2014 presence, care, craft, mentorship. Other humans pay for them. 20% platform fee. The Trojan Horse: it looks like a gig platform, but it\u2019s a doorway into the organism.' },
+        { id: 'fair', label: 'JOB Fair', desc: 'A traveling expo of the new human economy. Death doulas, trip sitters, nervous system regulators, craft workers \u2014 every job AI can\u2019t do, showcased in one place. Part trade show, part awakening.' },
       ]},
       { id: 'ext', label: 'External Investments', desc: 'The organism can invest in member projects and aligned ventures, expanding the mycelial network. Not acquisitions \u2014 resonance-based partnerships where the whole gets stronger.', children: [
         { id: 'spirit', label: 'SpiritTech', desc: 'Technology that serves the human spirit, not the other way around. Investments in tools and platforms that honor human sovereignty.' },
-        { id: 'immersive', label: 'Immersive Centers', desc: 'Spaces designed for transformation beyond MagicShowLand \u2014 experiential environments where the work of becoming human has a physical home.' },
+        { id: 'immersive', label: 'Immersive Centers', desc: 'Spaces designed for transformation beyond JOB Sites \u2014 experiential environments where the work of becoming human has a physical home.' },
       ]},
       { id: 'profits', label: 'Returns to Investors', desc: 'The organism rewards the humans who fund it. Profits flow back to community investors \u2014 the people who believed before it was obvious. Not charity, not extraction \u2014 regenerative returns.' },
     ];
@@ -570,7 +572,7 @@ const slides = [
       { id: 'mutual', label: 'Mutual Aid', desc: 'The organism takes care of its own. Community support, resource sharing, mutual aid networks. When a member is in crisis, the Church responds \u2014 not with a form, but with presence. Humans helping humans, the original technology.' },
       { id: 'grants', label: 'Grants + MicroGrants', desc: 'Small bets on sovereign humans. Funding for members who are building something from the inside out. The organism invests in the people it creates \u2014 before the market would.' },
       { id: 'ip', label: 'Church IP (licensed to HoldCo)', desc: 'The transformation methodology, curriculum, and practices \u2014 owned by the nonprofit, licensed to the HoldCo. This is the bridge: mission-side IP fuels commercial-side revenue without the mission losing control. The RCO agreement ensures it stays that way.' },
-      { id: 'land', label: 'Holds Land', desc: 'Physical spaces owned by the nonprofit \u2014 sanctuaries, gathering spaces, future MagicShowLand locations. Land held in trust for the community, not for profit. These are the rooms the organism builds in.' },
+      { id: 'land', label: 'Holds Land', desc: 'Physical spaces owned by the nonprofit \u2014 sanctuaries, gathering spaces, future JOB Sites. Land held in trust for the community, not for profit. These are the rooms the organism builds in.' },
       { id: 'research', label: 'Research + Publication', desc: 'Studying what happens when humans deprogram. Publishing findings. Building the evidence base for a new way of being. The organism documents its own evolution so others can learn from it.' },
     ];
 
@@ -691,7 +693,7 @@ const slides = [
         {[
           ['The entity structure is forming', 'Legal body taking shape — RCO Agreement, HoldCo, Church'],
           ['The RCO has members', 'People aren\u2019t buying a service \u2014 they\u2019re joining an organism'],
-          ['The HoldCo has products', 'Six products designed, built, or in motion — before the entity even exists'],
+          ['The HoldCo has products', 'Seven products designed, built, or in motion — before a single dollar of outside capital'],
           ['The Church has members', 'People showing up weekly for something with no obvious ROI'],
           ['People keep hiring themselves', 'No one asked them to. The thesis is already proving itself.'],
         ].map(([title, desc], i) => (
@@ -713,12 +715,13 @@ const slides = [
       <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Venture studios take bets. Incubators run cohorts. We do both &mdash; but ours are in service of the question. What works graduates into an SPV. What doesn&apos;t gets composted back into the organism &mdash; not as a failed experiment, but as nutrient-rich soil that the rest of the organism can feed from.</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
-          ['New Human Resources', null, 'HR & Enterprise', 'Outplacement for their layoff', 'People who come out more alive than they went in', 'The company pays to end the job. We use it to begin the human.'],
-          ['B3.0', 'Business 3.0', 'Consulting', 'Organizational transformation', 'A company that runs on aliveness instead of extraction', 'They pay to change their business. Their business changes them.'],
+          ['JOB Shift', null, 'HR & Enterprise', 'Outplacement for their layoff', 'People who come out more alive than they went in', 'The company pays to end the job. We use it to begin the human.'],
+          ['JOB Training', 'Business 3.0', 'Consulting', 'Organizational transformation', 'A company that runs on aliveness instead of extraction', 'They pay to change their business. Their business changes them.'],
           ['Magic Shows', null, 'Entertainment', 'Tickets to the show', 'The fastest way back to themselves', 'They came for a show. Surprise, you\u2019re the magic.'],
           ['JOB Board', null, 'Marketplace', 'A gig platform', 'A place where presence, not productivity, is the product', 'AI took the jobs. We turned being human into one.'],
           ['JOB Church', null, 'Spirituality', 'Nothing', 'The point', 'History\u2019s most powerful Trojan Horse. Now it\u2019s ours.'],
-          ['MagicShowLand', null, 'Real Estate', 'An immersive experience', 'Proof that the most abandoned spaces can hold the most alive humans', 'The old world is selling off its temples. We\u2019re turning them into ours.'],
+          ['JOB Sites', null, 'Real Estate', 'An immersive experience', 'Proof that the most abandoned spaces can hold the most alive humans', 'The old world is selling off its temples. We\u2019re turning them into ours.'],
+          ['JOB Fair', null, 'Events & Expo', 'A job fair', 'The first world expo of the new human economy \u2014 every job AI can\u2019t touch, in one place', 'They came looking for a job. They found out they already are one.'],
         ].map(([abbr, name, tag, buying, getting, trick], i) => (
           <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}><div><span className="gold" style={{ fontWeight: 700, fontSize: '0.95rem' }}>{abbr}</span>{name ? <span style={{ color: 'var(--text-muted)', fontWeight: 400, fontSize: '0.8rem' }}> — {name}</span> : null}</div><span style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', border: '1px solid var(--border)', borderRadius: '4px', padding: '0.15rem 0.4rem' }}>{tag}</span></div>
@@ -729,7 +732,7 @@ const slides = [
         ))}
       </div>
       <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.2rem', fontWeight: 700 }}>Every door leads to the same place. <span className="gold">Your new J.O.B.</span></p>
-      <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-muted)' }}>This is just what we&apos;re building today. Wait until you see our <span className="gold" style={{ fontWeight: 700 }}>moat.</span></p>
+      <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-muted)' }}>This is just what we&apos;re building today. But the real strategy <span className="gold" style={{ fontWeight: 700 }}>runs deeper.</span></p>
     </div>
   ),
 
@@ -745,17 +748,26 @@ const slides = [
     </div>
   ),
 
-  // 15 — THE MOAT
+  // 15 — THE MOAT (two moats: memory + language)
   () => (
     <div className="slide">
       <h3>14 · The moat</h3>
-      <h1>Our moat isn&apos;t technology. It&apos;s <span className="gold">memory.</span></h1>
-      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.7, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>Individuals and companies join the RCO as members. Their contribution extends beyond money: introductions, ideas, presence, the thing nobody asked for that changed everything.</p>
-      <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.7, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>Energy wants to flow. And the organism uses it to create itself.</p>
-      <p style={{ fontSize: '0.95rem', marginTop: '0.75rem', lineHeight: 1.7, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Thanks to AI, we can finally track the impact of human contribution over time.</p>
-      <p style={{ fontSize: '0.95rem', marginTop: '0.75rem', lineHeight: 1.7, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>That means an intro you make today could turn into a free Magic Show. A B3.0 cohort. A year-long residency in Costa Rica.</p>
-      <p style={{ fontSize: '0.95rem', marginTop: '0.75rem', lineHeight: 1.7, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>When and how you contribute is completely up to you. No bosses. No titles. No capital required.</p>
-      <p style={{ fontSize: '1.2rem', marginTop: '0.75rem', textAlign: 'center', fontWeight: 700, background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>The organism remembers. And it doesn&apos;t just track contribution. It learns where to grow next.</p>
+      <h1>Our moat isn&apos;t technology. It&apos;s <span className="gold">memory.</span> And <span className="gold">language.</span></h1>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
+        <div style={{ padding: '1rem 1.25rem', border: '1px solid var(--border)', borderRadius: '10px', background: 'rgba(255,255,255,0.03)' }}>
+          <p className="gold" style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.5rem' }}>Memory</p>
+          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text-muted)' }}>Members contribute more than money &mdash; introductions, ideas, presence, care. Thanks to AI, we can finally track the impact of human contribution over time.</p>
+          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginTop: '0.5rem' }}>An intro you make today could turn into a free Magic Show. A JOB Training cohort. A year-long residency in Costa Rica.</p>
+          <p style={{ fontSize: '0.85rem', lineHeight: 1.6, marginTop: '0.5rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>The organism remembers. And it doesn&apos;t just track contribution. It learns where to grow next.</p>
+        </div>
+        <div style={{ padding: '1rem 1.25rem', border: '1px solid var(--border)', borderRadius: '10px', background: 'rgba(255,255,255,0.03)' }}>
+          <p className="gold" style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.5rem' }}>Language</p>
+          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text-muted)' }}>We&apos;re reclaiming the entire vocabulary of work. Every familiar &ldquo;job&rdquo; word gets inverted &mdash; familiar on the outside, transformative on the inside.</p>
+          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginTop: '0.5rem' }}>JOB Description. JOB Offer. JOB Interview. JOB Shift. JOB Training. JOB Fair. JOB Search. Every word people thought they understood about work means something different in our world.</p>
+          <p style={{ fontSize: '0.85rem', lineHeight: 1.6, marginTop: '0.5rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>It&apos;s a language system no one can copy &mdash; because it&apos;s not a brand. It&apos;s a worldview.</p>
+        </div>
+      </div>
+      <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 700, background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>One moat no one can outbuild. Another no one can copy. Together, they make the organism uncatchable.</p>
     </div>
   ),
 
@@ -803,7 +815,7 @@ const slides = [
       <div className="slide">
         <h3>18 · The market</h3>
         <h1>We&apos;re not entering a market. We&apos;re <span className="gold">creating a category.</span></h1>
-        <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>Every one of these industries exists because humans are fragmented &mdash; each one holds a piece of the person, none of them hold the whole. $1.5 trillion a year flows into solving parts of the same problem. </p>
+        <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>Every one of these industries exists because humans are fragmented &mdash; each one holds a piece of the person, none of them hold the whole. $2.6 trillion a year flows into solving parts of the same problem.</p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '780px', marginLeft: 'auto', marginRight: 'auto' }}>
           {[
             ['$461B', 'Mental health & therapy', 'Holds your pain'],
