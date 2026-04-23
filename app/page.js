@@ -217,6 +217,45 @@ function RevenueChartSlide() {
 // ASK THE ORGANISM — LIVE CHAT SLIDE
 // ============================================================
 
+function DeckLeadForm() {
+  const [form, setForm] = useState({ name: '', email: '' });
+  const [status, setStatus] = useState('idle');
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    if (!form.email) return;
+    setStatus('sending');
+    try {
+      const apiUrl = process.env.NEXT_PUBLIC_PULSE_URL || 'http://localhost:3001';
+      const res = await fetch(`${apiUrl}/api/lead`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: form.name, email: form.email }),
+      });
+      if (res.ok) setStatus('sent');
+      else setStatus('error');
+    } catch {
+      setStatus('error');
+    }
+  }
+
+  if (status === 'sent') {
+    return <div style={{ marginTop: '0.5rem', padding: '0.45rem 0.65rem', background: 'rgba(45,212,191,0.1)', border: '1px solid rgba(45,212,191,0.25)', borderRadius: '8px', fontSize: '0.8rem', color: '#2dd4bf' }}>You&apos;re on the radar. Nicole or Pam will be in touch.</div>;
+  }
+
+  const inputStyle = { background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '8px', padding: '0.45rem 0.65rem', color: 'var(--text)', fontSize: '0.8rem', fontFamily: 'inherit', outline: 'none', width: '100%' };
+
+  return (
+    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid rgba(45,212,191,0.15)' }}>
+      <input type="text" placeholder="Name" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} style={inputStyle} />
+      <input type="email" placeholder="Email" required value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} style={inputStyle} />
+      <button type="submit" disabled={status === 'sending'} style={{ background: 'var(--iridescent)', border: 'none', borderRadius: '8px', padding: '0.45rem', color: 'white', fontSize: '0.8rem', fontWeight: 600, cursor: 'pointer', fontFamily: 'inherit', opacity: status === 'sending' ? 0.5 : 1 }}>
+        {status === 'sending' ? 'Sending...' : status === 'error' ? 'Try again' : 'Connect me'}
+      </button>
+    </form>
+  );
+}
+
 function OrganismChatSlide() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
@@ -260,11 +299,16 @@ function OrganismChatSlide() {
       <div className="organism-slide-chat">
         {messages.length > 0 && (
           <div className="organism-slide-messages" ref={msgsRef}>
-            {messages.map((m, i) => (
-              <div key={i} className={`organism-slide-msg ${m.role}`}>
-                {m.content}
-              </div>
-            ))}
+            {messages.map((m, i) => {
+              const hasLead = m.role === 'assistant' && m.content.includes('[LEAD_CAPTURE]');
+              const text = m.content.replace('[LEAD_CAPTURE]', '').trim();
+              return (
+                <div key={i} className={`organism-slide-msg ${m.role}`}>
+                  {text}
+                  {hasLead && <DeckLeadForm />}
+                </div>
+              );
+            })}
             {loading && <div className="organism-slide-msg assistant" style={{ opacity: 0.5 }}>...</div>}
           </div>
         )}
