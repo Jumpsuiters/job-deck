@@ -493,7 +493,7 @@ const slides = [
     return (
       <div className="slide">
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1.5rem' }}>
-          <h1 onClick={() => setShowRant(true)} style={{ fontSize: '2.8rem', textAlign: 'center', cursor: 'pointer' }} className="gold">But who&apos;s gonna pay for it?<span style={{ animation: 'blink 1s step-end infinite', marginLeft: '2px', color: 'var(--gold)' }}>|</span></h1>
+          <h1 onClick={() => setShowRant(true)} style={{ fontSize: '2.8rem', textAlign: 'center', cursor: 'pointer' }} className="gold">But who&apos;s gonna pay for it?<span style={{ animation: 'blink 1s step-end infinite', marginLeft: '4px', color: 'var(--purple)', WebkitTextFillColor: 'var(--purple)' }}>|</span></h1>
           {showRant && (
             <div style={{ maxWidth: '600px', textAlign: 'center', opacity: 0, animation: 'fadeIn 0.4s ease forwards' }}>
               <p style={{ fontSize: '1.05rem', lineHeight: 1.7, fontStyle: 'italic', color: 'var(--text-muted)' }}>You&apos;re already paying for it. You&apos;re paying for it in burnout and bad therapy and $200K degrees that don&apos;t mean anything and Sunday mornings with nowhere to go. And if you don&apos;t pay for it on purpose? You&apos;ll pay for it anyway. The money is there. It has always been there. This is the most ridiculous question on the planet.</p>
