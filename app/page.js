@@ -471,6 +471,7 @@ const slides = [
       <h3>06 · The insight</h3>
       <h1>No one&apos;s building the infrastructure for <span className="gold">humans being.</span></h1>
       <p style={{ fontSize: '1.3rem', marginTop: '1.5rem', textAlign: 'center', color: 'var(--text-muted)' }}>UBI gives people money. It doesn&apos;t give them meaning. We&apos;re building the infrastructure for the part that no one seems to have an answer for.</p>
+      <p style={{ fontSize: '1.1rem', marginTop: '1.25rem', textAlign: 'center', color: 'var(--text-muted)', lineHeight: 1.7 }}>The technology story is over. AI won that race. The only frontier left is what humans uniquely are &mdash; and nobody is staging it, nobody is showing it, nobody is making it a spectacle. We&apos;re all just quietly panicking about being replaced while the thing that can&apos;t be replaced goes <span className="gold">uncelebrated.</span></p>
     </div>
   ),
 
