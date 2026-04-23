@@ -490,7 +490,7 @@ const slides = [
   () => {
     const [showRant, setShowRant] = useState(false);
     const [displayText, setDisplayText] = useState('');
-    const rant = "Oh my god. This question. This is the question that makes me want to flip a table. You\u2019re ALREADY paying for it. You\u2019re paying for it in burnout and therapy and degrees that don\u2019t mean anything and jobs that make people sick. And if you don\u2019t pay for it on purpose? You\u2019ll pay for it anyway. You\u2019ll just pay more. And it\u2019ll be uglier. The money is there. It\u2019s always been there. Everyone just keeps asking this like it\u2019s a real question. It\u2019s a cosmic joke.";
+    const rant = "Oh my god. This question. This is the question that makes me want to flip a table. You\u2019re ALREADY paying for it! You\u2019re paying for it in burnout and bad therapy and $200K degrees that don\u2019t mean anything and Sunday mornings with nowhere to go. The money is there. It has ALWAYS been there. Humans just keep asking this question like it\u2019s a real question and I\u2019m like \u2014 babe. It\u2019s the funniest cosmic joke on the planet. The only question is whether we keep spending it on band-aids or we finally build something real.";
 
     useEffect(() => {
       if (!showRant) return;
@@ -529,11 +529,11 @@ const slides = [
       <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>The money is already being spent &mdash; it&apos;s just scattered across industries that each hold a piece of the person. We&apos;re the first place it converges.</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '620px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
-          ['Companies', 'Because they\u2019re already spending billions on the problem \u2014 they just need somewhere real to send their people'],
-          ['People', 'Because they\u2019re already paying for therapy, coaching, wellness, and spiritual communities \u2014 separately. They\u2019re looking for one place that holds all of it'],
+          ['Companies', 'Because they\u2019re already spending billions on the problem, so here\u2019s a better option that lets them sleep at night'],
+          ['People', 'Because they\u2019re already paying for therapy, coaching, wellness, and spiritual communities \u2014 separately'],
           ['Investors', 'Because this is a new asset class \u2014 an organism that compounds, not a startup that exits'],
           ['Philanthropists', 'Because this is the mission they\u2019ve been looking for \u2014 structural change, not another band-aid'],
-          ['Members', 'Because they don\u2019t just pay \u2014 they show up with time, skills, presence, and connection'],
+          ['Members', 'Because they\u2019re going to pay with more than money: they\u2019ll contribute time, skills, presence, and connection as legitimate value'],
         ].map(([who, why], i) => (
           <div key={i} style={{ padding: '0.65rem 0.85rem', border: '1px solid var(--border)', borderRadius: '8px', background: 'rgba(255,255,255,0.03)' }}>
             <span className="gold" style={{ fontWeight: 700 }}>{who}.</span>{' '}
