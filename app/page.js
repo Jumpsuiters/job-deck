@@ -159,8 +159,8 @@ function JobReportSlide() {
 function RevenueChartSlide() {
   const [openIndex, setOpenIndex] = useState(null);
   const experiments = [
-    { name: 'JOB Shift', label: 'Per-seat enterprise + Magic Show add-on', revenue: '$200M+', max: 200, breakdown: 'One enterprise deal at 30K seats × $2,500 = $75M. 10 deals/yr at varied scale = $200M+. Magic Show add-on adds 10–30% per cohort.' },
-    { name: 'JOB Training', label: 'Founder cohorts + certification', revenue: '$50M', max: 50, breakdown: '2,000 founders × $25K entry = $50M. Plus platform fees from certified implementers and ongoing cohorts.' },
+    { name: 'JOB Training', label: 'Per-seat enterprise + Magic Show add-on', revenue: '$200M+', max: 200, breakdown: 'One enterprise deal at 30K seats × $2,500 = $75M. 10 deals/yr at varied scale = $200M+. Magic Show add-on adds 10–30% per cohort.' },
+    { name: 'JOB Shift', label: 'Founder cohorts + certification', revenue: '$50M', max: 50, breakdown: '2,000 founders × $25K entry = $50M. Plus platform fees from certified implementers and ongoing cohorts.' },
     { name: 'Magic Shows', label: 'Immersions + host certification', revenue: '$40M', max: 40, breakdown: 'Two streams: (1) attendees pay to be transformed (~3,500/yr blended across formats). (2) Members pay to be trained as certified Magic Show hosts — spaceholding, sacrament training, facilitation craft.' },
     { name: 'JOB Sites', label: 'Physical cohorts + residencies', revenue: '$30M', max: 30, breakdown: '10 sites × ~$3M each (cohorts, retreats, residencies). Each site is its own experience — MagicShowLand is the flagship. Real estate arbitrage on the collapse of the old economy.' },
     { name: 'J.O.B. Board', label: 'Marketplace fees', revenue: '$20M', max: 20, breakdown: '20% platform fee on $100M GMV. Sovereign humans selling what AI can\u2019t do — coaching, mediation, hands-on craft, presence work.' },
@@ -172,7 +172,7 @@ function RevenueChartSlide() {
     <div className="slide">
       <h3>17 · Revenue at scale</h3>
       <h1>Where the money gets made.</h1>
-      <p style={{ fontSize: '1.05rem', marginTop: '0.25rem' }}><strong>Seven revenue lines. One organism.</strong> JOB Shift is the wedge &mdash; biggest, fastest, already selling. The rest compound behind it as the network grows. Click any experiment for the math.</p>
+      <p style={{ fontSize: '1.05rem', marginTop: '0.25rem' }}><strong>Seven revenue lines. One organism.</strong> JOB Training is the wedge &mdash; biggest, fastest, already selling. The rest compound behind it as the network grows. Click any experiment for the math.</p>
       <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '0.25rem' }}>Numbers are early-stage models, not promises.</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1rem' }}>
         {experiments.map((exp, i) => (
@@ -548,8 +548,8 @@ const slides = [
       { id: 'pool', label: 'Investment Pool', desc: 'Community-owned capital via Wefunder / Reg CF equity crowdfunding. The people who believe in J.O.B. own a piece of it. Capital flows into experiments, and successful ones become their own investable entities.' },
       { id: 'ops', label: 'Operations + Incubator', desc: 'The nervous system of the organism. Runs day-to-day operations and incubates new experiments. When something works, it graduates into its own SPV. When it doesn\u2019t, it gets composted \u2014 learnings and relationships recycled back into the system.' },
       { id: 'spvs', label: 'SPV Subsidiaries', desc: 'Each successful experiment becomes its own investable entity. SPVs can raise independently while staying connected to the organism. This is how the HoldCo scales without centralizing.', children: [
-        { id: 'nhr', label: 'JOB Shift', desc: 'B2B transition-as-benefit. The revenue wedge. Companies pay to shift their people through J.O.B. instead of handing them a severance check and a LinkedIn link. The budget already exists \u2014 we\u2019re the first honest use of it.' },
-        { id: 'b30', label: 'JOB Training', desc: 'Organizational transformation consulting. Helps companies become organisms, not machines. Founder cohorts, certified Guides, and a framework built on nature\u2019s intelligence \u2014 not another management theory.' },
+        { id: 'nhr', label: 'JOB Training', desc: 'B2B transition-as-benefit. The revenue wedge. Companies pay to train their people through J.O.B. instead of handing them a severance check and a LinkedIn link. The budget already exists \u2014 we\u2019re the first honest use of it.' },
+        { id: 'b30', label: 'JOB Shift', desc: 'Organizational transformation consulting. Helps companies shift from machine to organism. Founder cohorts, certified Guides, and a framework built on nature\u2019s intelligence \u2014 not another management theory.' },
         { id: 'msl', label: 'JOB Sites', desc: 'Physical immersive spaces in abandoned churches, castles, and colleges \u2014 where humans go to remember what they are. Each site is its own experience. MagicShowLand is the flagship.' },
         { id: 'ms', label: 'Magic Shows', desc: 'Experiential events that crack people open. Corporate retreats, public gatherings, initiatory experiences. Psychedelic-adjacent journeys where human magic gets rediscovered in days, not years.' },
         { id: 'board', label: 'J.O.B. Board', desc: 'A marketplace for things AI can\u2019t do. Humans post uniquely human offers \u2014 presence, care, craft, mentorship. Other humans pay for them. 20% platform fee. The Trojan Horse: it looks like a gig platform, but it\u2019s a doorway into the organism.' },
@@ -715,8 +715,8 @@ const slides = [
       <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Venture studios take bets. Incubators run cohorts. We do both &mdash; but ours are in service of the question. What works graduates into an SPV. What doesn&apos;t gets composted back into the organism &mdash; not as a failed experiment, but as nutrient-rich soil that the rest of the organism can feed from.</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
         {[
-          ['JOB Shift', null, 'HR & Enterprise', 'Outplacement for their layoff', 'People who come out more alive than they went in', 'The company pays to end the job. We use it to begin the human.'],
-          ['JOB Training', 'Business 3.0', 'Consulting', 'Organizational transformation', 'A company that runs on aliveness instead of extraction', 'They pay to change their business. Their business changes them.'],
+          ['JOB Training', null, 'HR & Enterprise', 'Outplacement for their layoff', 'People who come out more alive than they went in', 'The company pays to end the job. We use it to begin the human.'],
+          ['JOB Shift', 'Business 3.0', 'Consulting', 'Organizational transformation', 'A company that runs on aliveness instead of extraction', 'They pay to change their business. Their business changes them.'],
           ['Magic Shows', null, 'Entertainment', 'Tickets to the show', 'The fastest way back to themselves', 'They came for a show. Surprise, you\u2019re the magic.'],
           ['JOB Board', null, 'Marketplace', 'A gig platform', 'A place where presence, not productivity, is the product', 'AI took the jobs. We turned being human into one.'],
           ['JOB Church', null, 'Spirituality', 'Nothing', 'The point', 'History\u2019s most powerful Trojan Horse. Now it\u2019s ours.'],
@@ -757,7 +757,7 @@ const slides = [
         <div style={{ padding: '1rem 1.25rem', border: '1px solid var(--border)', borderRadius: '10px', background: 'rgba(255,255,255,0.03)' }}>
           <p className="gold" style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.5rem' }}>Memory</p>
           <p style={{ fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text-muted)' }}>Members contribute more than money &mdash; introductions, ideas, presence, care. Thanks to AI, we can finally track the impact of human contribution over time.</p>
-          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginTop: '0.5rem' }}>An intro you make today could turn into a free Magic Show. A JOB Training cohort. A year-long residency in Costa Rica.</p>
+          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginTop: '0.5rem' }}>An intro you make today could turn into a free Magic Show. A JOB Shift cohort. A year-long residency in Costa Rica.</p>
           <p style={{ fontSize: '0.85rem', lineHeight: 1.6, marginTop: '0.5rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>The organism remembers. And it doesn&apos;t just track contribution. It learns where to grow next.</p>
         </div>
         <div style={{ padding: '1rem 1.25rem', border: '1px solid var(--border)', borderRadius: '10px', background: 'rgba(255,255,255,0.03)' }}>
