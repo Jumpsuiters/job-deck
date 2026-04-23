@@ -328,7 +328,7 @@ function OrganismChatSlide() {
         </form>
         {messages.length === 0 && (
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: '0.75rem', justifyContent: 'center' }}>
-            {['What is JOB?', 'How does the RCO work?', 'What\'s the revenue model?', 'Why should I invest?'].map((q, i) => (
+            {['What is JOB?', 'How does the RCO work?', 'What\'s the revenue model?', 'Why should I invest?', 'Why AA, Indeed, and Meow Wolf?'].map((q, i) => (
               <button
                 key={i}
                 onClick={() => { setInput(q); }}
