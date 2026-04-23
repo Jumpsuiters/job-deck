@@ -749,19 +749,19 @@ const slides = [
   () => (
     <div className="slide">
       <h3>14 · The moat</h3>
-      <h1>Our moat isn&apos;t technology. It&apos;s <span className="gold">memory.</span> And <span className="gold">language.</span></h1>
+      <h1>Our moat isn&apos;t technology. It&apos;s <span className="gold">language.</span> And <span className="gold">memory.</span></h1>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
-        <div style={{ padding: '1rem 1.25rem', border: '1px solid var(--border)', borderRadius: '10px', background: 'rgba(255,255,255,0.03)' }}>
-          <p className="gold" style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.5rem' }}>Memory</p>
-          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text-muted)' }}>Members contribute more than money &mdash; introductions, ideas, presence, care. Thanks to AI, we can finally track the impact of human contribution over time.</p>
-          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginTop: '0.5rem' }}>An intro you make today could turn into a free Magic Show. A JOB Shift cohort. A year-long residency in Costa Rica.</p>
-          <p style={{ fontSize: '0.85rem', lineHeight: 1.6, marginTop: '0.5rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>The organism remembers. And it doesn&apos;t just track contribution. It learns where to grow next.</p>
-        </div>
         <div style={{ padding: '1rem 1.25rem', border: '1px solid var(--border)', borderRadius: '10px', background: 'rgba(255,255,255,0.03)' }}>
           <p className="gold" style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.5rem' }}>Language</p>
           <p style={{ fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text-muted)' }}>We&apos;re reclaiming the entire vocabulary of work. Every familiar &ldquo;job&rdquo; word gets inverted &mdash; familiar on the outside, transformative on the inside.</p>
           <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginTop: '0.5rem' }}>JOB Description. JOB Offer. JOB Interview. JOB Shift. JOB Training. JOB Fair. JOB Search. Every word people thought they understood about work means something different in our world.</p>
           <p style={{ fontSize: '0.85rem', lineHeight: 1.6, marginTop: '0.5rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>It&apos;s a language system no one can copy &mdash; because it&apos;s not a brand. It&apos;s a worldview.</p>
+        </div>
+        <div style={{ padding: '1rem 1.25rem', border: '1px solid var(--border)', borderRadius: '10px', background: 'rgba(255,255,255,0.03)' }}>
+          <p className="gold" style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.5rem' }}>Memory</p>
+          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text-muted)' }}>Members contribute more than money &mdash; introductions, ideas, presence, care. Thanks to AI, we can finally track the impact of human contribution over time.</p>
+          <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginTop: '0.5rem' }}>An intro you make today could turn into a free Magic Show. A JOB Shift cohort. A year-long residency in Costa Rica.</p>
+          <p style={{ fontSize: '0.85rem', lineHeight: 1.6, marginTop: '0.5rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>The organism remembers. And it doesn&apos;t just track contribution. It learns where to grow next.</p>
         </div>
       </div>
       <p style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 700, background: 'var(--iridescent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>One moat no one can outbuild. Another no one can copy. Together, they make the organism uncatchable.</p>
