@@ -251,7 +251,7 @@ function OrganismChatSlide() {
 
   return (
     <div className="slide">
-      <h3>18 · The organism</h3>
+      <h3>19 · The organism</h3>
       <h1>Don&apos;t take our word for it. <span className="gold">Ask it yourself.</span></h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
         This is a living organism. It knows what it is, what it&apos;s building, and why. Go ahead &mdash; ask it anything.
@@ -476,18 +476,6 @@ const slides = [
     </div>
   ),
 
-  // 8 — THE TROJAN HORSE
-  () => (
-    <div className="slide">
-      <h3>10 · The strategy</h3>
-      <h1>Everything is a <span className="gold">Trojan Horse.</span></h1>
-      <p style={{ fontSize: '1.2rem', marginTop: '2rem', lineHeight: 1.7, textAlign: 'center' }}>The future doesn&apos;t announce itself. It shows up dressed as something familiar &mdash; and changes you from the inside.</p>
-      <p style={{ fontSize: '1.15rem', marginTop: '2rem', lineHeight: 1.7, textAlign: 'center', color: 'var(--text-muted)', fontStyle: 'italic' }}>A marketplace. A church. A show. A company. A membership. A fund.</p>
-      <p style={{ fontSize: '1.05rem', marginTop: '1.25rem', lineHeight: 1.7, textAlign: 'center' }}>Things that used to extract. That now, all of a sudden, regenerate.</p>
-      <p style={{ fontSize: '1.3rem', marginTop: '2rem', textAlign: 'center', fontWeight: 700 }}>The best way to end the old game is to build a better one alongside it. Until one day, nobody&apos;s playing the old one at all &mdash; <span className="gold">including us.</span></p>
-    </div>
-  ),
-
   // 7 — THE STRUCTURE (four layers)
   () => {
     const [openIds, setOpenIds] = useState(new Set());
@@ -567,7 +555,7 @@ const slides = [
 
     return (
       <div className="slide">
-        <h3>11 · The structure</h3>
+        <h3>10 · The structure</h3>
         <h1><span className="gold">Incorruptible</span> by design.</h1>
         <p style={{ fontSize: '1rem', marginTop: '0.5rem', marginBottom: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>A game this big needs a structure the old world can&apos;t swallow. Can&apos;t acquire it. Can&apos;t extract from it. Can&apos;t shut it down. So we didn&apos;t build a company. We grew an organism. JOB is a Business 3.0 entity and the first RCO in the United States.</p>
         <p style={{ fontSize: '0.85rem', marginBottom: '1rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Every organism has a lifecycle. JOB is no different. It&apos;s born. It grows. It fruits. And when the question is answered &mdash; or no longer needs asking &mdash; it composts itself entirely. On purpose. The RCO agreement guarantees the full arc. When the cycle completes, IP becomes commons, capital returns to members, and the infrastructure becomes soil for whatever grows next. <span style={{ color: 'var(--gold)' }}>The organism knows its JOB.</span></p>
@@ -652,7 +640,7 @@ const slides = [
   // 8 — PROOF OF LIFE
   () => (
     <div className="slide">
-      <h3>12 · Proof of life</h3>
+      <h3>11 · Proof of life</h3>
       <h1>This organism is <span className="gold">already growing.</span></h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center' }}>Before a single dollar of outside investment, the network started building itself.</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -676,7 +664,7 @@ const slides = [
   // 9 — THE EXPERIMENTS
   () => (
     <div className="slide">
-      <h3>13 · The portfolio</h3>
+      <h3>12 · The portfolio</h3>
       <h1>Successful experiments become SPVs. <span className="gold">The rest get composted.</span></h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', color: 'var(--text-muted)' }}>Venture studios take bets. Incubators run cohorts. We do both &mdash; but ours are in service of the question. What works graduates into an SPV. What doesn&apos;t gets composted back into the organism &mdash; not as a failed experiment, but as nutrient-rich soil that the rest of the organism can feed from.</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '1.25rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -701,7 +689,19 @@ const slides = [
     </div>
   ),
 
-  // 14 — THE MOAT
+  // THE TROJAN HORSE (the reveal, after they've seen the experiments)
+  () => (
+    <div className="slide">
+      <h3>13 · The strategy</h3>
+      <h1>Everything is a <span className="gold">Trojan Horse.</span></h1>
+      <p style={{ fontSize: '1.2rem', marginTop: '2rem', lineHeight: 1.7, textAlign: 'center' }}>The future doesn&apos;t announce itself. It shows up dressed as something familiar &mdash; and changes you from the inside.</p>
+      <p style={{ fontSize: '1.15rem', marginTop: '2rem', lineHeight: 1.7, textAlign: 'center', color: 'var(--text-muted)', fontStyle: 'italic' }}>A marketplace. A church. A show. A company. A membership. A fund.</p>
+      <p style={{ fontSize: '1.05rem', marginTop: '1.25rem', lineHeight: 1.7, textAlign: 'center' }}>Things that used to extract. That now, all of a sudden, regenerate.</p>
+      <p style={{ fontSize: '1.3rem', marginTop: '2rem', textAlign: 'center', fontWeight: 700 }}>The best way to end the old game is to build a better one alongside it. Until one day, nobody&apos;s playing the old one at all &mdash; <span className="gold">including us.</span></p>
+    </div>
+  ),
+
+  // 15 — THE MOAT
   () => (
     <div className="slide">
       <h3>14 · The moat</h3>
@@ -757,7 +757,7 @@ const slides = [
     const [showDetail, setShowDetail] = useState(false);
     return (
       <div className="slide">
-        <h3>17 · The market</h3>
+        <h3>18 · The market</h3>
         <h1>We&apos;re not entering a market. We&apos;re <span className="gold">creating a category.</span></h1>
         <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>Every one of these industries exists because humans are fragmented &mdash; each one holds a piece of the person, none of them hold the whole. $1.5 trillion a year flows into solving parts of the same problem. </p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '780px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -810,7 +810,7 @@ const slides = [
 function CloseSlide({ onJoin, onTicket }) {
   return (
     <div className="slide close-slide">
-      <h3>19 · The ask</h3>
+      <h3>20 · The ask</h3>
       <h1>As much as <span className="gold">humanly possible.</span></h1>
       <p style={{ fontSize: '1.3rem', marginTop: '0.5rem', fontWeight: 700 }}>Put your money where your species is.</p>
       <div className="cta-row" style={{ marginTop: '2rem', flexDirection: 'column', gap: '0.75rem' }}>
