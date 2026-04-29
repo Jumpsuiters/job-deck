@@ -87,7 +87,7 @@ function JobReportSlide() {
 
   return (
     <div className="slide job-report-slide">
-      <h3>15 · The JOB Report</h3>
+      <h3>17 · The JOB Report</h3>
       <h1>Your contribution has always mattered. Now it has a <span className="gold">receipt.</span></h1>
       <p style={{ marginBottom: '0.75rem' }}>
         <strong>Try it below. Give yourself a job only you can do for JOB.</strong>
@@ -170,7 +170,7 @@ function RevenueChartSlide() {
   const maxValue = 200;
   return (
     <div className="slide">
-      <h3>17 · Revenue at scale</h3>
+      <h3>19 · Revenue at scale</h3>
       <h1>Where the money gets made.</h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.25rem' }}><strong>Seven revenue lines. One JOB.</strong> JOB Training is the wedge &mdash; biggest, fastest, already selling. The rest compound behind it as the network grows. Click any experiment for the math.</p>
       <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '0.25rem' }}>Numbers are early-stage models, not promises.</p>
@@ -291,7 +291,7 @@ function OrganismChatSlide() {
 
   return (
     <div className="slide">
-      <h3>19 · Ask JOB</h3>
+      <h3>21 · Ask JOB</h3>
       <h1>Don&apos;t take our word for it. <span className="gold">Ask it yourself.</span></h1>
       <p style={{ fontSize: '1.05rem', marginTop: '0.5rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '580px', marginLeft: 'auto', marginRight: 'auto' }}>
         JOB is a living organism. It knows what it is, what it&apos;s building, and why. Go ahead &mdash; ask it anything.
@@ -776,13 +776,66 @@ const slides = [
     </div>
   ),
 
-  // 15 — THE JOB REPORT (interactive demo)
-  JobReportSlide,
-
-  // 16 — TEAM
+  // 15 — MAGIC SHOWS BEGET MAGIC SHOWS
   () => (
     <div className="slide">
-      <h3>16 · The team</h3>
+      <h3>15 · The viral loop</h3>
+      <h1>Magic Shows beget <span className="gold">Magic Shows.</span></h1>
+      <p style={{ fontSize: '1.15rem', marginTop: '1rem', lineHeight: 1.7, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>The product IS the marketing. A founder experiences a Magic Show. Their nervous system changes. They can&apos;t not share it.</p>
+      <div className="flywheel" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '1.5rem' }}>
+        <div className="flywheel-step"><strong>A founder attends a Magic Show</strong></div>
+        <div className="flywheel-arrow">↓</div>
+        <div className="flywheel-step"><strong>They host one for their leadership team</strong></div>
+        <div className="flywheel-arrow">↓</div>
+        <div className="flywheel-step"><strong>Three of those leaders host their own</strong></div>
+        <div className="flywheel-arrow">↓</div>
+        <div className="flywheel-step"><strong>Each show creates demand for the next</strong></div>
+        <div className="flywheel-arrow">↻</div>
+      </div>
+      <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '1.1rem', fontWeight: 700 }}>You don&apos;t need a sales team. You need a <span className="gold">great first show.</span></p>
+      <p style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '0.95rem', color: 'var(--text-muted)' }}>That&apos;s exponential, not linear. And it&apos;s already happening.</p>
+    </div>
+  ),
+
+  // 16 — RCO EMERGENCE
+  () => (
+    <div className="slide">
+      <h3>16 · The emergent upside</h3>
+      <h1>The organism creates revenue streams that <span className="gold">don&apos;t exist yet.</span></h1>
+      <p style={{ fontSize: '1.1rem', marginTop: '1rem', lineHeight: 1.7, maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>You can&apos;t predict what 1,000+ people contributing time, skills, and creativity will build. That&apos;s the point.</p>
+      <div className="two-col" style={{ marginTop: '1.5rem', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
+        <div className="card">
+          <h3>What we can model</h3>
+          <ul>
+            <li>Cohort tuition</li>
+            <li>Unconference tickets</li>
+            <li>Platform fees on engagements</li>
+            <li>Magic Show revenue</li>
+          </ul>
+          <p style={{ marginTop: '0.75rem', fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--text-muted)' }}>These are the revenue streams we designed.</p>
+        </div>
+        <div className="card" style={{ borderColor: 'var(--gold)', background: 'rgba(201,168,76,0.05)' }}>
+          <h3>What we can&apos;t</h3>
+          <ul>
+            <li>A member creates a playbook that becomes a product</li>
+            <li>A Guide hosts a ceremony that becomes a service line</li>
+            <li>Two members connect and start a company</li>
+            <li>A community builds a tool the whole network adopts</li>
+          </ul>
+          <p style={{ marginTop: '0.75rem', fontSize: '0.9rem', fontStyle: 'italic' }} className="gold">These are the revenue streams the organism will generate.</p>
+        </div>
+      </div>
+      <p style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '1.15rem', fontWeight: 700 }}>Traditional financial models break here. The upside is fundamentally <span className="gold">uncapped.</span></p>
+    </div>
+  ),
+
+  // 17 — THE JOB REPORT (interactive demo)
+  JobReportSlide,
+
+  // 18 — TEAM
+  () => (
+    <div className="slide">
+      <h3>18 · The team</h3>
       <h1>Who&apos;s audacious enough to <span className="gold">pull this off?</span></h1>
       <div className="two-col" style={{ marginTop: '0.75rem' }}>
         <div className="card">
@@ -813,7 +866,7 @@ const slides = [
     </div>
   ),
 
-  // 17 — THE MARKET
+  // 19 — THE MARKET
   () => {
     const [showJobs, setShowJobs] = useState(false);
     const jobs = [
@@ -827,7 +880,7 @@ const slides = [
     ];
     return (
       <div className="slide">
-        <h3>18 · The market</h3>
+        <h3>20 · The market</h3>
         <h1>We&apos;re not entering a market. We&apos;re the first place it <span className="gold">converges.</span></h1>
         <p style={{ fontSize: '1.05rem', marginTop: '0.75rem', lineHeight: 1.6, textAlign: 'center', maxWidth: '640px', marginLeft: 'auto', marginRight: 'auto' }}>Every one of these industries exists because humans are fragmented &mdash; each one holds a piece of the person, none of them hold the whole. $2.6 trillion a year flows into solving parts of the same problem.</p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '0.5rem', marginTop: '1.25rem', maxWidth: '780px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -884,7 +937,7 @@ const slides = [
 function CloseSlide({ onJoin, onTicket }) {
   return (
     <div className="slide close-slide">
-      <h3>20 · The ask</h3>
+      <h3>22 · The ask</h3>
       <h1>As much as <span className="gold">humanly possible.</span></h1>
       <p style={{ fontSize: '1.3rem', marginTop: '0.5rem', fontWeight: 700 }}>Put your money where your species is.</p>
       <div className="cta-row" style={{ marginTop: '2rem', flexDirection: 'column', gap: '0.75rem' }}>
